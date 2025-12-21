@@ -330,25 +330,48 @@
 </div>
 
 <!-- Fullscreen Image Modal -->
-<div id="fullscreenImageModal" class="fixed inset-0 bg-black z-[100] opacity-0 pointer-events-none transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+<div id="fullscreenImageModal" class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300" style="z-index: 9999 !important;" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
     <div class="relative w-full h-full flex items-center justify-center p-4">
         <!-- Close Button -->
-        <button id="closeFullscreenImage" class="absolute top-4 right-4 z-10 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300" aria-label="Cerrar vista ampliada">
+        <button id="closeFullscreenImage" class="absolute top-4 right-4 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300" style="z-index: 10000;" aria-label="Cerrar vista ampliada">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
         </button>
 
         <!-- Fullscreen Image -->
-        <img id="fullscreenImage" src="" alt="" class="max-w-full max-h-full object-contain">
+        <img id="fullscreenImage" src="" alt="" class="max-w-full max-h-full object-contain" style="z-index: 9999;">
 
         <!-- Image info overlay -->
-        <div class="absolute bottom-4 left-4 right-4 bg-black/60 rounded-lg p-4 text-white">
-            <h3 id="fullscreenImageTitle" class="font-semibold text-lg mb-1"></h3>
+        <div class="absolute bottom-4 left-4 right-4 bg-black/60 rounded-lg p-4 text-white" style="z-index: 10000;">
+            <h3 id="fullscreenImageTitle" class="font-semibold text-lg mb-1 text-white"></h3>
             <p id="fullscreenImageDescription" class="text-sm text-gray-200"></p>
         </div>
     </div>
 </div>
+
+<style>
+/* Fullscreen modal con z-index forzado */
+#fullscreenImageModal {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    z-index: 9999 !important;
+}
+
+#fullscreenImageModal.opacity-100 {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+#fullscreenImageModal.opacity-0 {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+</style>
 
 <!-- CTA Section -->
 <section class="section bg-gradient-to-b from-background to-secondary">
@@ -709,9 +732,22 @@
 
     function initializeLightboxImageClick() {
         const lightboxImageContainer = document.getElementById('lightboxImageContainer');
-        if (lightboxImageContainer) {
+        const lightboxImage = document.getElementById('lightboxImage');
+
+        if (lightboxImageContainer && lightboxImage) {
+            // Remover listeners anteriores
             lightboxImageContainer.removeEventListener('click', handleLightboxImageClick);
+            lightboxImageContainer.removeEventListener('touchend', handleLightboxImageClick);
+            lightboxImage.removeEventListener('click', handleLightboxImageClick);
+            lightboxImage.removeEventListener('touchend', handleLightboxImageClick);
+
+            // Agregar listeners para móvil y desktop
             lightboxImageContainer.addEventListener('click', handleLightboxImageClick);
+            lightboxImageContainer.addEventListener('touchend', handleLightboxImageClick);
+            lightboxImage.addEventListener('click', handleLightboxImageClick);
+            lightboxImage.addEventListener('touchend', handleLightboxImageClick);
+
+            console.log('🖱️ Eventos de imagen inicializados');
         }
     }
 
@@ -719,24 +755,51 @@
         e.preventDefault();
         e.stopPropagation();
 
+        console.log('🖱️ Click en imagen detectado - Ancho pantalla:', window.innerWidth);
+
         // Solo abrir fullscreen en móvil (pantalla < 1024px)
         if (window.innerWidth < 1024) {
+            console.log('📱 Abriendo fullscreen en móvil');
             openFullscreenImage();
+        } else {
+            console.log('💻 PC detectado - no abrir fullscreen');
         }
-        // En PC no hacer nada (mantener solo navegación con flechas)
     }
 
     // Fullscreen Image Modal Functions
     function openFullscreenImage() {
+        console.log('🚀 Iniciando openFullscreenImage()');
+
         const fullscreenModal = document.getElementById('fullscreenImageModal');
         const fullscreenImage = document.getElementById('fullscreenImage');
         const fullscreenTitle = document.getElementById('fullscreenImageTitle');
         const fullscreenDescription = document.getElementById('fullscreenImageDescription');
 
+        console.log('📋 Elementos encontrados:', {
+            modal: !!fullscreenModal,
+            image: !!fullscreenImage,
+            title: !!fullscreenTitle,
+            description: !!fullscreenDescription,
+            currentIndex: currentImageIndex,
+            portfolioData: portfolioData.length
+        });
+
+        if (!fullscreenModal || !fullscreenImage) {
+            console.error('❌ Modal fullscreen no encontrado');
+            return;
+        }
+
         const currentItem = portfolioData[currentImageIndex];
+        if (!currentItem) {
+            console.error('❌ No hay item actual en el índice:', currentImageIndex);
+            return;
+        }
+
         const imageSrc = currentItem.image && !currentItem.image.startsWith('http')
             ? `../${currentItem.image}`
             : currentItem.image;
+
+        console.log('🖼️ Configurando imagen fullscreen:', imageSrc);
 
         fullscreenImage.src = imageSrc;
         fullscreenImage.alt = `Vista ampliada de ${currentItem.title}`;
@@ -746,6 +809,10 @@
         fullscreenModal.classList.remove('opacity-0', 'pointer-events-none');
         fullscreenModal.classList.add('opacity-100');
         document.body.style.overflow = 'hidden';
+
+        console.log('✅ Modal fullscreen abierto');
+        console.log('🎨 Clases aplicadas:', fullscreenModal.className);
+        console.log('🎨 Z-index aplicado:', getComputedStyle(fullscreenModal).zIndex);
     }
 
     function closeFullscreenImage() {
