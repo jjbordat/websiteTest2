@@ -222,7 +222,7 @@
             <!-- Content -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-secondary rounded-2xl overflow-hidden">
                 <!-- Image -->
-                <div class="relative aspect-square lg:aspect-auto cursor-pointer lightbox-trigger" data-index="">
+                <div class="relative aspect-square lg:aspect-auto cursor-pointer" id="lightboxImageContainer">
                     <img
                         id="lightboxImage"
                         src=""
@@ -232,9 +232,8 @@
                 </div>
 
                 <!-- Details -->
-                <div class="p-4 lg:p-8 flex flex-col h-full lg:justify-between">
-                    <!-- Scrollable content area for mobile -->
-                    <div class="flex-1 overflow-y-auto lg:overflow-visible space-y-4 lg:space-y-6" style="max-height: calc(100vh - 12rem); -webkit-overflow-scrolling: touch;">
+                <div class="p-4 lg:p-8 flex flex-col justify-between mobile-lightbox-details" style="max-height: calc(100vh - 8rem);">
+                    <div class="space-y-4 lg:space-y-6 overflow-y-auto mobile-scroll-content" id="lightboxDetailsContent">
                         <div>
                             <span id="lightboxCategory" class="badge badge-gold mb-4"></span>
                             <h2 id="lightboxTitle" class="font-headline text-2xl lg:text-3xl xl:text-4xl font-bold mb-4"></h2>
@@ -274,10 +273,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Extra content for mobile to force scroll -->
+                        <div class="lg:hidden pb-8">
+                            <div class="h-4"></div>
+                        </div>
                     </div>
 
-                    <!-- Fixed buttons area -->
-                    <div class="flex gap-2 lg:gap-4 pt-4 lg:pt-6 border-t border-border mt-4 lg:mt-0 flex-shrink-0">
+                    <div class="flex gap-3 lg:gap-4 pt-4 lg:pt-6 border-t border-border flex-shrink-0">
                         <a href="contact.html" class="btn btn-primary flex-1 text-sm lg:text-base">
                             Consultar Diseño Similar
                         </a>
@@ -289,6 +292,54 @@
                     </div>
                 </div>
             </div>
+
+<style>
+/* CSS específico para móvil - scroll forzado */
+@media (max-width: 1023px) {
+    .mobile-lightbox-details {
+        height: calc(100vh - 16rem) !important;
+        max-height: calc(100vh - 16rem) !important;
+    }
+
+    .mobile-scroll-content {
+        height: calc(100vh - 24rem) !important;
+        max-height: calc(100vh - 24rem) !important;
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+/* Desktop mantiene comportamiento normal */
+@media (min-width: 1024px) {
+    .mobile-scroll-content {
+        overflow-y: visible !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+}
+</style>
+        </div>
+    </div>
+</div>
+
+<!-- Fullscreen Image Modal -->
+<div id="fullscreenImageModal" class="fixed inset-0 bg-black z-[100] opacity-0 pointer-events-none transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+    <div class="relative w-full h-full flex items-center justify-center p-4">
+        <!-- Close Button -->
+        <button id="closeFullscreenImage" class="absolute top-4 right-4 z-10 w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300" aria-label="Cerrar vista ampliada">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Fullscreen Image -->
+        <img id="fullscreenImage" src="" alt="" class="max-w-full max-h-full object-contain">
+
+        <!-- Image info overlay -->
+        <div class="absolute bottom-4 left-4 right-4 bg-black/60 rounded-lg p-4 text-white">
+            <h3 id="fullscreenImageTitle" class="font-semibold text-lg mb-1"></h3>
+            <p id="fullscreenImageDescription" class="text-sm text-gray-200"></p>
         </div>
     </div>
 </div>
@@ -627,8 +678,8 @@
         lightboxSessions.textContent = item.sessions;
         lightboxYear.textContent = item.year;
 
-        // Update lightbox image trigger data-index for navigation
-        const lightboxImageContainer = lightboxImage.parentElement;
+        // Update lightbox image container for fullscreen functionality
+        const lightboxImageContainer = document.getElementById('lightboxImageContainer');
         if (lightboxImageContainer) {
             lightboxImageContainer.setAttribute('data-index', currentImageIndex);
         }
@@ -646,12 +697,12 @@
         lightbox.classList.add('opacity-100');
         document.body.style.overflow = 'hidden';
 
-        // Re-initialize lightbox image click handler for navigation
+        // Re-initialize lightbox image click handler for fullscreen
         initializeLightboxImageClick();
     }
 
     function initializeLightboxImageClick() {
-        const lightboxImageContainer = document.querySelector('#lightbox .lightbox-trigger');
+        const lightboxImageContainer = document.getElementById('lightboxImageContainer');
         if (lightboxImageContainer) {
             lightboxImageContainer.removeEventListener('click', handleLightboxImageClick);
             lightboxImageContainer.addEventListener('click', handleLightboxImageClick);
@@ -661,9 +712,64 @@
     function handleLightboxImageClick(e) {
         e.preventDefault();
         e.stopPropagation();
-        // Navigate to next image when clicking on the lightbox image
-        showNextImage();
+        // Open fullscreen image modal
+        openFullscreenImage();
     }
+
+    // Fullscreen Image Modal Functions
+    function openFullscreenImage() {
+        const fullscreenModal = document.getElementById('fullscreenImageModal');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+        const fullscreenTitle = document.getElementById('fullscreenImageTitle');
+        const fullscreenDescription = document.getElementById('fullscreenImageDescription');
+
+        const currentItem = portfolioData[currentImageIndex];
+        const imageSrc = currentItem.image && !currentItem.image.startsWith('http')
+            ? `../${currentItem.image}`
+            : currentItem.image;
+
+        fullscreenImage.src = imageSrc;
+        fullscreenImage.alt = `Vista ampliada de ${currentItem.title}`;
+        fullscreenTitle.textContent = currentItem.title;
+        fullscreenDescription.textContent = currentItem.description;
+
+        fullscreenModal.classList.remove('opacity-0', 'pointer-events-none');
+        fullscreenModal.classList.add('opacity-100');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeFullscreenImage() {
+        const fullscreenModal = document.getElementById('fullscreenImageModal');
+        fullscreenModal.classList.add('opacity-0', 'pointer-events-none');
+        fullscreenModal.classList.remove('opacity-100');
+        document.body.style.overflow = '';
+    }
+
+    // Initialize fullscreen image modal events
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeFullscreenBtn = document.getElementById('closeFullscreenImage');
+        const fullscreenModal = document.getElementById('fullscreenImageModal');
+
+        if (closeFullscreenBtn) {
+            closeFullscreenBtn.addEventListener('click', closeFullscreenImage);
+        }
+
+        // Close on click outside image
+        if (fullscreenModal) {
+            fullscreenModal.addEventListener('click', function(e) {
+                if (e.target === fullscreenModal) {
+                    closeFullscreenImage();
+                }
+            });
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !fullscreenModal.classList.contains('pointer-events-none')) {
+                closeFullscreenImage();
+            }
+        });
+    });
 
     function closeLightboxModal() {
         lightbox.classList.add('opacity-0', 'pointer-events-none');
