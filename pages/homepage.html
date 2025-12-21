@@ -642,6 +642,9 @@
             const config = await response.json();
             console.log('✅ Config cargado:', config);
 
+            // Cargar imagen del hero
+            loadHeroImage(config.images || {});
+
             // Cargar trabajos destacados (primeros 3)
             await loadFeaturedWorks(config.portfolios || []);
 
@@ -652,6 +655,30 @@
             console.error('❌ Error cargando contenido de homepage:', error);
             showErrorInFeaturedWorks();
             showErrorInStyleCategories();
+        }
+    }
+
+    function loadHeroImage(images) {
+        try {
+            // Buscar la imagen del hero
+            const heroImage = document.querySelector('[data-homepage-hero-image]');
+            if (!heroImage) {
+                console.warn('⚠️ No se encontró imagen del hero con data-homepage-hero-image');
+                return;
+            }
+
+            // Obtener la URL de la imagen del hero
+            const heroImageUrl = images.homepage?.hero || images.hero || 'imagenes/homepage/hero.jpg';
+
+            console.log('🖼️ Cargando imagen del hero:', heroImageUrl);
+
+            // Asignar el src a la imagen
+            heroImage.src = heroImageUrl;
+
+            console.log('✅ Imagen del hero cargada correctamente');
+
+        } catch (error) {
+            console.error('❌ Error cargando imagen del hero:', error);
         }
     }
 
@@ -800,6 +827,6 @@
 
 <!-- 🎨 Force Theme Loader - Solución para aplicación de colores -->
 <script src="../js/force-theme.js"></script>
-<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<!-- dhws-data-injector.js removed - not needed for production -->
 </body>
 </html>
