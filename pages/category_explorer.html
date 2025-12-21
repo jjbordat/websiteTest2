@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora diferentes estilos de tatuajes - Realismo, Geométrico, Japonés, Blackwork y más. Encuentra el estilo perfecto para tu próximo tatuaje.">
+    <meta name="keywords" content="estilos de tatuajes, realismo, geométrico, japonés, blackwork, tatuajes personalizados, InkMaster">
+    <title>Explorador de Estilos - InkMaster Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/dynamic-links.js"></script>
+    <script src="../public/dhws-data-injector.js"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+
+    <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finkmaster2554back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+<body class="bg-background text-text-primary">
+<!-- Navigation Header -->
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-custom bg-primary/90 border-b border-border">
+    <nav class="container-custom py-4" role="navigation" aria-label="Navegación principal">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="homepage.html" class="flex items-center gap-3 group" aria-label="InkMaster Portfolio - Inicio">
+                <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="url(#goldGradient)" stroke-width="2"/>
+                    <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="url(#goldGradient)"/>
+                    <defs>
+                        <linearGradient id="goldGradient" x1="8" y1="8" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#740DB5"/>
+                            <stop offset="50%" stop-color="#8B2AC0"/>
+                            <stop offset="100%" stop-color="#740DB5"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Inicio</a>
+                <a href="portfolio_gallery.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Portafolio</a>
+                <a href="artist_profile.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Artista</a>
+                <a href="category_explorer.html" class="text-accent font-medium hover:text-accent-light transition-colors duration-300">Estilos</a>
+                <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Reservas</a>
+                <a href="contact.html" class="btn btn-primary">Contactar</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="lg:hidden p-2 text-accent hover:text-accent-light transition-colors duration-300" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="fixed inset-0 bg-primary/95 backdrop-blur-custom z-50 lg:hidden transform translate-x-full transition-transform duration-300" role="dialog" aria-modal="true">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-4 border-b border-border">
+                    <span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+                    <button id="closeMobileMenu" class="p-2 text-accent hover:text-accent-light transition-colors duration-300" aria-label="Cerrar menú">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-2 p-6" role="navigation" aria-label="Navegación móvil">
+                    <a href="homepage.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Inicio</a>
+                    <a href="portfolio_gallery.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Portafolio</a>
+                    <a href="artist_profile.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Artista</a>
+                    <a href="category_explorer.html" class="text-accent text-lg font-medium py-3 px-4 rounded-lg bg-accent/10 border border-accent/20">Estilos</a>
+                    <a href="booking_information.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Reservas</a>
+                    <a href="contact.html" class="btn btn-primary mt-4">Contactar</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Breadcrumb Navigation -->
+<section class="pt-24 pb-8 bg-gradient-to-b from-primary to-background">
+    <div class="container-custom">
+        <nav class="flex items-center gap-2 text-sm" aria-label="Breadcrumb">
+            <a href="homepage.html" class="text-text-tertiary hover:text-accent transition-colors duration-300">Inicio</a>
+            <svg class="w-4 h-4 text-text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+            <span class="text-accent font-medium">Explorador de Estilos</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Hero Section -->
+<section class="section-sm bg-gradient-to-b from-background to-secondary">
+    <div class="container-custom">
+        <div class="text-center space-y-6 max-w-4xl mx-auto animate-fade-in">
+            <div class="inline-flex items-center gap-2 badge badge-gold">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <span>Especialización en Múltiples Técnicas</span>
+            </div>
+
+            <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Explora Nuestros
+                <span class="text-gradient-gold block">Estilos de Tatuaje</span>
+            </h1>
+
+            <p class="text-text-secondary text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                Cada estilo cuenta una historia única. Descubre la técnica perfecta para dar vida a tu visión, desde el realismo fotográfico hasta la geometría sagrada.
+            </p>
+
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto pt-4">
+                <div class="relative">
+                    <input
+                            type="text"
+                            id="styleSearch"
+                            placeholder="Buscar estilos, técnicas o características..."
+                            class="input pl-12 pr-12"
+                            aria-label="Buscar estilos de tatuaje"
+                    >
+                    <svg class="w-5 h-5 text-text-tertiary absolute left-4 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <button
+                            id="clearSearch"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 text-text-tertiary hover:text-accent transition-colors duration-300 hidden"
+                            aria-label="Limpiar búsqueda"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Tags Section -->
+<section class="py-8 bg-secondary border-y border-border sticky top-[73px] z-40 backdrop-blur-custom">
+    <div class="container-custom">
+        <div class="flex items-center justify-between gap-4 mb-4">
+            <h2 class="font-headline text-xl font-semibold text-text-primary">Filtrar por Características</h2>
+            <button
+                    id="resetFilters"
+                    class="text-sm text-accent hover:text-accent-light transition-colors duration-300 flex items-center gap-2"
+                    aria-label="Restablecer todos los filtros"
+            >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                </svg>
+                <span>Restablecer</span>
+            </button>
+        </div>
+
+        <div class="flex flex-wrap gap-3" id="filterTags" role="group" aria-label="Filtros de características">
+            <button class="filter-tag" data-filter="color">
+                <span>Color</span>
+            </button>
+            <button class="filter-tag" data-filter="blackwork">
+                <span>Blanco y Negro</span>
+            </button>
+            <button class="filter-tag" data-filter="detailed">
+                <span>Alta Detalle</span>
+            </button>
+            <button class="filter-tag" data-filter="minimalist">
+                <span>Minimalista</span>
+            </button>
+            <button class="filter-tag" data-filter="large">
+                <span>Tamaño Grande</span>
+            </button>
+            <button class="filter-tag" data-filter="small">
+                <span>Tamaño Pequeño</span>
+            </button>
+            <button class="filter-tag" data-filter="traditional">
+                <span>Tradicional</span>
+            </button>
+            <button class="filter-tag" data-filter="modern">
+                <span>Moderno</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Style Categories Grid -->
+<section class="section" id="styleCategories">
+    <div class="container-custom">
+        <!-- Results Counter -->
+        <div class="mb-8 flex items-center justify-between">
+            <p class="text-text-secondary">
+                Mostrando <span id="resultCount" class="text-accent font-semibold">8</span> estilos
+            </p>
+            <div class="flex items-center gap-2">
+                <label for="sortSelect" class="text-sm text-text-tertiary">Ordenar por:</label>
+                <select id="sortSelect" class="input py-2 px-3 text-sm" aria-label="Ordenar estilos">
+                    <option value="popular">Más Popular</option>
+                    <option value="name">Nombre A-Z</option>
+                    <option value="complexity">Complejidad</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="categoriesGrid">
+            <!-- Las categorías se cargan dinámicamente desde config.json -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="hidden text-center py-16">
+            <svg class="w-24 h-24 mx-auto text-text-tertiary mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <h3 class="font-headline text-2xl font-semibold text-text-primary mb-2">No se encontraron estilos</h3>
+            <p class="text-text-secondary mb-6">Intenta ajustar tus filtros o búsqueda para ver más resultados</p>
+            <button id="clearAllFilters" class="btn btn-primary">
+                <span>Limpiar Filtros</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Style Quiz CTA -->
+<section class="section bg-gradient-to-b from-background to-secondary">
+    <div class="container-custom">
+        <div class="card card-gold p-12 md:p-16 text-center space-y-8 relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                    <rect width="100" height="100" fill="url(#grid)"/>
+                </svg>
+            </div>
+
+            <div class="relative z-10 space-y-6">
+                <div class="inline-flex items-center gap-2 badge badge-gold">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Herramienta Interactiva</span>
+                </div>
+
+                <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                    ¿No estás seguro de tu <span class="text-gradient-gold">Estilo Ideal?</span>
+                </h2>
+
+                <p class="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto">
+                    Responde nuestro cuestionario interactivo y descubre qué estilo de tatuaje se adapta mejor a tu personalidad y visión.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <a href="contact.html" class="btn btn-primary glow-gold group">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                        </svg>
+                        <span>Iniciar Cuestionario</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline group">
+                        <span>Consulta Personalizada</span>
+                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Educational Content Section -->
+<section class="section" id="styleGuides">
+    <div class="container-custom">
+        <div class="text-center mb-16 space-y-4 animate-fade-in">
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                Guías de <span class="text-gradient-gold">Estilo</span>
+            </h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                Aprende sobre las técnicas, historia y características únicas de cada estilo
+            </p>
+            <div class="divider max-w-xs mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Guide Card 1 -->
+            <article class="card p-6 space-y-4 animate-scale-in">
+                <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                    </svg>
+                </div>
+                <h3 class="font-headline text-2xl font-semibold text-text-primary">Técnicas de Realismo</h3>
+                <p class="text-text-secondary leading-relaxed">
+                    Descubre cómo se logran los detalles fotográficos mediante sombreado avanzado, trabajo de líneas finas y comprensión profunda de luz y sombra.
+                </p>
+                <a href="contact.html" class="text-accent hover:text-accent-light transition-colors duration-300 inline-flex items-center gap-2 font-medium">
+                    <span>Leer Más</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+            </article>
+
+            <!-- Guide Card 2 -->
+            <article class="card p-6 space-y-4 animate-scale-in" style="animation-delay: 0.1s;">
+                <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                    </svg>
+                </div>
+                <h3 class="font-headline text-2xl font-semibold text-text-primary">Geometría Sagrada</h3>
+                <p class="text-text-secondary leading-relaxed">
+                    Explora el significado detrás de mandalas, patrones fractales y formas geométricas que han fascinado a culturas durante milenios.
+                </p>
+                <a href="contact.html" class="text-accent hover:text-accent-light transition-colors duration-300 inline-flex items-center gap-2 font-medium">
+                    <span>Leer Más</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+            </article>
+
+            <!-- Guide Card 3 -->
+            <article class="card p-6 space-y-4 animate-scale-in" style="animation-delay: 0.2s;">
+                <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                </div>
+                <h3 class="font-headline text-2xl font-semibold text-text-primary">Historia del Irezumi</h3>
+                <p class="text-text-secondary leading-relaxed">
+                    Sumérgete en la rica tradición del tatuaje japonés, desde sus orígenes hasta su evolución como forma de arte respetada mundialmente.
+                </p>
+                <a href="contact.html" class="text-accent hover:text-accent-light transition-colors duration-300 inline-flex items-center gap-2 font-medium">
+                    <span>Leer Más</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section bg-gradient-to-b from-background to-secondary">
+    <div class="container-custom">
+        <div class="card card-gold p-12 md:p-16 text-center space-y-8 relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <pattern id="gridCTA" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                    <rect width="100" height="100" fill="url(#gridCTA)"/>
+                </svg>
+            </div>
+
+            <div class="relative z-10 space-y-6">
+                <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                    ¿Encontraste tu <span class="text-gradient-gold">Estilo Perfecto?</span>
+                </h2>
+                <p class="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto">
+                    Agenda una consulta gratuita para discutir tu visión y comenzar el proceso de crear tu obra maestra personalizada.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <a href="contact.html" class="btn btn-primary glow-gold group">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span>Contactar por WhatsApp</span>
+                    </a>
+                    <a href="portfolio_gallery.html" class="btn btn-outline group">
+                        <span>Ver Portafolio Completo</span>
+                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary border-t border-border">
+    <div class="container-custom py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Brand Column -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="url(#goldGradientFooter)" stroke-width="2"/>
+                        <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="url(#goldGradientFooter)"/>
+                        <defs>
+                            <linearGradient id="goldGradientFooter" x1="8" y1="8" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#740DB5"/>
+                                <stop offset="50%" stop-color="#8B2AC0"/>
+                                <stop offset="100%" stop-color="#740DB5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+                </div>
+                <p class="text-text-secondary text-sm">
+                    Arte que vive contigo. Transformando visiones en obras maestras permanentes con precisión en cada línea.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="space-y-4">
+                <h3 class="font-headline text-lg font-semibold text-text-primary">Enlaces Rápidos</h3>
+                <nav class="flex flex-col gap-2" role="navigation" aria-label="Enlaces del pie de página">
+                    <a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Inicio</a>
+                    <a href="portfolio_gallery.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Portafolio</a>
+                    <a href="artist_profile.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Sobre el Artista</a>
+                    <a href="category_explorer.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Estilos</a>
+                </nav>
+            </div>
+
+            <!-- Services -->
+            <div class="space-y-4">
+                <h3 class="font-headline text-lg font-semibold text-text-primary">Servicios</h3>
+                <nav class="flex flex-col gap-2" role="navigation" aria-label="Servicios">
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Consultas</a>
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Diseños Personalizados</a>
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Cover-ups</a>
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Retoques</a>
+                </nav>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-4">
+                <h3 class="font-headline text-lg font-semibold text-text-primary">Contacto</h3>
+                <div class="flex flex-col gap-3">
+                    <a href="contact.html" class="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors duration-300 text-sm">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="contact.html" class="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors duration-300 text-sm">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8">
+            <p class="text-text-tertiary text-sm">
+                © 2025 InkMaster Portfolio. Todos los derechos reservados.
+            </p>
+            <div class="flex items-center gap-6">
+                <a href="javascript:void(0)" class="text-text-tertiary hover:text-accent transition-colors duration-300 text-sm">Política de Privacidad</a>
+                <a href="javascript:void(0)" class="text-text-tertiary hover:text-accent transition-colors duration-300 text-sm">Términos de Servicio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="contact.html" class="fixed bottom-6 right-6 w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-gold-lg hover:scale-110 transition-transform duration-300 z-50 glow-gold" aria-label="Contactar por WhatsApp">
+    <svg class="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    });
+
+    closeMobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Search Functionality
+    const styleSearch = document.getElementById('styleSearch');
+    const clearSearch = document.getElementById('clearSearch');
+    let categoryCards = document.querySelectorAll('.category-card');
+    const resultCount = document.getElementById('resultCount');
+    const noResults = document.getElementById('noResults');
+    const categoriesGrid = document.getElementById('categoriesGrid');
+
+    styleSearch.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+
+        if (searchTerm.length > 0) {
+            clearSearch.classList.remove('hidden');
+        } else {
+            clearSearch.classList.add('hidden');
+        }
+
+        filterCategories();
+    });
+
+    clearSearch.addEventListener('click', () => {
+        styleSearch.value = '';
+        clearSearch.classList.add('hidden');
+        filterCategories();
+    });
+
+    // Filter Tags Functionality
+    const filterTags = document.querySelectorAll('.filter-tag');
+    const resetFilters = document.getElementById('resetFilters');
+    const clearAllFilters = document.getElementById('clearAllFilters');
+    let activeFilters = new Set();
+
+    filterTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            const filter = tag.dataset.filter;
+
+            if (activeFilters.has(filter)) {
+                activeFilters.delete(filter);
+                tag.classList.remove('active');
+            } else {
+                activeFilters.add(filter);
+                tag.classList.add('active');
+            }
+
+            filterCategories();
+        });
+    });
+
+    resetFilters.addEventListener('click', () => {
+        activeFilters.clear();
+        filterTags.forEach(tag => tag.classList.remove('active'));
+        styleSearch.value = '';
+        clearSearch.classList.add('hidden');
+        filterCategories();
+    });
+
+    clearAllFilters.addEventListener('click', () => {
+        activeFilters.clear();
+        filterTags.forEach(tag => tag.classList.remove('active'));
+        styleSearch.value = '';
+        clearSearch.classList.add('hidden');
+        filterCategories();
+    });
+
+    // Sort Functionality
+    const sortSelect = document.getElementById('sortSelect');
+    sortSelect.addEventListener('change', () => {
+        sortCategories();
+    });
+
+    function filterCategories() {
+        // Only run if categoryCards exist
+        if (!categoryCards || categoryCards.length === 0) {
+            console.log('⚠️ No se encontraron tarjetas de categorías para filtrar');
+            return;
+        }
+
+        const searchTerm = styleSearch.value.toLowerCase();
+        let visibleCount = 0;
+
+        categoryCards.forEach(card => {
+            const name = (card.dataset.name || '').toLowerCase();
+            const tags = (card.dataset.tags || '').toLowerCase();
+
+            // Check search term
+            const matchesSearch = searchTerm === '' ||
+                                name.includes(searchTerm) ||
+                                tags.includes(searchTerm);
+
+            // Check active filters
+            let matchesFilters = true;
+            if (activeFilters.size > 0) {
+                matchesFilters = Array.from(activeFilters).every(filter =>
+                    tags.includes(filter)
+                );
+            }
+
+            if (matchesSearch && matchesFilters) {
+                card.style.display = '';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        if (resultCount) {
+            resultCount.textContent = visibleCount;
+        }
+
+        if (visibleCount === 0) {
+            noResults.classList.remove('hidden');
+            categoriesGrid.classList.add('hidden');
+        } else {
+            noResults.classList.add('hidden');
+            categoriesGrid.classList.remove('hidden');
+        }
+    }
+
+    function sortCategories() {
+        // Only run if categoryCards exist
+        if (!categoryCards || categoryCards.length === 0) {
+            console.log('⚠️ No se encontraron tarjetas de categorías para ordenar');
+            return;
+        }
+
+        const sortValue = sortSelect.value;
+        const cardsArray = Array.from(categoryCards);
+
+        cardsArray.sort((a, b) => {
+            if (sortValue === 'name') {
+                return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+            } else if (sortValue === 'complexity') {
+                const complexityOrder = { 'low': 1, 'medium': 2, 'high': 3 };
+                return complexityOrder[b.dataset.complexity || 'medium'] - complexityOrder[a.dataset.complexity || 'medium'];
+            }
+            return 0; // popular (default order)
+        });
+
+        cardsArray.forEach(card => {
+            categoriesGrid.appendChild(card);
+        });
+    }
+
+    // Add scroll-based header background
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-lg');
+        } else {
+            header.classList.remove('shadow-lg');
+        }
+    });
+
+    // Add CSS for filter tags
+    const style = document.createElement('style');
+    style.textContent = `
+        .filter-tag {
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            background-color: var(--color-surface);
+            color: var(--color-text-secondary);
+            border: 1px solid var(--color-border);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .filter-tag:hover {
+            background-color: var(--color-surface-light);
+            border-color: var(--color-border-accent);
+            color: var(--color-text-primary);
+        }
+
+        .filter-tag.active {
+            background-color: rgba(212, 175, 55, 0.1);
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        .category-card {
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Load Categories from Config.json
+    async function loadCategoriesFromConfig() {
+        try {
+            console.log('🎨 Cargando categorías desde config.json...');
+
+            const response = await fetch('../config.json?' + new Date().getTime());
+            if (!response.ok) {
+                throw new Error('No se pudo cargar config.json');
+            }
+
+            const config = await response.json();
+            console.log('✅ Config.json cargado:', config);
+
+            const categories = (config.categories || []).filter(cat => cat.active !== false);
+            console.log('📂 Categorías activas encontradas:', categories.length);
+
+            generateCategoriesGrid(categories);
+
+            // Re-initialize filter functionality with loaded categories
+            setTimeout(() => {
+                reinitializeFilters(categories);
+            }, 100);
+
+            console.log('✅ Categorías cargadas correctamente');
+
+        } catch (error) {
+            console.error('❌ Error cargando categorías:', error);
+            showCategoriesError();
+        }
+    }
+
+    function generateCategoriesGrid(categories) {
+        const categoriesGrid = document.getElementById('categoriesGrid');
+
+        if (categories.length === 0) {
+            categoriesGrid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-text-tertiary">No hay categorías disponibles.</p></div>';
+            return;
+        }
+
+        // Create placeholder SVG as data URI
+        const createPlaceholderSvg = (title) => {
+            return `data:image/svg+xml;base64,${btoa(`
+                <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="300" fill="#1a1a1a"/>
+                    <text x="200" y="150" text-anchor="middle" fill="#9535d4" font-size="20" font-family="Arial">${title}</text>
+                </svg>
+            `)}`;
+        };
+
+        const categoriesHTML = categories.map((category, index) => {
+            // Normalize image path
+            const imageSrc = category.image && !category.image.startsWith('http')
+                ? `../${category.image}`
+                : category.image;
+
+            const placeholderSvg = createPlaceholderSvg(category.name);
+
+            return `
+            <div class="category-card card card-hover glow-gold group animate-scale-in"
+                 data-category="${category.id}"
+                 data-name="${category.name}"
+                 data-tags="${(category.tags || []).join(',')}"
+                 data-complexity="${category.complexity || 'medium'}"
+                 style="animation-delay: ${index * 0.1}s;">
+                <div class="relative overflow-hidden aspect-square">
+                    <img
+                        src="${imageSrc}"
+                        alt="${category.description || `Categoría de tatuaje ${category.name}`}"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        loading="lazy"
+                        onerror="this.src='${placeholderSvg}'"
+                    >
+                    <div class="overlay group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+                        <div class="absolute inset-0 flex flex-col justify-end p-6">
+                            <div class="mb-3">
+                                ${category.badge ? `<span class="badge badge-gold text-xs">${category.badge}</span>` : ''}
+                            </div>
+                            <h3 class="font-headline text-2xl font-bold text-white mb-2">${category.name}</h3>
+                            <p class="text-text-secondary text-sm mb-4 line-clamp-2">${category.description || ''}</p>
+                            <a href="${category.link || 'portfolio_gallery.html'}" class="btn btn-primary btn-sm self-start">
+                                Explorar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        }).join('');
+
+        categoriesGrid.innerHTML = categoriesHTML;
+
+        // Update result count
+        const resultCount = document.getElementById('resultCount');
+        if (resultCount) {
+            resultCount.textContent = categories.length;
+        }
+
+        console.log('✅ HTML de categorías generado correctamente');
+    }
+
+    function reinitializeFilters(categories) {
+        // Update category cards reference for existing filter functions
+        const newCategoryCards = document.querySelectorAll('.category-card');
+
+        // Update the global categoryCards variable that filterCategories() uses
+        categoryCards = newCategoryCards;
+
+        console.log('🔄 Filtros reinicializados con', categories.length, 'categorías');
+    }
+
+    function showCategoriesError() {
+        const categoriesGrid = document.getElementById('categoriesGrid');
+        categoriesGrid.innerHTML = `
+            <div class="col-span-full text-center py-12">
+                <svg class="w-16 h-16 mx-auto mb-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                </svg>
+                <p class="text-red-500 mb-2">Error cargando categorías</p>
+                <p class="text-text-tertiary text-sm">Verifica que config.json esté disponible</p>
+                <button onclick="loadCategoriesFromConfig()" class="btn btn-primary mt-4">Reintentar</button>
+            </div>
+        `;
+    }
+
+    // Load categories when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        loadCategoriesFromConfig();
+    });
+
+    // Make function available globally for debugging
+    window.loadCategoriesFromConfig = loadCategoriesFromConfig;
+</script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

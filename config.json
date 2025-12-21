@@ -1,0 +1,440 @@
+{
+  "site": {
+    "title": "Portfolio",
+    "tagline": "Arte que vive contigo",
+    "description": "Transformo visiones en arte permanente con precisión en cada línea. Cada tatuaje es una colaboración única entre artista y cliente, donde tu historia se convierte en una obra maestra que llevarás contigo para siempre."
+  },
+  "artist": {
+    "name": "Jeferson Bordaaaa",
+    "title": "Maestro del Arte Corporal en ingenieria",
+    "bio": "Con más de 30 años transformando visiones en arte permanente, cada línea que trazo cuenta una historia única.",
+    "badge": "INgeniero Profesional Certificado",
+    "experience": 12,
+    "clients": 510,
+    "awards": 8,
+    "whatsapp": "+573118321831",
+    "email": "contacto@inkmaster.es",
+    "location": "Calle del Arte, 123, 28001 Madrid, España",
+    "instagram": "https://instagram.com/inkmaster",
+    "facebook": "https://facebook.com/inkmaster",
+    "tiktok": "https://www.tiktok.com/@inkmaster",
+    "youtube": "https://www.youtube.com/@inkmaster",
+    "workHours": 5000,
+    "projects": 511,
+    "instagramFollowers": 1500,
+    "facebookFollowers": 523,
+    "tiktokFollowers": 890,
+    "youtubeFollowers": 1200
+  },
+  "theme": {
+    "colors": {
+      "primary": "#740DB5",
+      "accent": "#740DB5",
+      "background": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "textPrimary": "#ffffff"
+    },
+    "logo": null
+  },
+  "images": {
+    "hero": "imagenes/homepage/hero_1766256843841.jpg",
+    "artistProfile": "imagenes/artist/profile_1766255546731.jpg",
+    "homepage": {
+      "hero": "imagenes/homepage/hero_1766256843841.jpg",
+      "featured1": null,
+      "featured2": null,
+      "featured3": null
+    },
+    "artist": {
+      "profile": "imagenes/artist/profile_1766255546731.jpg",
+      "gallery": []
+    }
+  },
+  "texts": {
+    "homepage": {
+      "heroTitle": "Arte queaaaaaabbbbb",
+      "heroTitleAccent": "Vive Contigoaaaaaaa",
+      "heroDescription": "Transformo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "categories": [
+    {
+      "id": "realismo",
+      "name": "Realismo",
+      "description": "Detalles fotográficos que capturan la esencia de retratos y escenas con precisión impresionante.",
+      "image": "imagenes/categories/realismo.jpg",
+      "badge": "Alta Demanda",
+      "complexity": "high",
+      "tags": [
+        "color",
+        "detallado",
+        "grande",
+        "modernooooooooooooooo"
+      ],
+      "active": true,
+      "link": "portfolio_gallery.html"
+    },
+    {
+      "id": "geometrico",
+      "name": "Geométrico",
+      "description": "Patrones precisos y formas matemáticas que crean composiciones equilibradas y modernas.",
+      "image": "imagenes/categories/geometrico.jpg",
+      "tags": [
+        "blackwork",
+        "detallado",
+        "moderno",
+        "minimalista"
+      ],
+      "badge": "",
+      "complexity": "high",
+      "link": "portfolio_gallery.html",
+      "active": true
+    },
+    {
+      "id": "japones",
+      "name": "Japonés Irezumi",
+      "description": "Arte tradicional con dragones, koi y elementos de la cultura japonesa en composiciones completas.",
+      "image": "imagenes/categories/japones.jpg",
+      "tags": [
+        "color",
+        "tradicional",
+        "grande",
+        "cultural"
+      ],
+      "badge": "Tradicional",
+      "complexity": "high",
+      "link": "portfolio_gallery.html",
+      "active": true
+    },
+    {
+      "id": "blackwork",
+      "name": "Blackwork",
+      "description": "Tinta negra sólida con diseños contundentes que destacan por su simplicidad y elegancia atemporal.",
+      "image": "imagenes/categories/blackwork.jpg",
+      "tags": [
+        "blackwork",
+        "bold",
+        "moderno",
+        "minimalista"
+      ],
+      "badge": "",
+      "complexity": "medium",
+      "link": "portfolio_gallery.html",
+      "active": true
+    },
+    {
+      "id": "dotwork",
+      "name": "Dotwork",
+      "description": "Técnica meticulosa de puntillismo que crea texturas y gradientes únicos con miles de puntos precisos.",
+      "image": "imagenes/categories/dotwork.jpg",
+      "tags": [
+        "blackwork",
+        "detallado",
+        "moderno",
+        "stippling"
+      ],
+      "badge": "",
+      "complexity": "high",
+      "link": "portfolio_gallery.html",
+      "active": true
+    },
+    {
+      "id": "acuarela",
+      "name": "Acuarela",
+      "description": "Colores vibrantes que fluyen como pinceladas de acuarela, creando efectos únicos y artísticos.",
+      "image": "imagenes/categories/acuarela.jpg",
+      "tags": [
+        "color",
+        "artístico",
+        "moderno",
+        "abstracto"
+      ],
+      "badge": "Artístico",
+      "complexity": "medium",
+      "link": "portfolio_gallery.html",
+      "active": true
+    },
+    {
+      "id": "neo-tradicional",
+      "name": "Neo-Tradicional",
+      "description": "Evolución del estilo clásico americano con líneas gruesas, colores sólidos y motivos icónicos modernos.",
+      "image": "imagenes/categories/neo-tradicional.jpg",
+      "tags": [
+        "color",
+        "bold",
+        "tradicional",
+        "clásico"
+      ],
+      "badge": "",
+      "complexity": "medium",
+      "link": "portfolio_gallery.html",
+      "active": true
+    },
+    {
+      "id": "minimalista",
+      "name": "Minimalista",
+      "description": "Diseños simples y elegantes con líneas finas y composiciones limpias. La belleza en la simplicidad.",
+      "image": "imagenes/categories/minimalista.jpg",
+      "tags": [
+        "simple",
+        "lineas",
+        "delicado",
+        "moderno"
+      ],
+      "badge": "Elegante",
+      "complexity": "low",
+      "link": "portfolio_gallery.html",
+      "active": true
+    }
+  ],
+  "pricing": {
+    "currency": "$",
+    "currencyName": "COP",
+    "small": {
+      "min": 150000,
+      "max": 300000,
+      "description": "Diseños pequeños y minimalistas"
+    },
+    "medium": {
+      "min": 300000,
+      "max": 800000,
+      "description": "Tatuajes medianos con detalles"
+    },
+    "large": {
+      "min": 800000,
+      "max": 1900000,
+      "description": "Proyectos grandes y complejos"
+    },
+    "hourly": {
+      "rate": 45000,
+      "description": "Para proyectos complejos por horas"
+    },
+    "touchup": {
+      "free": 30,
+      "price": 99000,
+      "description": "Primer retoque gratuito dentro de 30 días"
+    },
+    "deposit": {
+      "percentage": 30,
+      "description": "Depósito requerido para reservar fecha"
+    }
+  },
+  "portfolios": [
+    {
+      "id": 13,
+      "title": "Retrato Realistaaaaaaaaaaaaaaaaaaa",
+      "description": "Retrato realista en blanco y negro con sombreado detallado y técnica fotográfica. Este diseño captura la esencia y expresión del sujeto con precisión artística.aaaaaaaaaaaaaaa",
+      "category": "realismo",
+      "image": "imagenes/portafolio/retrato_realista_001.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "retrato",
+        "blanco-negro",
+        "brazo"
+      ],
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Geometría Sagrada",
+      "category": "geometrico",
+      "location": "Antebrazo",
+      "tags": [
+        "mandala",
+        "simetria",
+        "antebrazo"
+      ],
+      "image": "imagenes/portafolio/geometria_sagrada_002.jpg",
+      "description": "Diseño geométrico con mandalas y patrones simétricos que representan equilibrio y armonía. Cada línea está calculada con precisión matemática.",
+      "style": "Geométrico",
+      "placement": "Antebrazo completo",
+      "sessions": "2 sesiones",
+      "year": "2024",
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Dragón Tradicional",
+      "description": "Tatuaje japonés tradicional con dragón y elementos florales. Representa fuerza, sabiduría y protección en la cultura oriental.",
+      "category": "japones",
+      "image": "imagenes/portafolio/dragon_tradicional_003.jpg",
+      "location": "Espalda",
+      "style": "Japonés Tradicional",
+      "placement": "Espalda completa",
+      "sessions": "4-5 sesiones",
+      "year": "2023",
+      "tags": [
+        "dragon",
+        "tradicional",
+        "espalda"
+      ],
+      "active": true
+    },
+    {
+      "id": 4,
+      "title": "Blackwork Tribal",
+      "category": "blackwork",
+      "location": "Hombro",
+      "tags": [
+        "tribal",
+        "negro",
+        "hombro"
+      ],
+      "image": "imagenes/portafolio/blackwork_tribal_004.jpg",
+      "description": "Diseño blackwork con patrones tribales en tinta negra sólida. Estilo audaz que destaca por su contraste y presencia visual.",
+      "style": "Blackwork",
+      "placement": "Hombro y pecho",
+      "sessions": "2 sesiones",
+      "year": "2024",
+      "active": true
+    },
+    {
+      "id": 4,
+      "title": "Flores Acuarela",
+      "description": "Tatuaje a color con técnica de acuarela que simula pinceladas fluidas. Los colores vibrantes crean un efecto artístico único.",
+      "category": "acuarela",
+      "image": "imagenes/portafolio/flores_acuarela_005.jpg",
+      "location": "Pierna",
+      "style": "Acuarela Color",
+      "placement": "Muslo",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "flores",
+        "acuarela",
+        "pierna"
+      ],
+      "active": true
+    },
+    {
+      "id": 6,
+      "title": "Líneas Minimalistas",
+      "category": "minimalista",
+      "location": "Muñeca",
+      "tags": [
+        "lineas",
+        "simple",
+        "muneca"
+      ],
+      "image": "imagenes/portafolio/lineas_minimalistas_006.jpg",
+      "description": "Diseño minimalista con líneas finas y delicadas. La simplicidad es la máxima sofisticación en este estilo contemporáneo.",
+      "style": "Minimalista",
+      "placement": "Muñeca interior",
+      "sessions": "1 sesión",
+      "year": "2024",
+      "active": true
+    },
+    {
+      "id": 7,
+      "title": "Lobo Realista",
+      "category": "realismo",
+      "location": "Pecho",
+      "tags": [
+        "animal",
+        "lobo",
+        "pecho"
+      ],
+      "image": "imagenes/portafolio/lobo_realista_007.jpg",
+      "description": "Retrato realista de lobo con detalles fotográficos en pelaje y expresión. Simboliza lealtad, fuerza y espíritu libre.",
+      "style": "Realismo Animal",
+      "placement": "Pecho central",
+      "sessions": "3 sesiones",
+      "year": "2023",
+      "active": true
+    },
+    {
+      "id": 8,
+      "title": "Abstracto Geométrico",
+      "category": "geometrico",
+      "location": "Costado",
+      "tags": [
+        "abstracto",
+        "lineas",
+        "costado"
+      ],
+      "image": "imagenes/portafolio/abstracto_geometrico_008.jpg",
+      "description": "Composición geométrica abstracta con líneas precisas y formas interconectadas. Arte moderno en la piel.",
+      "style": "Geométrico Abstracto",
+      "placement": "Costado completo",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "active": true
+    },
+    {
+      "id": 9,
+      "title": "Koi Japonés",
+      "category": "japones",
+      "location": "Manga",
+      "tags": [
+        "koi",
+        "agua",
+        "manga"
+      ],
+      "image": "imagenes/portafolio/koi_japones_009.jpg",
+      "description": "Pez koi nadando entre olas y flores de loto. Representa perseverancia, transformación y buena fortuna en la tradición japonesa.",
+      "style": "Japonés Tradicional",
+      "placement": "Manga completa",
+      "sessions": "3-4 sesiones",
+      "year": "2023",
+      "active": true
+    },
+    {
+      "id": 9,
+      "title": "Mariposa Natural",
+      "description": "Mariposa realista con colores naturales y elementos florales. Simboliza transformación, libertad y belleza efímera.",
+      "category": "acuarela",
+      "image": "imagenes/portafolio/mariposa_natural_010.jpg",
+      "location": "Espalda",
+      "style": "Realismo Color",
+      "placement": "Espalda alta",
+      "sessions": "2 sesiones",
+      "year": "2024",
+      "tags": [
+        "mariposa",
+        "naturaleza",
+        "espalda"
+      ],
+      "active": true
+    },
+    {
+      "id": 11,
+      "title": "Ornamental Blackwork",
+      "category": "blackwork",
+      "location": "Brazo",
+      "tags": [
+        "ornamental",
+        "simetria",
+        "brazo"
+      ],
+      "image": "imagenes/portafolio/ornamental_blackwork_011.jpg",
+      "description": "Diseño ornamental blackwork con patrones simétricos y detalles intrincados. Elegancia en tinta negra pura.",
+      "style": "Blackwork Ornamental",
+      "placement": "Brazo completo",
+      "sessions": "3 sesiones",
+      "year": "2024",
+      "active": true
+    },
+    {
+      "id": 12,
+      "title": "Símbolo Delicado",
+      "category": "minimalista",
+      "location": "Tobillo",
+      "tags": [
+        "simbolo",
+        "pequeno",
+        "tobillo"
+      ],
+      "image": "imagenes/portafolio/simbolo_delicado_012.jpg",
+      "description": "Pequeño símbolo minimalista con significado personal. Diseño discreto pero con gran impacto emocional.",
+      "style": "Minimalista",
+      "placement": "Tobillo exterior",
+      "sessions": "1 sesión",
+      "year": "2024",
+      "active": true
+    }
+  ]
+}

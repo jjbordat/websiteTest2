@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - InkMaster Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-container">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="sidebar">
+        <div class="p-6">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="#9535d4" stroke-width="2"/>
+                    <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="#9535d4"/>
+                </svg>
+                <div>
+                    <h1 class="font-headline text-lg font-bold text-gradient-gold">InkMaster</h1>
+                    <p class="text-xs text-admin-text-tertiary">Admin Panel</p>
+                </div>
+            </div>
+            <nav class="space-y-2">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                    </svg>
+                    <span class="admin-nav-text">Dashboard</span>
+                </a>
+                <a href="portfolio.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    <span class="admin-nav-text">Portfolio</span>
+                </a>
+                <a href="categories.html" class="admin-nav-item active">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                    </svg>
+                    <span class="admin-nav-text">Categorías</span>
+                </a>
+                <a href="settings.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span class="admin-nav-text">Configuración</span>
+                </a>
+            </nav>
+        </div>
+        <!-- Información del Sistema -->
+        <div class="p-6 border-t border-admin-border">
+            <div class="text-admin-text-tertiary text-xs">
+                <p>Modo Local</p>
+                <p>Sin autenticación requerida</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <header class="admin-header flex items-center justify-between px-6">
+            <div class="flex items-center gap-4">
+                <button onclick="toggleSidebar()" class="lg:hidden admin-btn admin-btn-secondary admin-btn-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <h1 class="font-headline text-2xl font-bold text-admin-text-primary">Gestión de Categorías</h1>
+            </div>
+            <button onclick="showAddModal()" class="admin-btn admin-btn-primary">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                </svg>
+                Nueva Categoría
+            </button>
+        </header>
+
+        <div class="p-6">
+            <!-- Categories Grid -->
+            <div id="categoriesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="admin-loading">Cargando categorías...</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add/Edit Modal -->
+    <div id="categoryModal" class="admin-modal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-header">
+                <h3 class="admin-modal-title" id="modalTitle">Nueva Categoría</h3>
+                <button onclick="closeModal()" class="admin-modal-close">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="categoryForm">
+                <input type="hidden" id="editId" value="">
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Nombre *</label>
+                    <input type="text" id="name" class="admin-input" required>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Descripción *</label>
+                    <textarea id="description" class="admin-textarea" required></textarea>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Imagen (URL o ruta local) *</label>
+                    <input type="text" id="imageUrl" class="admin-input" required placeholder="https://ejemplo.com/imagen.jpg o imagenes/categories/categoria.jpg">
+                    <p class="text-xs text-admin-text-tertiary mt-1">Acepta URLs externas (https://) o rutas locales (imagenes/...)</p>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Badge</label>
+                    <select id="badge" class="admin-select">
+                        <option value="">Sin badge</option>
+                        <option value="Popular">Popular</option>
+                        <option value="Trending">Trending</option>
+                        <option value="Alta Demanda">Alta Demanda</option>
+                        <option value="Clásico">Clásico</option>
+                        <option value="Nuevo">Nuevo</option>
+                    </select>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Complejidad</label>
+                    <select id="complexity" class="admin-select">
+                        <option value="low">Baja</option>
+                        <option value="medium">Media</option>
+                        <option value="high">Alta</option>
+                    </select>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Tags (separados por coma)</label>
+                    <input type="text" id="tags" class="admin-input" placeholder="Ej: color, detailed, modern">
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" id="popular" class="admin-checkbox" checked>
+                        <span class="text-admin-text-primary">✅ Categoría activa (visible en el sitio público)</span>
+                    </label>
+                    <p class="text-xs text-admin-text-tertiary mt-1">Si no está marcado, la categoría no aparecerá en pages/category_explorer.html</p>
+                </div>
+
+                <div class="flex gap-3 justify-end">
+                    <button type="button" onclick="closeModal()" class="admin-btn admin-btn-secondary">Cancelar</button>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Incluir ConfigUpdater -->
+    <script>
+        // ConfigUpdater sin fetch para evitar CORS
+        class ConfigUpdater {
+            constructor() {
+                this.config = {};
+                this.isDirty = false;
+                console.log('⚙️ Config Updater inicializado para categories.html');
+            }
+
+            async loadConfig() {
+                try {
+                    const response = await fetch(`../config.json?_=${Date.now()}`);
+                    if (response.ok) {
+                        this.config = await response.json();
+                        console.log('✅ Configuración cargada desde config.json');
+                        return this.config;
+                    } else {
+                        console.error('❌ No se pudo cargar config.json');
+                        this.config = { categories: [] };
+                        return this.config;
+                    }
+                } catch (error) {
+                    console.error('❌ Error cargando config.json:', error);
+                    this.config = { categories: [] };
+                    return this.config;
+                }
+            }
+
+            getConfig() {
+                return this.config;
+            }
+
+            updateConfig(updates) {
+                this.config = { ...this.config, ...updates };
+                console.log('📝 Configuración actualizada en memoria');
+                return this.config;
+            }
+
+            async saveConfig() {
+                try {
+                    console.log('💾 Generando descarga de config.json...');
+
+                    // Generar descarga automática del config.json actualizado
+                    const blob = new Blob([JSON.stringify(this.config, null, 2)], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'config.json';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+
+                    console.log('📤 config.json descargado automáticamente');
+                    return { success: true, message: 'config.json descargado' };
+                } catch (error) {
+                    console.error('❌ Error generando descarga:', error);
+                    return { success: false, error: error.message };
+                }
+            }
+        }
+
+        window.configUpdater = new ConfigUpdater();
+    </script>
+
+    <script>
+        // No se requiere autenticación en el modo local
+        async function checkAuth() {
+            return true; // Siempre permitir acceso
+        }
+
+        async function loadCategories() {
+            const grid = document.getElementById('categoriesGrid');
+            console.log('📂 Cargando categorías...');
+
+            try {
+                await window.configUpdater.loadConfig();
+                const config = window.configUpdater.getConfig();
+                const categories = config.categories || [];
+
+                console.log('🏷️ Categorías encontradas:', categories.length);
+
+                if (categories.length === 0) {
+                    grid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-admin-text-tertiary">No hay categorías creadas aún.</p></div>';
+                    return;
+                }
+
+                grid.innerHTML = categories.map((category, index) => {
+                    // Normalizar ruta de imagen
+                    const imageSrc = category.image && !category.image.startsWith('http')
+                        ? `../${category.image}`
+                        : category.image;
+
+                    // Crear placeholder SVG como data URI
+                    const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
+                        <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#1a1a1a"/>
+                            <text x="200" y="150" text-anchor="middle" fill="#9535d4" font-size="24" font-family="Arial">${category.name}</text>
+                        </svg>
+                    `)}`;
+
+                    return `
+                    <div class="admin-card">
+                        <img src="${imageSrc}" alt="${category.name}" class="w-full h-48 object-cover rounded-t-lg"
+                             onerror="this.src='${placeholderSvg}'">
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-admin-text-primary">${category.name}</h3>
+                                ${category.badge ? `<span class="badge badge-gold text-xs">${category.badge}</span>` : ''}
+                            </div>
+                            <p class="text-sm text-admin-text-secondary mb-3">${category.description}</p>
+                            <div class="mb-3">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs text-admin-text-tertiary">Complejidad:</span>
+                                    <span class="text-xs px-2 py-1 rounded ${category.complexity === 'high' ? 'bg-red-500/20 text-red-400' : category.complexity === 'medium' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-green-500/20 text-green-400'}">${
+                                        category.complexity === 'high' ? 'Alta' : category.complexity === 'medium' ? 'Media' : 'Baja'
+                                    }</span>
+                                </div>
+                                ${category.tags && category.tags.length > 0 ? `<div class="flex flex-wrap gap-1">
+                                    ${category.tags.map(tag => `<span class="text-xs px-2 py-1 bg-accent/20 text-accent rounded">${tag}</span>`).join('')}
+                                </div>` : ''}
+                            </div>
+                            <div class="flex items-center justify-between">
+                                ${category.active ? '<span class="text-xs px-2 py-1 bg-green-500/20 text-green-400 rounded">Activa</span>' : '<span class="text-xs px-2 py-1 bg-red-500/20 text-red-400 rounded">Inactiva</span>'}
+                                <div class="flex gap-2">
+                                    <button onclick="editCategory(${index})" class="admin-btn admin-btn-sm admin-btn-secondary">Editar</button>
+                                    <button onclick="deleteCategory(${index})" class="admin-btn admin-btn-sm" style="background: #dc3545; color: white;">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `}).join('');
+            } catch (error) {
+                console.error('❌ Error cargando categorías:', error);
+                grid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-red-500">Error cargando categorías. Revisa la consola.</p></div>';
+            }
+        }
+
+        function showAddModal() {
+            document.getElementById('modalTitle').textContent = 'Nueva Categoría';
+            document.getElementById('categoryForm').reset();
+            document.getElementById('editId').value = '';
+            document.getElementById('categoryModal').classList.add('show');
+        }
+
+        // Función de notificación simple
+        function showNotification(message, type = 'success') {
+            // Crear o actualizar notificación
+            let notification = document.getElementById('notification');
+            if (!notification) {
+                notification = document.createElement('div');
+                notification.id = 'notification';
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    padding: 12px 20px;
+                    border-radius: 6px;
+                    color: white;
+                    font-weight: 500;
+                    z-index: 1000;
+                    transition: transform 0.3s ease;
+                    transform: translateX(400px);
+                `;
+                document.body.appendChild(notification);
+            }
+
+            notification.textContent = message;
+            notification.style.background = type === 'error' ? '#dc3545' : type === 'warning' ? '#ffc107' : '#28a745';
+            notification.style.transform = 'translateX(0)';
+
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+            }, 3000);
+        }
+
+        async function editCategory(index) {
+            try {
+                const config = window.configUpdater.getConfig();
+                const category = config.categories[index];
+                if (!category) return;
+
+                document.getElementById('modalTitle').textContent = 'Editar Categoría';
+                document.getElementById('editId').value = index;
+                document.getElementById('name').value = category.name;
+                document.getElementById('description').value = category.description;
+                document.getElementById('imageUrl').value = category.image;
+                document.getElementById('badge').value = category.badge || '';
+                document.getElementById('complexity').value = category.complexity || 'medium';
+                document.getElementById('tags').value = category.tags ? category.tags.join(', ') : '';
+                document.getElementById('popular').checked = category.active !== false;
+                document.getElementById('categoryModal').classList.add('show');
+            } catch (error) {
+                showNotification('Error cargando categoría', 'error');
+            }
+        }
+
+        async function deleteCategory(index) {
+            if (confirm('¿Estás seguro de que quieres eliminar esta categoría?')) {
+                try {
+                    const config = window.configUpdater.getConfig();
+                    const categoryName = config.categories[index].name;
+                    config.categories.splice(index, 1);
+
+                    // Actualizar y guardar config
+                    window.configUpdater.updateConfig({ categories: config.categories });
+                    await window.configUpdater.saveConfig();
+
+                    showNotification(`Categoría "${categoryName}" eliminada - config.json descargado`);
+                    loadCategories();
+                } catch (error) {
+                    showNotification('Error eliminando categoría', 'error');
+                }
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('categoryModal').classList.remove('show');
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('show');
+        }
+
+        // Ya no se requiere función de logout en el modo local
+
+        // Form submit handler
+        document.getElementById('categoryForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Generar ID único para nueva categoría
+            const generateId = (name) => {
+                return name.toLowerCase()
+                    .replace(/[^\w\s]/gi, '')
+                    .replace(/\s+/g, '-')
+                    .replace(/-+/g, '-')
+                    .trim();
+            };
+
+            const formData = {
+                id: generateId(document.getElementById('name').value),
+                name: document.getElementById('name').value,
+                description: document.getElementById('description').value,
+                image: document.getElementById('imageUrl').value,
+                badge: document.getElementById('badge').value,
+                complexity: document.getElementById('complexity').value,
+                tags: document.getElementById('tags').value.split(',').map(tag => tag.trim()).filter(Boolean),
+                active: document.getElementById('popular').checked,
+                link: 'portfolio_gallery.html'
+            };
+
+            const editIndex = document.getElementById('editId').value;
+
+            try {
+                const config = window.configUpdater.getConfig();
+
+                if (editIndex !== '') {
+                    // Editar existente
+                    config.categories[parseInt(editIndex)] = formData;
+
+                    // Actualizar y guardar config
+                    window.configUpdater.updateConfig({ categories: config.categories });
+                    await window.configUpdater.saveConfig();
+
+                    showNotification('Categoría actualizada - config.json descargado');
+                } else {
+                    // Crear nueva
+                    if (!config.categories) {
+                        config.categories = [];
+                    }
+                    config.categories.push(formData);
+
+                    // Actualizar y guardar config
+                    window.configUpdater.updateConfig({ categories: config.categories });
+                    await window.configUpdater.saveConfig();
+
+                    showNotification('Categoría creada - config.json descargado');
+                }
+
+                closeModal();
+                loadCategories();
+            } catch (error) {
+                showNotification('Error guardando categoría', 'error');
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            const isAuth = await checkAuth();
+            if (!isAuth) return;
+            await loadCategories();
+        });
+    </script>
+</body>
+</html>

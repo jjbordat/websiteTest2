@@ -1,0 +1,2978 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - InkMaster Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-container">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="sidebar">
+        <div class="p-6">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="#9535d4" stroke-width="2"/>
+                    <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="#9535d4"/>
+                </svg>
+                <div>
+                    <h1 class="font-headline text-lg font-bold text-gradient-gold">InkMaster</h1>
+                    <p class="text-xs text-admin-text-tertiary">Admin Panel</p>
+                </div>
+            </div>
+            <nav class="space-y-2">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                    </svg>
+                    <span class="admin-nav-text">Dashboard</span>
+                </a>
+                <a href="portfolio.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    <span class="admin-nav-text">Portfolio</span>
+                </a>
+                <a href="categories.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                    </svg>
+                    <span class="admin-nav-text">Categorías</span>
+                </a>
+                <a href="settings.html" class="admin-nav-item active">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span class="admin-nav-text">Configuración</span>
+                </a>
+            </nav>
+        </div>
+        <div class="p-6 border-t border-admin-border">
+            <button onclick="window.reloadSettings()" class="admin-nav-item w-full text-left text-accent">
+                <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                </svg>
+                <span class="admin-nav-text">Recargar Configuración</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <header class="admin-header flex items-center justify-between px-6">
+            <div class="flex items-center gap-4">
+                <button onclick="toggleSidebar()" class="lg:hidden admin-btn admin-btn-secondary admin-btn-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <h1 class="font-headline text-2xl font-bold text-admin-text-primary">Configuración</h1>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="exportData()" class="admin-btn admin-btn-secondary admin-btn-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Exportar
+                </button>
+                <button onclick="document.getElementById('importFile').click()" class="admin-btn admin-btn-secondary admin-btn-sm">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+                    </svg>
+                    Importar
+                </button>
+            </div>
+        </header>
+
+        <div class="p-6 space-y-6">
+            <!-- Artist Profile Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Perfil del Artista</h3>
+                </div>
+                <form id="artistForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="admin-form-group">
+                            <label class="admin-label">Nombre *</label>
+                            <input type="text" id="artistName" class="admin-input" required>
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Título Profesional</label>
+                            <input type="text" id="artistTitle" class="admin-input">
+                        </div>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Biografía</label>
+                        <textarea id="artistBio" class="admin-textarea"></textarea>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Imagen de Perfil</label>
+                        <div id="artistImageUploader"></div>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Badge/Certificación</label>
+                        <input type="text" id="artistBadge" class="admin-input" placeholder="Ej: Artista Profesional Certificado">
+                        <p class="text-admin-text-tertiary text-sm mt-1">Aparece como badge dorado en la página de inicio</p>
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Perfil</button>
+                </form>
+            </div>
+
+            <!-- Homepage Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Página de Inicio</h3>
+                </div>
+                <form id="homepageForm" class="space-y-4">
+                    <div class="admin-form-group">
+                        <label class="admin-label">Título Principal</label>
+                        <input type="text" id="homepageTitle" class="admin-input" placeholder="Ej: Arte que">
+                        <p class="text-admin-text-tertiary text-sm mt-1">Primera parte del título grande (ej: "Arte que")</p>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Título Acento</label>
+                        <input type="text" id="homepageTitleAccent" class="admin-input" placeholder="Ej: Vive Contigo">
+                        <p class="text-admin-text-tertiary text-sm mt-1">Segunda parte del título con color dorado (ej: "Vive Contigo")</p>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Descripción Principal</label>
+                        <textarea id="homepageDescription" class="admin-textarea" placeholder="Ej: Transformo visiones en arte permanente con precisión en cada línea..."></textarea>
+                        <p class="text-admin-text-tertiary text-sm mt-1">Descripción que aparece debajo del título en la homepage</p>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Imagen Hero</label>
+                        <div id="homepageHeroUploader"></div>
+                        <p class="text-admin-text-tertiary text-sm mt-2">Imagen principal grande de la homepage. Recomendado: 800x1000px, formato JPG/PNG</p>
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Homepage</button>
+                </form>
+            </div>
+
+            <!-- Site Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Configuración del Sitio</h3>
+                </div>
+                <form id="siteForm" class="space-y-4">
+                    <div class="admin-form-group">
+                        <label class="admin-label">Título del Sitio</label>
+                        <input type="text" id="siteTitle" class="admin-input" placeholder="Ej: InkMaster Portfolio">
+                        <p class="text-admin-text-tertiary text-sm mt-1">Aparece en el título de la pestaña del navegador y metadatos. El nombre "InkMaster" junto al logo se mantiene fijo.</p>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Tagline/Eslogan</label>
+                        <input type="text" id="siteTagline" class="admin-input" placeholder="Ej: Arte que vive contigo">
+                        <p class="text-admin-text-tertiary text-sm mt-1">Aparece como subtítulo debajo del título principal en las páginas</p>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Descripción del Sitio</label>
+                        <textarea id="siteDescription" class="admin-textarea" placeholder="Ej: Tatuajes personalizados de alta calidad con precisión en cada línea"></textarea>
+                        <p class="text-admin-text-tertiary text-sm mt-1">Aparece en la descripción principal de la página de inicio y metadatos SEO</p>
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Configuración</button>
+                </form>
+            </div>
+
+            <!-- Contact Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Información de Contacto</h3>
+                </div>
+                <form id="contactForm" class="space-y-4">
+                    <div class="admin-form-group">
+                        <label class="admin-label">WhatsApp</label>
+                        <input type="tel" id="whatsapp" class="admin-input" placeholder="+57 311 832 1831">
+                        <p class="text-admin-text-tertiary text-sm mt-1">
+                            Incluye código de país para Colombia: +57. Si no incluyes +57, se agregará automáticamente para números que empiecen con 3.
+                        </p>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Email</label>
+                        <input type="email" id="email" class="admin-input">
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Ubicación</label>
+                        <input type="text" id="location" class="admin-input">
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Contacto</button>
+                </form>
+            </div>
+
+            <!-- Social Media Settings -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Redes Sociales</h3>
+                </div>
+                <form id="socialForm" class="space-y-4">
+                    <div class="admin-form-group">
+                        <label class="admin-label">Instagram</label>
+                        <input type="url" id="instagram" class="admin-input" placeholder="https://instagram.com/tu_usuario">
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Facebook</label>
+                        <input type="url" id="facebook" class="admin-input" placeholder="https://facebook.com/tu_pagina">
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">TikTok</label>
+                        <input type="url" id="tiktok" class="admin-input" placeholder="https://tiktok.com/@tu_usuario">
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">YouTube</label>
+                        <input type="url" id="youtube" class="admin-input" placeholder="https://youtube.com/c/tu_canal">
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Redes Sociales</button>
+                </form>
+            </div>
+
+            <!-- Additional Stats -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Métricas Adicionales</h3>
+                </div>
+                <form id="metricsForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="admin-form-group">
+                            <label class="admin-label">Seguidores Instagram</label>
+                            <input type="number" id="instagramFollowers" class="admin-input" min="0" placeholder="10000">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Seguidores Facebook</label>
+                            <input type="number" id="facebookFollowers" class="admin-input" min="0" placeholder="5000">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Horas de Trabajo Totales</label>
+                            <input type="number" id="workHours" class="admin-input" min="0" placeholder="5000">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Proyectos Completados</label>
+                            <input type="number" id="projects" class="admin-input" min="0" placeholder="800">
+                        </div>
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Métricas</button>
+                </form>
+            </div>
+
+            <!-- Statistics & Experience -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Estadísticas y Experiencia</h3>
+                </div>
+                <form id="statsForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="admin-form-group">
+                            <label class="admin-label">Años de Experiencia</label>
+                            <input type="number" id="experience" class="admin-input" min="0">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Clientes Atendidos</label>
+                            <input type="number" id="clients" class="admin-input" min="0">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Premios/Reconocimientos</label>
+                            <input type="number" id="awards" class="admin-input" min="0">
+                        </div>
+                    </div>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Estadísticas</button>
+                </form>
+            </div>
+
+            <!-- Pricing Configuration -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Configuración de Precios</h3>
+                </div>
+                <form id="pricingForm" class="space-y-6">
+                    <!-- Currency Settings -->
+                    <div class="bg-surface/50 p-4 rounded-lg border border-border">
+                        <h4 class="font-semibold text-accent mb-4">💰 Configuración de Moneda</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="admin-form-group">
+                                <label class="admin-label">Símbolo de Moneda</label>
+                                <input type="text" id="currencySymbol" class="admin-input" placeholder="$" maxlength="3">
+                                <p class="text-admin-text-tertiary text-sm mt-1">Símbolo que aparece antes de los precios (ej: $, €, £)</p>
+                            </div>
+                            <div class="admin-form-group">
+                                <label class="admin-label">Nombre de Moneda</label>
+                                <input type="text" id="currencyName" class="admin-input" placeholder="COP">
+                                <p class="text-admin-text-tertiary text-sm mt-1">Código de moneda (ej: COP, USD, EUR)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tattoo Size Pricing -->
+                    <div class="bg-surface/50 p-4 rounded-lg border border-border">
+                        <h4 class="font-semibold text-accent mb-4">🎯 Precios por Tamaño de Tatuaje</h4>
+
+                        <!-- Small Tattoos -->
+                        <div class="space-y-4 mb-6">
+                            <h5 class="font-medium text-text-primary">Tatuajes Pequeños (hasta 5x5cm)</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Mínimo</label>
+                                    <input type="number" id="smallPriceMin" class="admin-input" min="0" step="1000" placeholder="350000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Máximo</label>
+                                    <input type="number" id="smallPriceMax" class="admin-input" min="0" step="1000" placeholder="650000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Descripción</label>
+                                    <input type="text" id="smallDescription" class="admin-input" placeholder="Diseños pequeños y minimalistas">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Medium Tattoos -->
+                        <div class="space-y-4 mb-6">
+                            <h5 class="font-medium text-text-primary">Tatuajes Medianos (5x5cm - 15x15cm)</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Mínimo</label>
+                                    <input type="number" id="mediumPriceMin" class="admin-input" min="0" step="1000" placeholder="650000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Máximo</label>
+                                    <input type="number" id="mediumPriceMax" class="admin-input" min="0" step="1000" placeholder="1800000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Descripción</label>
+                                    <input type="text" id="mediumDescription" class="admin-input" placeholder="Tatuajes medianos con detalles">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Large Tattoos -->
+                        <div class="space-y-4">
+                            <h5 class="font-medium text-text-primary">Tatuajes Grandes (más de 15x15cm)</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Mínimo</label>
+                                    <input type="number" id="largePriceMin" class="admin-input" min="0" step="1000" placeholder="1800000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Máximo (Opcional)</label>
+                                    <input type="number" id="largePriceMax" class="admin-input" min="0" step="1000" placeholder="">
+                                    <p class="text-admin-text-tertiary text-sm mt-1">Dejar vacío para mostrar "desde X+"</p>
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Descripción</label>
+                                    <input type="text" id="largeDescription" class="admin-input" placeholder="Proyectos grandes y complejos">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Pricing -->
+                    <div class="bg-surface/50 p-4 rounded-lg border border-border">
+                        <h4 class="font-semibold text-accent mb-4">⚡ Precios Adicionales</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                            <!-- Hourly Rate -->
+                            <div class="space-y-4">
+                                <h5 class="font-medium text-text-primary">Tarifa por Hora</h5>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio por Hora</label>
+                                    <input type="number" id="hourlyRate" class="admin-input" min="0" step="1000" placeholder="450000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Descripción</label>
+                                    <input type="text" id="hourlyDescription" class="admin-input" placeholder="Para proyectos complejos por horas">
+                                </div>
+                            </div>
+
+                            <!-- Touchup Pricing -->
+                            <div class="space-y-4">
+                                <h5 class="font-medium text-text-primary">Retoques</h5>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Días Gratuitos</label>
+                                    <input type="number" id="touchupFreeDays" class="admin-input" min="0" max="365" placeholder="30">
+                                    <p class="text-admin-text-tertiary text-sm mt-1">Días gratis para retoques</p>
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Precio Retoque</label>
+                                    <input type="number" id="touchupPrice" class="admin-input" min="0" step="1000" placeholder="220000">
+                                </div>
+                                <div class="admin-form-group">
+                                    <label class="admin-label">Descripción</label>
+                                    <input type="text" id="touchupDescription" class="admin-input" placeholder="Primer retoque gratuito dentro de 30 días">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deposit Settings -->
+                    <div class="bg-surface/50 p-4 rounded-lg border border-border">
+                        <h4 class="font-semibold text-accent mb-4">💳 Configuración de Depósito</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="admin-form-group">
+                                <label class="admin-label">Porcentaje de Depósito</label>
+                                <input type="number" id="depositPercentage" class="admin-input" min="0" max="100" placeholder="30">
+                                <p class="text-admin-text-tertiary text-sm mt-1">Porcentaje requerido para reservar fecha (%)</p>
+                            </div>
+                            <div class="admin-form-group">
+                                <label class="admin-label">Descripción</label>
+                                <input type="text" id="depositDescription" class="admin-input" placeholder="Depósito requerido para reservar fecha">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Preview Section -->
+                    <div class="bg-accent/10 border border-accent/20 rounded-lg p-6">
+                        <h4 class="font-semibold text-text-primary mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                            Vista Previa de Precios
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="pricingPreview">
+                            <div class="bg-surface p-4 rounded-lg">
+                                <h5 class="font-semibold text-text-primary mb-2">Pequeños</h5>
+                                <p class="text-accent font-bold" id="previewSmall">$350.000 - $650.000</p>
+                            </div>
+                            <div class="bg-surface p-4 rounded-lg">
+                                <h5 class="font-semibold text-text-primary mb-2">Medianos</h5>
+                                <p class="text-accent font-bold" id="previewMedium">$650.000 - $1.800.000</p>
+                            </div>
+                            <div class="bg-surface p-4 rounded-lg">
+                                <h5 class="font-semibold text-text-primary mb-2">Grandes</h5>
+                                <p class="text-accent font-bold" id="previewLarge">$1.800.000+</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-surface p-3 rounded-lg">
+                                <p class="text-sm text-text-secondary">Tarifa por hora: <span class="text-accent font-semibold" id="previewHourly">$450.000/hora</span></p>
+                            </div>
+                            <div class="bg-surface p-3 rounded-lg">
+                                <p class="text-sm text-text-secondary">Depósito: <span class="text-accent font-semibold" id="previewDeposit">30%</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar Configuración de Precios</button>
+                </form>
+            </div>
+
+            <!-- Theme Editor -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Editor de Temas</h3>
+                </div>
+                <form id="themeForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="admin-form-group">
+                            <label class="admin-label">Color Primario (Dorado)</label>
+                            <input type="color" id="primaryColor" class="admin-input h-12" value="#9535d4">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Color de Fondo</label>
+                            <input type="color" id="backgroundColor" class="admin-input h-12" value="#000000">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Color de Superficie</label>
+                            <input type="color" id="surfaceColor" class="admin-input h-12" value="#262626">
+                        </div>
+                        <div class="admin-form-group">
+                            <label class="admin-label">Color de Texto</label>
+                            <input type="color" id="textColor" class="admin-input h-12" value="#FFFFFF">
+                        </div>
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Logo del Sitio</label>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="admin-label text-sm">Subir imagen local</label>
+                                <div id="logoImageUploader"></div>
+                            </div>
+                            <div class="text-center text-admin-text-tertiary">- O -</div>
+                            <div>
+                                <label class="admin-label text-sm">URL de imagen</label>
+                                <input type="url" id="logoUrl" class="admin-input" placeholder="https://ejemplo.com/logo.png">
+                            </div>
+                        </div>
+                        <p class="text-admin-text-tertiary text-sm mt-2">Recomendado: 200x60px, formato PNG con fondo transparente</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button type="submit" class="admin-btn admin-btn-primary">Aplicar Tema</button>
+                        <button type="button" onclick="previewTheme()" class="admin-btn admin-btn-secondary">Vista Previa</button>
+                        <button type="button" onclick="resetTheme()" class="admin-btn admin-btn-secondary">Restaurar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Backup & Data -->
+            <div class="admin-card">
+                <div class="admin-card-header">
+                    <h3 class="admin-card-title">Respaldo de Datos</h3>
+                </div>
+                <div class="space-y-4">
+                    <p class="text-admin-text-secondary">Exporta o importa todos tus datos del sitio web.</p>
+
+                    <!-- Configuración de Carpeta Automática -->
+                    <div class="bg-surface/50 p-4 rounded-lg border border-border">
+                        <h4 class="font-semibold text-accent mb-2">🚀 Guardado Automático</h4>
+                        <p class="text-admin-text-secondary text-sm mb-3">Configura la carpeta del proyecto para guardar imágenes y config.json automáticamente.</p>
+                        <button onclick="configureProjectFolder()" class="admin-btn admin-btn-primary">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2V7zm0 0a2 2 0 012-2h6l2 2h6a2 2 0 012 2z"/>
+                            </svg>
+                            Configurar Carpeta del Proyecto
+                        </button>
+                        <div id="folderStatus" class="mt-2 text-sm text-admin-text-tertiary"></div>
+                    </div>
+
+                    <!-- Exportar/Importar Manual -->
+                    <div>
+                        <h4 class="font-semibold text-admin-text-primary mb-2">Respaldo Manual</h4>
+                        <div class="flex gap-3">
+                            <button onclick="exportData()" class="admin-btn admin-btn-secondary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                Exportar Datos
+                            </button>
+                            <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importData(this)">
+                            <button onclick="document.getElementById('importFile').click()" class="admin-btn admin-btn-secondary">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+                                </svg>
+                                Importar Datos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Save All Configuration Button -->
+            <div class="admin-card bg-gradient-to-r from-accent/10 to-accent/20 border-accent/30">
+                <div class="p-8 text-center space-y-4">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3-3m0 0l-3 3m3-3v12"/>
+                        </svg>
+                        <h3 class="font-headline text-2xl font-bold text-text-primary">Guardar Toda la Configuración</h3>
+                    </div>
+                    <p class="text-text-secondary max-w-2xl mx-auto">
+                        Guarda todos los cambios realizados en todas las secciones de una vez. Esto incluye perfil del artista, configuración del sitio, precios, contacto, redes sociales, métricas y tema.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                        <button onclick="saveAllConfiguration()" class="admin-btn admin-btn-primary text-lg px-8 py-4 glow-gold">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3-3m0 0l-3 3m3-3v12"/>
+                            </svg>
+                            💾 Guardar Toda la Configuración
+                        </button>
+                        <button onclick="previewAllChanges()" class="admin-btn admin-btn-secondary text-lg px-8 py-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                            👁️ Vista Previa de Cambios
+                        </button>
+                    </div>
+                    <div class="mt-6 p-4 bg-accent/10 rounded-lg border border-accent/20">
+                        <h4 class="font-semibold text-accent mb-2">💡 Recomendación de Uso</h4>
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            Modifica todas las secciones que necesites y luego usa este botón para guardar todo de una vez.
+                            Esto es especialmente útil cuando estás configurando el sitio por primera vez o realizando múltiples cambios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Notification -->
+    <div id="notification" class="admin-notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <!-- ConfigUpdater lee directamente desde config.json - Sin configuración embebida -->
+
+    <!-- ConfigUpdater modificado -->
+    <script>
+        // ConfigUpdater sin fetch para evitar CORS
+        class ConfigUpdater {
+            constructor() {
+                this.config = {};
+                this.isDirty = false;
+                console.log('⚙️ Config Updater inicializado (modo local)');
+                // No auto-cargar - se carga manualmente en el orden correcto
+            }
+
+            async loadConfig() {
+                // Estructura base completa que siempre debe existir
+                const baseConfig = {
+                    "site": {
+                        "title": "InkMaster Portfolio",
+                        "tagline": "Arte que vive contigo",
+                        "description": "Transformo visiones en arte permanente con precisión en cada línea. Cada tatuaje es una colaboración única entre artista y cliente, donde tu historia se convierte en una obra maestra que llevarás contigo para siempre."
+                    },
+                    "artist": {
+                        "name": "Alejandro Morales",
+                        "title": "Maestro del Arte Corporal",
+                        "bio": "Con más de 10 años transformando visiones en arte permanente, cada línea que trazo cuenta una historia única.",
+                        "badge": "Artista Profesional Certificado",
+                        "experience": 10,
+                        "clients": 500,
+                        "awards": 15,
+                        "whatsapp": "+34600000000",
+                        "email": "contacto@inkmaster.es",
+                        "location": "Calle del Arte, 123, 28001 Madrid, España",
+                        "instagram": "https://instagram.com/inkmaster",
+                        "facebook": "https://facebook.com/inkmaster",
+                        "tiktok": "",
+                        "youtube": "",
+                        "workHours": 5000,
+                        "projects": 800,
+                        "instagramFollowers": 0,
+                        "facebookFollowers": 0
+                    },
+                    "theme": {
+                        "colors": {
+                            "primary": "#9535d4",
+                            "accent": "#9535d4",
+                            "background": "#0a0a0a",
+                            "surface": "#1a1a1a",
+                            "textPrimary": "#ffffff"
+                        },
+                        "logo": null
+                    },
+                    "images": {
+                        "hero": null,
+                        "artistProfile": null,
+                        "homepage": {
+                            "hero": null,
+                            "featured1": null,
+                            "featured2": null,
+                            "featured3": null
+                        },
+                        "artist": {
+                            "profile": null,
+                            "gallery": []
+                        }
+                    },
+                    "texts": {
+                        "homepage": {
+                            "heroTitle": "Arte que",
+                            "heroTitleAccent": "Vive Contigo",
+                            "heroDescription": "Transformo visiones en arte permanente con precisión en cada línea. Cada tatuaje es una colaboración única entre artista y cliente, donde tu historia se convierte en una obra maestra que llevarás contigo para siempre."
+                        }
+                    },
+                    "categories": [
+                        {
+                            "id": "realismo",
+                            "name": "Realismo",
+                            "description": "Detalles fotográficos que capturan la esencia de retratos y escenas con precisión impresionante.",
+                            "image": "imagenes/categories/realismo.png",
+                            "tags": ["color", "detallado", "grande", "moderno"],
+                            "badge": "Alta Demanda",
+                            "complexity": "high",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        },
+                        {
+                            "id": "geometrico",
+                            "name": "Geométrico",
+                            "description": "Patrones precisos y formas matemáticas que crean composiciones equilibradas y modernas.",
+                            "image": "imagenes/categories/geometrico.png",
+                            "tags": ["blackwork", "detallado", "moderno", "minimalista"],
+                            "badge": "",
+                            "complexity": "high",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        },
+                        {
+                            "id": "japones",
+                            "name": "Japonés Irezumi",
+                            "description": "Arte tradicional con dragones, koi y elementos de la cultura japonesa en composiciones completas.",
+                            "image": "imagenes/categories/japones.png",
+                            "tags": ["color", "tradicional", "grande", "cultural"],
+                            "badge": "Tradicional",
+                            "complexity": "high",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        },
+                        {
+                            "id": "blackwork",
+                            "name": "Blackwork",
+                            "description": "Tinta negra sólida con diseños contundentes que destacan por su simplicidad y elegancia atemporal.",
+                            "image": "imagenes/categories/blackwork.jpg",
+                            "tags": ["blackwork", "bold", "moderno", "minimalista"],
+                            "badge": "",
+                            "complexity": "medium",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        },
+                        {
+                            "id": "dotwork",
+                            "name": "Dotwork",
+                            "description": "Técnica meticulosa de puntillismo que crea texturas y gradientes únicos con miles de puntos precisos.",
+                            "image": "imagenes/categories/dotwork.jpg",
+                            "tags": ["blackwork", "detallado", "moderno", "stippling"],
+                            "badge": "",
+                            "complexity": "high",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        },
+                        {
+                            "id": "acuarela",
+                            "name": "Acuarela",
+                            "description": "Colores vibrantes que fluyen como pinceladas de acuarela, creando efectos únicos y artísticos.",
+                            "image": "imagenes/categories/acuarela.jpg",
+                            "tags": ["color", "artístico", "moderno", "abstracto"],
+                            "badge": "Artístico",
+                            "complexity": "medium",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        },
+                        {
+                            "id": "neo-tradicional",
+                            "name": "Neo-Tradicional",
+                            "description": "Evolución del estilo clásico americano con líneas gruesas, colores sólidos y motivos icónicos modernos.",
+                            "image": "imagenes/categories/neo-tradicional.jpg",
+                            "tags": ["color", "bold", "tradicional", "clásico"],
+                            "badge": "",
+                            "complexity": "medium",
+                            "link": "portfolio_gallery.html",
+                            "active": true
+                        }
+                    ]
+                };
+
+                try {
+                    // Intentar cargar config.json real con cache buster
+                    const response = await fetch(`../config.json?_=${Date.now()}`);
+                    if (response.ok) {
+                        const loadedConfig = await response.json();
+                        console.log('📄 Config.json cargado:', loadedConfig);
+
+                        // IMPORTANTE: Base como estructura + config.json sobrescribe
+                        this.config = this.deepMerge(baseConfig, loadedConfig);
+                        console.log('✅ Configuración cargada desde config.json (cache-bust)');
+                        console.log('🎯 Config final:', this.config);
+
+                        this.isDirty = false;
+                        return this.config;
+                    } else {
+                        console.warn('⚠️ No se pudo cargar config.json, usando estructura base');
+                        this.config = baseConfig;
+                        return this.config;
+                    }
+                } catch (error) {
+                    console.warn('⚠️ Error cargando config.json, usando estructura base:', error);
+                    this.config = baseConfig;
+                    return this.config;
+                }
+            }
+
+
+            updateConfig(updates) {
+                this.config = this.deepMerge(this.config, updates);
+                this.isDirty = true;
+                console.log('📝 Configuración actualizada en memoria');
+                return this.config;
+            }
+
+            deepMerge(target, source) {
+                const result = { ...target };
+                for (const key in source) {
+                    if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key])) {
+                        result[key] = this.deepMerge(result[key] || {}, source[key]);
+                    } else {
+                        result[key] = source[key];
+                    }
+                }
+                return result;
+            }
+
+            async saveConfig() {
+                try {
+                    console.log('💾 Guardando configuración únicamente en config.json...');
+                    this.isDirty = false;
+
+                    // Intentar guardar automáticamente con File System Access API
+                    try {
+                        await this.saveConfigDirectly();
+                        console.log('✅ config.json guardado automáticamente');
+                    } catch (directError) {
+                        console.warn('⚠️ Guardado automático no disponible:', directError.message);
+                        // Fallback: generar descarga manual
+                        this.exportConfigJson();
+                    }
+
+                    this.dispatchConfigSaved();
+                    return { success: true, message: 'config.json actualizado correctamente' };
+                } catch (error) {
+                    console.error('❌ Error guardando config.json:', error);
+                    return { success: false, error: error.message };
+                }
+            }
+
+            async saveConfigDirectly() {
+                // Verificar si el navegador soporta File System Access API
+                if (!('showDirectoryPicker' in window)) {
+                    throw new Error('Navegador no soporta File System Access API');
+                }
+
+                // Obtener acceso a la carpeta del proyecto (usar el mismo que las imágenes)
+                let projectDir = window.localAPI.projectDirectoryHandle;
+                if (!projectDir) {
+                    // Intentar obtener el directorio como lo haría para imágenes
+                    projectDir = await window.localAPI.getProjectDirectory();
+                    if (!projectDir) {
+                        throw new Error('No se pudo acceder a la carpeta del proyecto');
+                    }
+                }
+
+                try {
+                    // Crear/sobrescribir config.json
+                    const fileHandle = await projectDir.getFileHandle('config.json', { create: true });
+                    const writable = await fileHandle.createWritable();
+
+                    // Escribir la configuración como JSON formateado
+                    const configJson = JSON.stringify(this.config, null, 2);
+                    await writable.write(configJson);
+                    await writable.close();
+
+                    console.log('✅ config.json guardado automáticamente en carpeta del proyecto');
+                    return { success: true, message: 'config.json guardado automáticamente' };
+
+                } catch (error) {
+                    console.error('Error guardando config.json:', error);
+                    throw new Error('Error escribiendo config.json: ' + error.message);
+                }
+            }
+
+
+            hasUnsavedChanges() {
+                return this.isDirty;
+            }
+
+            getConfig() {
+                return { ...this.config };
+            }
+
+            getConfigValue(path) {
+                const keys = path.split('.');
+                let value = this.config;
+                for (const key of keys) {
+                    if (value && typeof value === 'object') {
+                        value = value[key];
+                    } else {
+                        return undefined;
+                    }
+                }
+                return value;
+            }
+
+            exportConfig() {
+                const exportData = {
+                    config: this.config,
+                    exported: new Date().toISOString(),
+                    version: '1.0'
+                };
+                const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `inkmaster-config-${new Date().toISOString().split('T')[0]}.json`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                console.log('📤 Configuración exportada');
+            }
+
+            exportConfigJson() {
+                // Exportar solo la configuración actual para reemplazar config.json
+                const blob = new Blob([JSON.stringify(this.config, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'config.json';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                console.log('📤 config.json generado para descarga');
+
+                const instruction = `
+🔔 ACCIÓN REQUERIDA:
+1. Se ha descargado el archivo "config.json" actualizado
+2. Reemplaza el archivo "config.json" en la raíz del proyecto
+3. Recarga las páginas públicas para ver los cambios
+
+Esto actualizará permanentemente la configuración del sitio.
+                `;
+
+                if (window.showNotification) {
+                    showNotification(instruction, 'success', 8000);
+                } else {
+                    alert(instruction);
+                }
+            }
+
+            async importConfig(file) {
+                try {
+                    const text = await file.text();
+                    const importedData = JSON.parse(text);
+                    if (importedData.config && typeof importedData.config === 'object') {
+                        this.config = importedData.config;
+                        this.isDirty = true;
+                        this.saveBackup();
+                        console.log('📥 Configuración importada exitosamente');
+                        return { success: true, message: 'Configuración importada correctamente' };
+                    } else {
+                        throw new Error('Formato de archivo inválido');
+                    }
+                } catch (error) {
+                    console.error('❌ Error importando configuración:', error);
+                    return { success: false, error: error.message };
+                }
+            }
+
+            dispatchConfigSaved() {
+                const event = new CustomEvent('configSaved', {
+                    detail: { config: this.config, timestamp: Date.now() }
+                });
+                document.dispatchEvent(event);
+            }
+        }
+
+        // Instancia global
+        window.configUpdater = new ConfigUpdater();
+    </script>
+
+    <script>
+        // Adapter para compatibilidad con localAPI
+        window.localAPI = {
+            // Directorio compartido para acceso a archivos
+            projectDirectoryHandle: null,
+
+            async getArtist() {
+                const config = window.configUpdater.getConfig();
+                return config.artist || {};
+            },
+            async getSiteConfig() {
+                const config = window.configUpdater.getConfig();
+                return config.site || {};
+            },
+            async getTheme() {
+                const config = window.configUpdater.getConfig();
+                return config.theme || { colors: { primary: '#9535d4' } };
+            },
+            updateArtistData(data) {
+                window.configUpdater.updateConfig({ artist: data });
+                return window.configUpdater.saveConfig();
+            },
+            updateSiteConfig(data) {
+                window.configUpdater.updateConfig({ site: data });
+                return window.configUpdater.saveConfig();
+            },
+            updateTheme(data) {
+                window.configUpdater.updateConfig({ theme: data });
+                return window.configUpdater.saveConfig();
+            },
+            exportConfig() {
+                return window.configUpdater.exportConfig();
+            },
+            importConfig(file, callback) {
+                window.configUpdater.importConfig(file).then(result => {
+                    callback(result.success, result.error ? { message: result.error } : null);
+                });
+            },
+
+            // Compartir las funciones de directorio con las imágenes
+            async getProjectDirectory() {
+                // Intentar usar directorio previamente seleccionado
+                if (this.projectDirectoryHandle) {
+                    try {
+                        // Verificar que aún tenemos permisos
+                        if (await this.projectDirectoryHandle.queryPermission({ mode: 'readwrite' }) === 'granted') {
+                            return this.projectDirectoryHandle;
+                        }
+                    } catch (error) {
+                        console.log('Permisos expirados, solicitando nuevamente');
+                    }
+                }
+
+                // Pedir al usuario que seleccione la carpeta del proyecto
+                try {
+                    const dirHandle = await window.showDirectoryPicker({
+                        mode: 'readwrite',
+                        startIn: 'documents'
+                    });
+
+                    // Verificar que es la carpeta correcta (que contenga config.json o admin/)
+                    try {
+                        await dirHandle.getFileHandle('config.json');
+                        console.log('✅ Carpeta del proyecto identificada por config.json');
+                    } catch {
+                        try {
+                            await dirHandle.getDirectoryHandle('admin');
+                            console.log('✅ Carpeta del proyecto identificada por carpeta admin/');
+                        } catch {
+                            if (window.showNotification) {
+                                showNotification('⚠️ Asegúrate de seleccionar la carpeta raíz del proyecto (la que contiene config.json)', 'warning', 8000);
+                            }
+                        }
+                    }
+
+                    this.projectDirectoryHandle = dirHandle;
+
+                    if (window.showNotification) {
+                        showNotification('✅ Carpeta del proyecto configurada. ¡Ahora las imágenes y config.json se guardarán automáticamente!', 'success', 5000);
+                    }
+
+                    return dirHandle;
+                } catch (error) {
+                    if (error.name === 'AbortError') {
+                        throw new Error('Usuario canceló la selección de carpeta');
+                    }
+                    throw new Error('Error seleccionando carpeta: ' + error.message);
+                }
+            },
+            async handleImageUpload(file, type, callback) {
+                if (!file) return;
+
+                // Intentar guardar automáticamente con File System Access API
+                try {
+                    const success = await this.saveFileDirectly(file, type);
+                    if (success) {
+                        console.log(`✅ Imagen ${type} guardada automáticamente en carpeta`);
+                        if (callback) callback(success);
+                        return success;
+                    }
+                } catch (error) {
+                    console.warn('⚠️ Guardado automático no disponible:', error.message);
+                }
+
+                // Fallback: método manual (instrucciones)
+                return this.handleImageUploadManual(file, type, callback);
+            },
+
+            async saveFileDirectly(file, type) {
+                // Verificar si el navegador soporta File System Access API
+                if (!('showDirectoryPicker' in window)) {
+                    throw new Error('Navegador no soporta File System Access API');
+                }
+
+                // Obtener o pedir acceso a la carpeta del proyecto
+                let projectDir = await this.getProjectDirectory();
+                if (!projectDir) {
+                    throw new Error('No se pudo acceder a la carpeta del proyecto');
+                }
+
+                // Mapear tipos a subcarpetas
+                const folderMap = {
+                    'artistProfile': 'imagenes/artist',
+                    'heroImage': 'imagenes/homepage',
+                    'logo': 'imagenes',
+                    'portfolioImage': 'imagenes/portafolio',
+                    'categoryImage': 'imagenes/categories'
+                };
+
+                const folderPath = folderMap[type] || 'imagenes';
+
+                // Generar nombre de archivo único
+                const timestamp = Date.now();
+                const extension = file.name.split('.').pop().toLowerCase();
+                const prefix = type === 'artistProfile' ? 'profile' :
+                              type === 'heroImage' ? 'hero' :
+                              type === 'logo' ? 'logo' :
+                              type === 'categoryImage' ? 'category' : 'image';
+                const fileName = `${prefix}_${timestamp}.${extension}`;
+
+                // Crear/acceder a la subcarpeta
+                const folders = folderPath.split('/');
+                let currentDir = projectDir;
+
+                for (const folder of folders) {
+                    try {
+                        currentDir = await currentDir.getDirectoryHandle(folder, { create: true });
+                    } catch (error) {
+                        console.error(`Error creando carpeta ${folder}:`, error);
+                        throw new Error(`No se pudo crear la carpeta ${folder}`);
+                    }
+                }
+
+                // Crear el archivo
+                const fileHandle = await currentDir.getFileHandle(fileName, { create: true });
+                const writable = await fileHandle.createWritable();
+
+                // Escribir el contenido del archivo
+                await writable.write(file);
+                await writable.close();
+
+                // Crear ruta relativa para config.json
+                const relativePath = `${folderPath}/${fileName}`;
+
+                // Actualizar configuración automáticamente
+                const updates = {};
+                if (type === 'artistProfile') {
+                    updates.images = {
+                        artistProfile: relativePath,
+                        artist: { profile: relativePath }
+                    };
+                } else if (type === 'heroImage') {
+                    updates.images = {
+                        hero: relativePath,
+                        homepage: { hero: relativePath }
+                    };
+                } else if (type === 'logo') {
+                    updates.theme = { logo: relativePath };
+                }
+
+                // Guardar en configuración
+                window.configUpdater.updateConfig(updates);
+                await window.configUpdater.saveConfig();
+
+                // Mostrar notificación de éxito
+                if (window.showNotification) {
+                    showNotification(`✅ Imagen guardada automáticamente: ${fileName}`, 'success', 5000);
+                }
+
+                console.log(`📁 Archivo guardado en: ${folderPath}/${fileName}`);
+                return relativePath;
+            },
+
+            async getProjectDirectory() {
+                // Intentar usar directorio previamente seleccionado
+                if (this.projectDirectoryHandle) {
+                    try {
+                        // Verificar que aún tenemos permisos
+                        if (await this.projectDirectoryHandle.queryPermission({ mode: 'readwrite' }) === 'granted') {
+                            return this.projectDirectoryHandle;
+                        }
+                    } catch (error) {
+                        console.log('Permisos expirados, solicitando nuevamente');
+                    }
+                }
+
+                // Pedir al usuario que seleccione la carpeta del proyecto
+                try {
+                    const dirHandle = await window.showDirectoryPicker({
+                        mode: 'readwrite',
+                        startIn: 'documents'
+                    });
+
+                    // Verificar que es la carpeta correcta (que contenga config.json o admin/)
+                    try {
+                        await dirHandle.getFileHandle('config.json');
+                        console.log('✅ Carpeta del proyecto identificada por config.json');
+                    } catch {
+                        try {
+                            await dirHandle.getDirectoryHandle('admin');
+                            console.log('✅ Carpeta del proyecto identificada por carpeta admin/');
+                        } catch {
+                            if (window.showNotification) {
+                                showNotification('⚠️ Asegúrate de seleccionar la carpeta raíz del proyecto (la que contiene config.json)', 'warning', 8000);
+                            }
+                        }
+                    }
+
+                    this.projectDirectoryHandle = dirHandle;
+
+                    if (window.showNotification) {
+                        showNotification('✅ Carpeta del proyecto configurada. ¡Ahora las imágenes se guardarán automáticamente!', 'success', 5000);
+                    }
+
+                    return dirHandle;
+                } catch (error) {
+                    if (error.name === 'AbortError') {
+                        throw new Error('Usuario canceló la selección de carpeta');
+                    }
+                    throw new Error('Error seleccionando carpeta: ' + error.message);
+                }
+            },
+
+            handleImageUploadManual(file, type, callback) {
+                // Generar nombre de archivo y ruta según el tipo
+                const timestamp = Date.now();
+                const extension = file.name.split('.').pop().toLowerCase();
+
+                let fileName, folderPath, relativePath;
+
+                switch(type) {
+                    case 'artistProfile':
+                        fileName = `profile_${timestamp}.${extension}`;
+                        folderPath = 'imagenes/artist';
+                        relativePath = `imagenes/artist/${fileName}`;
+                        break;
+                    case 'heroImage':
+                        fileName = `hero_${timestamp}.${extension}`;
+                        folderPath = 'imagenes/homepage';
+                        relativePath = `imagenes/homepage/${fileName}`;
+                        break;
+                    case 'logo':
+                        fileName = `logo_${timestamp}.${extension}`;
+                        folderPath = 'imagenes';
+                        relativePath = `imagenes/${fileName}`;
+                        break;
+                    default:
+                        fileName = `image_${timestamp}.${extension}`;
+                        folderPath = 'imagenes';
+                        relativePath = `imagenes/${fileName}`;
+                }
+
+                console.log(`📁 Imagen debe guardarse en: ${relativePath}`);
+
+                // Convertir a base64 para preview inmediato
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const base64 = e.target.result;
+
+                    // Guardar ruta relativa en configuración (no base64)
+                    const updates = {};
+                    if (type === 'artistProfile') {
+                        updates.images = {
+                            artistProfile: relativePath,
+                            artist: { profile: relativePath }
+                        };
+                    } else if (type === 'heroImage') {
+                        updates.images = {
+                            hero: relativePath,
+                            homepage: { hero: relativePath }
+                        };
+                    } else if (type === 'logo') {
+                        updates.theme = { logo: relativePath };
+                    }
+
+                    // Actualizar configuración con ruta relativa
+                    window.configUpdater.updateConfig(updates);
+                    window.configUpdater.saveConfig();
+
+                    console.log(`✅ Ruta de imagen ${type} guardada: ${relativePath}`);
+                    console.log(`📌 ACCIÓN REQUERIDA: Copia manualmente el archivo a la carpeta ${folderPath}/ con nombre ${fileName}`);
+
+                    // Mostrar instrucción al usuario
+                    this.showImageSaveInstruction(file.name, folderPath, fileName);
+
+                    if (callback) callback(base64); // Para preview inmediato
+                };
+                reader.readAsDataURL(file);
+
+                return relativePath;
+            },
+
+            showImageSaveInstruction(originalName, folderPath, newFileName) {
+                const instruction = `
+🔔 ACCIÓN REQUERIDA PARA GUARDAR IMAGEN:
+
+1️⃣ Copia el archivo "${originalName}" desde tu computadora
+2️⃣ Navega a la carpeta del proyecto: ${folderPath}/
+3️⃣ Pega el archivo y renómbralo exactamente como: ${newFileName}
+
+📂 RUTA COMPLETA: ${folderPath}/${newFileName}
+
+✅ CARPETAS DISPONIBLES:
+• imagenes/homepage/ - Para imágenes de la página principal
+• imagenes/artist/ - Para imágenes del perfil del artista
+• imagenes/ - Para logos y otros elementos
+
+⚠️ IMPORTANTE:
+- El nombre debe ser exacto para que funcione
+- Una vez copiado, recarga las páginas públicas para verlo
+- La configuración ya fue actualizada con la ruta correcta
+
+💡 TIP: Puedes usar URLs externas si prefieres no guardar archivos localmente.
+                `;
+
+                if (window.showNotification) {
+                    showNotification(instruction, 'info', 15000); // 15 segundos
+                } else {
+                    alert(instruction);
+                }
+
+                console.log(`📋 INSTRUCCIONES DETALLADAS:\n${instruction}`);
+
+                // También crear un modal más detallado
+                this.createImageInstructionModal(originalName, folderPath, newFileName);
+            },
+
+            createImageInstructionModal(originalName, folderPath, newFileName) {
+                // Crear modal con instrucciones detalladas
+                const modalId = 'imageInstructionModal';
+                let existingModal = document.getElementById(modalId);
+                if (existingModal) {
+                    existingModal.remove();
+                }
+
+                const modal = document.createElement('div');
+                modal.id = modalId;
+                modal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0,0,0,0.8);
+                    z-index: 10000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                `;
+
+                modal.innerHTML = `
+                    <div style="background: #1a1a1a; padding: 30px; border-radius: 12px; max-width: 600px; width: 100%; border: 2px solid #9535d4;">
+                        <h3 style="color: #9535d4; margin-top: 0; font-size: 1.5rem;">📂 Instrucciones para Guardar Imagen</h3>
+
+                        <div style="background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                            <h4 style="color: #E5C158; margin-top: 0;">🎯 Pasos a Seguir:</h4>
+                            <ol style="color: #ffffff; line-height: 1.6;">
+                                <li><strong>Localiza tu archivo:</strong> "${originalName}"</li>
+                                <li><strong>Navega a:</strong> <code style="background: #000; padding: 2px 6px; border-radius: 4px;">${folderPath}/</code></li>
+                                <li><strong>Copia y renombra a:</strong> <code style="background: #000; padding: 2px 6px; border-radius: 4px; color: #9535d4;">${newFileName}</code></li>
+                                <li><strong>Recarga las páginas</strong> públicas para ver el cambio</li>
+                            </ol>
+                        </div>
+
+                        <div style="background: #2a2a3a; padding: 15px; border-radius: 8px; border-left: 4px solid #9535d4; margin: 20px 0;">
+                            <p style="color: #ffffff; margin: 0; font-size: 0.9rem;">
+                                <strong>💡 Alternativa:</strong> Puedes usar URLs externas (https://...) en lugar de archivos locales si prefieres no gestionar archivos.
+                            </p>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 25px;">
+                            <button onclick="document.getElementById('${modalId}').remove()"
+                                style="background: #9535d4; color: white; border: none; padding: 12px 30px; border-radius: 6px; cursor: pointer; font-size: 1rem;">
+                                ✅ Entendido
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                document.body.appendChild(modal);
+
+                // Auto-cerrar después de 30 segundos
+                setTimeout(() => {
+                    if (document.getElementById(modalId)) {
+                        document.getElementById(modalId).remove();
+                    }
+                }, 30000);
+            }
+        };
+
+        // Clase ImageUploader completa
+        class ImageUploader {
+            constructor(containerId) {
+                this.containerId = containerId;
+                this.value = '';
+                this.file = null;
+                this.createUploader();
+            }
+
+            createUploader() {
+                const container = document.getElementById(this.containerId);
+                if (!container) return;
+
+                container.innerHTML = `
+                    <div class="image-upload-area">
+                        <!-- File Upload -->
+                        <input type="file" id="${this.containerId}_file" class="hidden" accept="image/*">
+                        <div class="upload-preview" id="${this.containerId}_preview">
+                            <div class="upload-placeholder">
+                                <svg class="w-12 h-12 text-admin-text-tertiary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                                <p class="text-admin-text-secondary text-sm">Selecciona archivo o ingresa URL</p>
+                                <p class="text-admin-text-tertiary text-xs mt-1">JPG, PNG, WebP (máx. 5MB)</p>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="upload-actions mt-3 flex gap-2">
+                            <button type="button" class="upload-btn-select btn-sm" onclick="document.getElementById('${this.containerId}_file').click()">
+                                📁 Archivo local
+                            </button>
+                            <button type="button" class="upload-btn-url btn-sm" onclick="window.imageUploaders['${this.containerId}'].toggleUrlInput()">
+                                🌐 URL
+                            </button>
+                            <button type="button" class="upload-btn-remove btn-sm" onclick="window.imageUploaders['${this.containerId}'].removeImage()">
+                                🗑️ Eliminar
+                            </button>
+                        </div>
+
+                        <!-- URL Input (hidden by default) -->
+                        <div class="url-input-area mt-3 hidden" id="${this.containerId}_urlArea">
+                            <input type="url" id="${this.containerId}_url" class="admin-input" placeholder="https://ejemplo.com/imagen.jpg">
+                            <div class="flex gap-2 mt-2">
+                                <button type="button" class="upload-btn-select btn-sm" onclick="window.imageUploaders['${this.containerId}'].loadFromUrl()">
+                                    ✅ Cargar URL
+                                </button>
+                                <button type="button" class="upload-btn-secondary btn-sm" onclick="window.imageUploaders['${this.containerId}'].hideUrlInput()">
+                                    ❌ Cancelar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Configurar event listeners
+                const fileInput = document.getElementById(`${this.containerId}_file`);
+                const preview = document.getElementById(`${this.containerId}_preview`);
+
+                fileInput.addEventListener('change', (e) => {
+                    this.handleFileSelect(e);
+                });
+
+                preview.addEventListener('click', () => {
+                    if (!this.value) {
+                        fileInput.click();
+                    }
+                });
+
+                // Registrar en global para acceso desde botones
+                if (!window.imageUploaders) window.imageUploaders = {};
+                window.imageUploaders[this.containerId] = this;
+
+                this.addStyles();
+            }
+
+            addStyles() {
+                if (document.getElementById('imageUploader-styles')) return;
+
+                const style = document.createElement('style');
+                style.id = 'imageUploader-styles';
+                style.textContent = `
+                    .image-upload-area {
+                        width: 100%;
+                    }
+                    .upload-preview {
+                        border: 2px dashed #444;
+                        border-radius: 8px;
+                        padding: 20px;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        background: #1a1a1a;
+                        min-height: 120px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .upload-preview:hover {
+                        border-color: #9535d4;
+                        background: #2a1a3a;
+                    }
+                    .upload-preview.has-image {
+                        padding: 0;
+                        border-color: #9535d4;
+                    }
+                    .upload-preview img {
+                        width: 100%;
+                        max-width: 300px;
+                        max-height: 200px;
+                        object-fit: cover;
+                        border-radius: 6px;
+                    }
+                    .upload-placeholder {
+                        width: 100%;
+                    }
+                    .upload-btn-select, .upload-btn-remove, .upload-btn-url, .upload-btn-secondary {
+                        background: #9535d4;
+                        color: white;
+                        padding: 8px 16px;
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        transition: all 0.3s ease;
+                    }
+                    .upload-btn-select:hover, .upload-btn-url:hover {
+                        background: #7c2db8;
+                        transform: translateY(-1px);
+                    }
+                    .upload-btn-remove {
+                        background: #dc3545;
+                    }
+                    .upload-btn-remove:hover {
+                        background: #c82333;
+                    }
+                    .upload-btn-secondary {
+                        background: #6c757d;
+                    }
+                    .upload-btn-secondary:hover {
+                        background: #5a6268;
+                    }
+                    .url-input-area.hidden {
+                        display: none;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+
+            async handleFileSelect(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                // Validar tipo
+                if (!file.type.startsWith('image/')) {
+                    this.showError('Por favor selecciona una imagen válida');
+                    return;
+                }
+
+                // Validar tamaño (5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    this.showError('La imagen debe ser menor a 5MB');
+                    return;
+                }
+
+                try {
+                    // Convertir a base64
+                    const base64 = await this.fileToBase64(file);
+                    this.file = file;
+                    this.value = base64;
+
+                    // Mostrar preview
+                    this.showPreview(base64);
+
+                    // Mostrar notificación de éxito
+                    this.showSuccess(`Imagen cargada: ${file.name}`);
+
+                } catch (error) {
+                    console.error('Error procesando imagen:', error);
+                    this.showError('Error procesando la imagen');
+                }
+            }
+
+            fileToBase64(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(file);
+                });
+            }
+
+            showPreview(imageSrc) {
+                const preview = document.getElementById(`${this.containerId}_preview`);
+                if (preview) {
+                    preview.innerHTML = `<img src="${imageSrc}" alt="Preview">`;
+                    preview.classList.add('has-image');
+                }
+            }
+
+            setInitialValue(value) {
+                this.value = value;
+                if (value) {
+                    this.showPreview(value);
+                }
+            }
+
+            getValue() {
+                return this.value;
+            }
+
+            setValue(value) {
+                this.value = value;
+                if (value) {
+                    this.showPreview(value);
+                } else {
+                    this.removeImage();
+                }
+            }
+
+            getFile() {
+                return this.file;
+            }
+
+            removeImage() {
+                this.value = '';
+                this.file = null;
+
+                const preview = document.getElementById(`${this.containerId}_preview`);
+                const fileInput = document.getElementById(`${this.containerId}_file`);
+
+                if (preview) {
+                    preview.innerHTML = `
+                        <div class="upload-placeholder">
+                            <svg class="w-12 h-12 text-admin-text-tertiary mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                            <p class="text-admin-text-secondary text-sm">Haz clic para seleccionar imagen</p>
+                            <p class="text-admin-text-tertiary text-xs mt-1">JPG, PNG, WebP (máx. 5MB)</p>
+                        </div>
+                    `;
+                    preview.classList.remove('has-image');
+                }
+
+                if (fileInput) {
+                    fileInput.value = '';
+                }
+
+                this.showSuccess('Imagen eliminada');
+            }
+
+            showError(message) {
+                if (window.showNotification) {
+                    showNotification(message, 'error');
+                } else {
+                    alert(message);
+                }
+            }
+
+            showSuccess(message) {
+                if (window.showNotification) {
+                    showNotification(message, 'success');
+                } else {
+                    console.log('✅', message);
+                }
+            }
+
+            // Métodos para manejar URLs
+            toggleUrlInput() {
+                const urlArea = document.getElementById(`${this.containerId}_urlArea`);
+                if (urlArea) {
+                    urlArea.classList.toggle('hidden');
+                    if (!urlArea.classList.contains('hidden')) {
+                        const urlInput = document.getElementById(`${this.containerId}_url`);
+                        if (urlInput) {
+                            urlInput.focus();
+                        }
+                    }
+                }
+            }
+
+            hideUrlInput() {
+                const urlArea = document.getElementById(`${this.containerId}_urlArea`);
+                if (urlArea) {
+                    urlArea.classList.add('hidden');
+                    // Limpiar input
+                    const urlInput = document.getElementById(`${this.containerId}_url`);
+                    if (urlInput) {
+                        urlInput.value = '';
+                    }
+                }
+            }
+
+            async loadFromUrl() {
+                const urlInput = document.getElementById(`${this.containerId}_url`);
+                if (!urlInput || !urlInput.value.trim()) {
+                    this.showError('Por favor ingresa una URL válida');
+                    return;
+                }
+
+                const url = urlInput.value.trim();
+
+                // Validar formato URL
+                try {
+                    new URL(url);
+                } catch {
+                    this.showError('URL no válida');
+                    return;
+                }
+
+                // Verificar si es una imagen
+                if (!this.isImageUrl(url)) {
+                    this.showError('La URL debe ser de una imagen (jpg, png, gif, webp)');
+                    return;
+                }
+
+                try {
+                    // Verificar que la imagen sea accesible
+                    await this.validateImageUrl(url);
+
+                    // Guardar URL
+                    this.value = url;
+                    this.file = null; // Reset file ya que usamos URL
+
+                    // Mostrar preview
+                    this.showPreview(url);
+
+                    // Ocultar input URL
+                    this.hideUrlInput();
+
+                    this.showSuccess('Imagen cargada desde URL');
+
+                } catch (error) {
+                    console.error('Error cargando imagen desde URL:', error);
+                    this.showError('No se pudo cargar la imagen desde la URL');
+                }
+            }
+
+            isImageUrl(url) {
+                const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'];
+                const urlLower = url.toLowerCase();
+                return imageExtensions.some(ext => urlLower.includes(ext)) ||
+                       url.includes('unsplash.com') ||
+                       url.includes('images.') ||
+                       url.startsWith('data:image/');
+            }
+
+            validateImageUrl(url) {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.onload = () => resolve();
+                    img.onerror = () => reject(new Error('Invalid image URL'));
+                    img.src = url;
+                });
+            }
+
+            // Método para establecer URL inicial
+            setUrlValue(url) {
+                const urlInput = document.getElementById(`${this.containerId}_url`);
+                if (urlInput) {
+                    urlInput.value = url;
+                }
+                this.value = url;
+                this.file = null;
+                if (url) {
+                    this.showPreview(url);
+                }
+            }
+        }
+
+        // No se requiere autenticación en el modo local
+        async function checkAuth() {
+            return true; // Siempre permitir acceso
+        }
+
+        let artistImageUploader;
+        let logoImageUploader;
+        let homepageHeroUploader;
+
+        async function loadPricingSettings() {
+            try {
+                const config = window.configUpdater.getConfig();
+                const pricing = config.pricing || {};
+
+                // Load currency settings
+                document.getElementById('currencySymbol').value = pricing.currency || '$';
+                document.getElementById('currencyName').value = pricing.currencyName || 'COP';
+
+                // Load small tattoo pricing
+                document.getElementById('smallPriceMin').value = pricing.small?.min || 350000;
+                document.getElementById('smallPriceMax').value = pricing.small?.max || 650000;
+                document.getElementById('smallDescription').value = pricing.small?.description || 'Diseños pequeños y minimalistas';
+
+                // Load medium tattoo pricing
+                document.getElementById('mediumPriceMin').value = pricing.medium?.min || 650000;
+                document.getElementById('mediumPriceMax').value = pricing.medium?.max || 1800000;
+                document.getElementById('mediumDescription').value = pricing.medium?.description || 'Tatuajes medianos con detalles';
+
+                // Load large tattoo pricing
+                document.getElementById('largePriceMin').value = pricing.large?.min || 1800000;
+                document.getElementById('largePriceMax').value = pricing.large?.max || '';
+                document.getElementById('largeDescription').value = pricing.large?.description || 'Proyectos grandes y complejos';
+
+                // Load hourly rate
+                document.getElementById('hourlyRate').value = pricing.hourly?.rate || 450000;
+                document.getElementById('hourlyDescription').value = pricing.hourly?.description || 'Para proyectos complejos por horas';
+
+                // Load touchup pricing
+                document.getElementById('touchupFreeDays').value = pricing.touchup?.free || 30;
+                document.getElementById('touchupPrice').value = pricing.touchup?.price || 220000;
+                document.getElementById('touchupDescription').value = pricing.touchup?.description || 'Primer retoque gratuito dentro de 30 días';
+
+                // Load deposit settings
+                document.getElementById('depositPercentage').value = pricing.deposit?.percentage || 30;
+                document.getElementById('depositDescription').value = pricing.deposit?.description || 'Depósito requerido para reservar fecha';
+
+                // Update preview
+                updatePricingPreview();
+
+                console.log('✅ Configuración de precios cargada:', pricing);
+            } catch (error) {
+                console.error('❌ Error loading pricing settings:', error);
+                showNotification('Error cargando configuración de precios', 'error');
+            }
+        }
+
+        function formatPricePreview(price) {
+            // Format Colombian pesos with dots as thousands separators
+            return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        }
+
+        function updatePricingPreview() {
+            const currency = document.getElementById('currencySymbol').value || '$';
+
+            // Small tattoos
+            const smallMin = parseInt(document.getElementById('smallPriceMin').value) || 350000;
+            const smallMax = parseInt(document.getElementById('smallPriceMax').value) || 650000;
+            document.getElementById('previewSmall').textContent = `${currency}${formatPricePreview(smallMin)} - ${currency}${formatPricePreview(smallMax)}`;
+
+            // Medium tattoos
+            const mediumMin = parseInt(document.getElementById('mediumPriceMin').value) || 650000;
+            const mediumMax = parseInt(document.getElementById('mediumPriceMax').value) || 1800000;
+            document.getElementById('previewMedium').textContent = `${currency}${formatPricePreview(mediumMin)} - ${currency}${formatPricePreview(mediumMax)}`;
+
+            // Large tattoos
+            const largeMin = parseInt(document.getElementById('largePriceMin').value) || 1800000;
+            const largePriceMax = document.getElementById('largePriceMax').value;
+            if (largePriceMax && parseInt(largePriceMax) > 0) {
+                document.getElementById('previewLarge').textContent = `${currency}${formatPricePreview(largeMin)} - ${currency}${formatPricePreview(parseInt(largePriceMax))}`;
+            } else {
+                document.getElementById('previewLarge').textContent = `${currency}${formatPricePreview(largeMin)}+`;
+            }
+
+            // Hourly rate
+            const hourlyRate = parseInt(document.getElementById('hourlyRate').value) || 450000;
+            document.getElementById('previewHourly').textContent = `${currency}${formatPricePreview(hourlyRate)}/hora`;
+
+            // Deposit
+            const depositPercentage = parseInt(document.getElementById('depositPercentage').value) || 30;
+            document.getElementById('previewDeposit').textContent = `${depositPercentage}%`;
+        }
+
+        async function loadSettings() {
+            try {
+                // Obtener configuración una sola vez
+                const config = window.configUpdater.getConfig();
+
+                const [artist, siteConfig, theme] = await Promise.all([
+                    localAPI.getArtist(),
+                    localAPI.getSiteConfig(),
+                    localAPI.getTheme()
+                ]);
+
+                // Initialize image uploaders
+                artistImageUploader = new ImageUploader('artistImageUploader');
+                logoImageUploader = new ImageUploader('logoImageUploader');
+                homepageHeroUploader = new ImageUploader('homepageHeroUploader');
+
+                // Artist data
+                document.getElementById('artistName').value = artist.name || '';
+                document.getElementById('artistTitle').value = artist.title || '';
+                document.getElementById('artistBio').value = artist.bio || '';
+                document.getElementById('artistBadge').value = artist.badge || '';
+
+                // Set image in uploader - buscar en la ubicación correcta
+                const profileImage = config.images?.artistProfile || config.images?.artist?.profile;
+                if (profileImage) {
+                    // Normalizar ruta para que funcione desde admin/
+                    const normalizedPath = profileImage.startsWith('imagenes/') ? `../${profileImage}` : profileImage;
+                    artistImageUploader.setInitialValue(normalizedPath);
+                    console.log('✅ Imagen de perfil cargada en uploader:', normalizedPath);
+                }
+
+                // Set logo in uploader
+                if (theme && theme.logo) {
+                    // Normalizar ruta para que funcione desde admin/
+                    const normalizedLogoPath = theme.logo.startsWith('imagenes/') ? `../${theme.logo}` : theme.logo;
+                    logoImageUploader.setInitialValue(normalizedLogoPath);
+                    console.log('✅ Logo cargado en uploader:', normalizedLogoPath);
+                }
+
+                // Site config data
+                document.getElementById('siteTitle').value = siteConfig.title || 'InkMaster Portfolio';
+                document.getElementById('siteTagline').value = siteConfig.tagline || 'Arte que vive contigo';
+                document.getElementById('siteDescription').value = siteConfig.description || 'Tatuajes personalizados de alta calidad';
+
+                // Homepage data
+                const homepageTexts = config.texts?.homepage || {};
+                document.getElementById('homepageTitle').value = homepageTexts.heroTitle || 'Arte que';
+                document.getElementById('homepageTitleAccent').value = homepageTexts.heroTitleAccent || 'Vive Contigo';
+                document.getElementById('homepageDescription').value = homepageTexts.heroDescription || 'Transformo visiones en arte permanente con precisión en cada línea.';
+
+                // Homepage hero image
+                const homepageImages = config.images || {};
+                if (homepageImages.hero) {
+                    // Normalizar ruta para que funcione desde admin/
+                    const normalizedHeroPath = homepageImages.hero.startsWith('imagenes/') ? `../${homepageImages.hero}` : homepageImages.hero;
+                    homepageHeroUploader.setInitialValue(normalizedHeroPath);
+                    console.log('✅ Imagen hero homepage cargada en uploader:', normalizedHeroPath);
+                }
+
+                // Contact data
+                document.getElementById('whatsapp').value = artist.whatsapp || '';
+                document.getElementById('email').value = artist.email || '';
+                document.getElementById('location').value = artist.location || '';
+
+                // Social media data
+                document.getElementById('instagram').value = artist.instagram || '';
+                document.getElementById('facebook').value = artist.facebook || '';
+                document.getElementById('tiktok').value = artist.tiktok || '';
+                document.getElementById('youtube').value = artist.youtube || '';
+
+                // Metrics data
+                document.getElementById('instagramFollowers').value = artist.instagramFollowers || 0;
+                document.getElementById('facebookFollowers').value = artist.facebookFollowers || 0;
+                document.getElementById('workHours').value = artist.workHours || 0;
+                document.getElementById('projects').value = artist.projects || 0;
+
+                // Stats data
+                document.getElementById('experience').value = artist.experience || 0;
+                document.getElementById('clients').value = artist.clients || 0;
+                document.getElementById('awards').value = artist.awards || 0;
+            } catch (error) {
+                console.error('Error loading settings:', error);
+                showNotification('Error cargando configuración', 'error');
+            }
+        }
+
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const text = document.getElementById('notificationText');
+
+            notification.className = `admin-notification ${type}`;
+            text.textContent = message;
+            notification.classList.add('show');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        async function exportData() {
+            try {
+                // Usar el método de exportación del localAPI
+                localAPI.exportConfig();
+                showNotification('Configuración exportada correctamente');
+            } catch (error) {
+                showNotification('Error exportando configuración', 'error');
+            }
+        }
+
+        function importData(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            localAPI.importConfig(file, (success, error) => {
+                if (success) {
+                    showNotification('Configuración importada correctamente');
+                    // Recargar la página para mostrar los nuevos datos
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showNotification('Error importando configuración: ' + (error?.message || 'Error desconocido'), 'error');
+                }
+            });
+        }
+
+        // Theme functions
+        async function loadTheme() {
+            try {
+                const theme = await localAPI.getTheme();
+                if (theme && theme.colors) {
+                    document.getElementById('primaryColor').value = theme.colors.primary || '#9535d4';
+                    document.getElementById('backgroundColor').value = theme.colors.background || '#000000';
+                    document.getElementById('surfaceColor').value = theme.colors.surface || '#262626';
+                    document.getElementById('textColor').value = theme.colors.textPrimary || '#FFFFFF';
+
+                    // Load logo URL if it exists and is a URL (not base64 data)
+                    if (theme.logo && theme.logo.startsWith('http')) {
+                        document.getElementById('logoUrl').value = theme.logo;
+                    } else if (theme.logo && logoImageUploader) {
+                        // If it's base64 data, load it in the image uploader
+                        logoImageUploader.setInitialValue(theme.logo);
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading theme:', error);
+            }
+        }
+
+        function previewTheme() {
+            const colors = {
+                primary: document.getElementById('primaryColor').value,
+                background: document.getElementById('backgroundColor').value,
+                surface: document.getElementById('surfaceColor').value,
+                textPrimary: document.getElementById('textColor').value
+            };
+
+            // Create preview theme data
+            const previewThemeData = {
+                name: 'InkMaster Custom Theme (Preview)',
+                colors: colors
+            };
+
+            // Update critical theme cache temporarily for preview
+            updateCriticalThemeCache(previewThemeData);
+
+            // Apply theme to admin panel using admin-specific CSS variables
+            applyAdminTheme(colors);
+
+            // Also apply to public API if available (for consistency)
+            if (window.publicAPI) {
+                publicAPI.applyTheme(previewThemeData);
+            }
+
+            showNotification('Vista previa aplicada. Guarda para hacer los cambios permanentes.');
+        }
+
+        function applyAdminTheme(colors) {
+            const root = document.documentElement;
+
+            // Validar estructura de colors
+            if (!colors) {
+                console.warn('⚠️ Colors no definido, usando valores por defecto');
+                colors = {
+                    primary: '#9535d4',
+                    background: '#0a0a0a',
+                    surface: '#1a1a1a',
+                    textPrimary: '#ffffff'
+                };
+            }
+
+            // Apply admin-specific CSS variables
+            root.style.setProperty('--admin-primary', colors.primary || '#9535d4');
+            root.style.setProperty('--admin-accent', colors.primary || '#9535d4');
+            root.style.setProperty('--admin-background', colors.background || '#0a0a0a');
+            root.style.setProperty('--admin-surface', colors.surface || '#1a1a1a');
+            root.style.setProperty('--admin-text-primary', colors.textPrimary || colors.text?.primary || '#ffffff');
+
+            // Also apply public page variables for consistency
+            root.style.setProperty('--color-accent', colors.primary || '#9535d4');
+            root.style.setProperty('--color-primary', colors.primary || '#9535d4');
+            root.style.setProperty('--color-background', colors.background || '#0a0a0a');
+            root.style.setProperty('--color-surface', colors.surface || '#1a1a1a');
+            root.style.setProperty('--color-text-primary', colors.textPrimary || colors.text?.primary || '#ffffff');
+
+            console.log('🎨 Admin theme applied:', colors);
+        }
+
+        // Update critical theme cache for instant loading
+        function updateCriticalThemeCache(themeData) {
+            try {
+                const CACHE_KEY = 'inkmaster_theme_cache';
+                const cacheData = {
+                    theme: themeData,
+                    timestamp: Date.now(),
+                    version: '1.0'
+                };
+                localStorage.setItem(CACHE_KEY, JSON.stringify(cacheData));
+                console.log('⚡ CRITICAL: Theme cache updated for instant loading');
+                console.log('🎨 CRITICAL: New theme colors:', themeData.colors);
+            } catch (error) {
+                console.error('❌ CRITICAL: Failed to update theme cache:', error);
+            }
+        }
+
+        async function resetTheme() {
+            try {
+                // Valores por defecto originales
+                const defaultTheme = {
+                    name: 'InkMaster Default Theme',
+                    colors: {
+                        primary: '#9535d4',
+                        background: '#000000',
+                        surface: '#262626',
+                        textPrimary: '#FFFFFF'
+                    },
+                    fonts: {
+                        primary: "Inter, system-ui, sans-serif",
+                        secondary: "Georgia, serif",
+                        headline: "Poppins, sans-serif"
+                    },
+                    logo: null, // Sin logo personalizado
+                    favicon: null,
+                    customCSS: null
+                };
+
+                // Restaurar valores en el formulario
+                document.getElementById('primaryColor').value = defaultTheme.colors.primary;
+                document.getElementById('backgroundColor').value = defaultTheme.colors.background;
+                document.getElementById('surfaceColor').value = defaultTheme.colors.surface;
+                document.getElementById('textColor').value = defaultTheme.colors.textPrimary;
+
+                // Reset logo URL input
+                document.getElementById('logoUrl').value = '';
+
+                // Reset logo uploader
+                if (logoImageUploader) {
+                    logoImageUploader.setValue('');
+                }
+
+                // Guardar tema por defecto en configuración local
+                localAPI.updateTheme(defaultTheme);
+
+                // Update critical theme cache with default theme
+                updateCriticalThemeCache(defaultTheme);
+
+                // Apply default theme to admin panel immediately
+                applyAdminTheme(defaultTheme.colors);
+
+                // Also apply to public API if available
+                if (window.publicAPI) {
+                    try {
+                        publicAPI.applyTheme(defaultTheme);
+                        console.log('✅ Tema por defecto aplicado al sistema público');
+                    } catch (themeError) {
+                        console.warn('⚠️ Error aplicando tema por defecto al sistema público:', themeError);
+                    }
+                }
+
+                // También restaurar configuración del sitio a valores por defecto
+                const defaultSiteConfig = {
+                    siteTitle: 'InkMaster Portfolio',
+                    siteTagline: 'Arte que vive contigo',
+                    siteDescription: 'Tatuajes personalizados de alta calidad con precisión en cada línea'
+                };
+
+                // Actualizar campos del sitio en el formulario
+                document.getElementById('siteTitle').value = defaultSiteConfig.siteTitle;
+                document.getElementById('siteTagline').value = defaultSiteConfig.siteTagline;
+                document.getElementById('siteDescription').value = defaultSiteConfig.siteDescription;
+
+                // Guardar configuración del sitio por defecto
+                localAPI.updateSiteConfig(defaultSiteConfig);
+
+                showNotification('🎨 Tema y configuración restaurados completamente a valores por defecto');
+            } catch (error) {
+                console.error('Error resetting theme:', error);
+                showNotification('Error restaurando tema', 'error');
+            }
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('show');
+        }
+
+        // Ya no se requiere función de logout en el modo local
+
+        // Form handlers
+        document.getElementById('artistForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Preparar datos del artista
+            const artistData = {
+                artist: {
+                    name: document.getElementById('artistName').value,
+                    title: document.getElementById('artistTitle').value,
+                    bio: document.getElementById('artistBio').value,
+                    badge: document.getElementById('artistBadge').value,
+                    experience: parseInt(document.getElementById('experience').value) || 0,
+                    clients: parseInt(document.getElementById('clients').value) || 0,
+                    awards: parseInt(document.getElementById('awards').value) || 0
+                }
+            };
+
+            // Guardar imagen de perfil si se ha subido
+            if (artistImageUploader && artistImageUploader.getValue()) {
+                const imageValue = artistImageUploader.getValue();
+                const imageFile = artistImageUploader.getFile();
+
+                if (imageFile) {
+                    // Es un archivo local - generar ruta relativa
+                    const timestamp = Date.now();
+                    const extension = imageFile.name.split('.').pop().toLowerCase();
+                    const fileName = `profile_${timestamp}.${extension}`;
+                    const relativePath = `imagenes/artist/${fileName}`;
+
+                    artistData.images = {
+                        artistProfile: relativePath,
+                        artist: { profile: relativePath }
+                    };
+
+                    // Mostrar instrucciones al usuario
+                    localAPI.handleImageUpload(imageFile, 'artistProfile', (imagePath) => {
+                        console.log('✅ Imagen de perfil guardada:', imagePath);
+                    });
+                } else if (imageValue && imageValue.startsWith('http')) {
+                    // Es una URL externa
+                    artistData.images = {
+                        artistProfile: imageValue,
+                        artist: { profile: imageValue }
+                    };
+                    console.log('✅ URL de imagen de perfil guardada:', imageValue);
+                }
+            }
+
+            try {
+                console.log('💾 Guardando datos del artista:', artistData);
+                window.configUpdater.updateConfig(artistData);
+                await window.configUpdater.saveConfig();
+                showNotification('Perfil actualizado - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando perfil:', error);
+                showNotification('Error actualizando perfil', 'error');
+            }
+        });
+
+        document.getElementById('homepageForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Preparar datos de homepage
+            const homepageData = {
+                texts: {
+                    homepage: {
+                        heroTitle: document.getElementById('homepageTitle').value,
+                        heroTitleAccent: document.getElementById('homepageTitleAccent').value,
+                        heroDescription: document.getElementById('homepageDescription').value
+                    }
+                }
+            };
+
+            // Guardar imagen hero de homepage si se ha subido
+            if (homepageHeroUploader && homepageHeroUploader.getValue()) {
+                const imageValue = homepageHeroUploader.getValue();
+                const imageFile = homepageHeroUploader.getFile();
+
+                if (imageFile) {
+                    // Es un archivo local - generar ruta relativa
+                    const timestamp = Date.now();
+                    const extension = imageFile.name.split('.').pop().toLowerCase();
+                    const fileName = `hero_${timestamp}.${extension}`;
+                    const relativePath = `imagenes/homepage/${fileName}`;
+
+                    homepageData.images = {
+                        hero: relativePath,
+                        homepage: { hero: relativePath }
+                    };
+
+                    // Mostrar instrucciones al usuario
+                    localAPI.handleImageUpload(imageFile, 'heroImage', (imagePath) => {
+                        console.log('✅ Imagen hero homepage guardada:', imagePath);
+                    });
+                } else if (imageValue && imageValue.startsWith('http')) {
+                    // Es una URL externa
+                    homepageData.images = {
+                        hero: imageValue,
+                        homepage: { hero: imageValue }
+                    };
+                    console.log('✅ URL de imagen hero homepage guardada:', imageValue);
+                }
+            }
+
+            try {
+                console.log('💾 Guardando datos de homepage:', homepageData);
+                window.configUpdater.updateConfig(homepageData);
+                await window.configUpdater.saveConfig();
+                showNotification('Homepage actualizada - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando homepage:', error);
+                showNotification('Error guardando homepage', 'error');
+            }
+        });
+
+        document.getElementById('siteForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const siteData = {
+                site: {
+                    title: document.getElementById('siteTitle').value,
+                    tagline: document.getElementById('siteTagline').value,
+                    description: document.getElementById('siteDescription').value
+                }
+            };
+
+            try {
+                console.log('💾 Guardando configuración del sitio:', siteData);
+                window.configUpdater.updateConfig(siteData);
+                await window.configUpdater.saveConfig();
+                showNotification('Configuración del sitio guardada - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando sitio:', error);
+                showNotification('Error guardando configuración del sitio', 'error');
+            }
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const contactData = {
+                artist: {
+                    whatsapp: document.getElementById('whatsapp').value,
+                    email: document.getElementById('email').value,
+                    location: document.getElementById('location').value
+                }
+            };
+
+            try {
+                console.log('💾 Guardando contacto:', contactData);
+                window.configUpdater.updateConfig(contactData);
+                await window.configUpdater.saveConfig();
+                showNotification('Información de contacto guardada - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando contacto:', error);
+                showNotification('Error guardando contacto', 'error');
+            }
+        });
+
+        document.getElementById('socialForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const socialData = {
+                artist: {
+                    instagram: document.getElementById('instagram').value,
+                    facebook: document.getElementById('facebook').value,
+                    tiktok: document.getElementById('tiktok').value,
+                    youtube: document.getElementById('youtube').value
+                }
+            };
+
+            try {
+                console.log('💾 Guardando redes sociales:', socialData);
+                window.configUpdater.updateConfig(socialData);
+                await window.configUpdater.saveConfig();
+                showNotification('Redes sociales actualizadas - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando redes:', error);
+                showNotification('Error guardando redes sociales', 'error');
+            }
+        });
+
+        document.getElementById('metricsForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const metricsData = {
+                artist: {
+                    instagramFollowers: parseInt(document.getElementById('instagramFollowers').value) || 0,
+                    facebookFollowers: parseInt(document.getElementById('facebookFollowers').value) || 0,
+                    workHours: parseInt(document.getElementById('workHours').value) || 0,
+                    projects: parseInt(document.getElementById('projects').value) || 0
+                }
+            };
+
+            try {
+                console.log('💾 Guardando métricas:', metricsData);
+                window.configUpdater.updateConfig(metricsData);
+                await window.configUpdater.saveConfig();
+                showNotification('Métricas actualizadas - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando métricas:', error);
+                showNotification('Error guardando métricas', 'error');
+            }
+        });
+
+        document.getElementById('statsForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const statsData = {
+                artist: {
+                    experience: parseInt(document.getElementById('experience').value) || 0,
+                    clients: parseInt(document.getElementById('clients').value) || 0,
+                    awards: parseInt(document.getElementById('awards').value) || 0
+                }
+            };
+
+            try {
+                console.log('💾 Guardando estadísticas:', statsData);
+                window.configUpdater.updateConfig(statsData);
+                await window.configUpdater.saveConfig();
+                showNotification('Estadísticas actualizadas - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando estadísticas:', error);
+                showNotification('Error actualizando estadísticas', 'error');
+            }
+        });
+
+        document.getElementById('pricingForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const pricingData = {
+                pricing: {
+                    currency: document.getElementById('currencySymbol').value || '$',
+                    currencyName: document.getElementById('currencyName').value || 'COP',
+                    small: {
+                        min: parseInt(document.getElementById('smallPriceMin').value) || 350000,
+                        max: parseInt(document.getElementById('smallPriceMax').value) || 650000,
+                        description: document.getElementById('smallDescription').value || 'Diseños pequeños y minimalistas'
+                    },
+                    medium: {
+                        min: parseInt(document.getElementById('mediumPriceMin').value) || 650000,
+                        max: parseInt(document.getElementById('mediumPriceMax').value) || 1800000,
+                        description: document.getElementById('mediumDescription').value || 'Tatuajes medianos con detalles'
+                    },
+                    large: {
+                        min: parseInt(document.getElementById('largePriceMin').value) || 1800000,
+                        max: document.getElementById('largePriceMax').value ? parseInt(document.getElementById('largePriceMax').value) : null,
+                        description: document.getElementById('largeDescription').value || 'Proyectos grandes y complejos'
+                    },
+                    hourly: {
+                        rate: parseInt(document.getElementById('hourlyRate').value) || 450000,
+                        description: document.getElementById('hourlyDescription').value || 'Para proyectos complejos por horas'
+                    },
+                    touchup: {
+                        free: parseInt(document.getElementById('touchupFreeDays').value) || 30,
+                        price: parseInt(document.getElementById('touchupPrice').value) || 220000,
+                        description: document.getElementById('touchupDescription').value || 'Primer retoque gratuito dentro de 30 días'
+                    },
+                    deposit: {
+                        percentage: parseInt(document.getElementById('depositPercentage').value) || 30,
+                        description: document.getElementById('depositDescription').value || 'Depósito requerido para reservar fecha'
+                    }
+                }
+            };
+
+            try {
+                console.log('💾 Guardando configuración de precios:', pricingData);
+                window.configUpdater.updateConfig(pricingData);
+                await window.configUpdater.saveConfig();
+                showNotification('Configuración de precios guardada - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando precios:', error);
+                showNotification('Error guardando configuración de precios', 'error');
+            }
+        });
+
+        document.getElementById('themeForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Get logo from URL input or image uploader (URL takes priority)
+            const logoUrl = document.getElementById('logoUrl').value.trim();
+            const uploadedLogo = logoImageUploader ? logoImageUploader.getValue() : '';
+            const logoFile = logoImageUploader ? logoImageUploader.getFile() : null;
+
+            let finalLogo = logoUrl;
+
+            const themeData = {
+                theme: {
+                    colors: {
+                        primary: document.getElementById('primaryColor').value,
+                        accent: document.getElementById('primaryColor').value,
+                        background: document.getElementById('backgroundColor').value,
+                        surface: document.getElementById('surfaceColor').value,
+                        textPrimary: document.getElementById('textColor').value
+                    }
+                }
+            };
+
+            // Handle logo image
+            if (logoFile) {
+                // Es un archivo local - generar ruta relativa
+                const timestamp = Date.now();
+                const extension = logoFile.name.split('.').pop().toLowerCase();
+                const fileName = `logo_${timestamp}.${extension}`;
+                const relativePath = `imagenes/${fileName}`;
+
+                themeData.theme.logo = relativePath;
+
+                // Mostrar instrucciones al usuario
+                localAPI.handleImageUpload(logoFile, 'logo', (imagePath) => {
+                    console.log('✅ Logo guardado:', imagePath);
+                });
+            } else if (logoUrl && logoUrl.startsWith('http')) {
+                // Es una URL externa
+                themeData.theme.logo = logoUrl;
+            } else {
+                themeData.theme.logo = null;
+            }
+
+            try {
+                console.log('💾 Guardando tema:', themeData);
+                window.configUpdater.updateConfig(themeData);
+                await window.configUpdater.saveConfig();
+
+                // Apply theme immediately to admin panel
+                applyAdminTheme(themeData.theme.colors);
+
+                // Update critical theme cache for instant loading
+                updateCriticalThemeCache(themeData.theme);
+
+                showNotification('Tema guardado - config.json descargado');
+            } catch (error) {
+                console.error('❌ Error guardando tema:', error);
+                showNotification('Error guardando tema', 'error');
+            }
+        });
+
+        // Save All Configuration Function
+        async function saveAllConfiguration() {
+            try {
+                showNotification('💾 Recopilando todos los datos...', 'info', 2000);
+
+                // Collect all form data
+                const completeConfig = {
+                    // Site configuration
+                    site: {
+                        title: document.getElementById('siteTitle').value || 'InkMaster Portfolio',
+                        tagline: document.getElementById('siteTagline').value || 'Arte que vive contigo',
+                        description: document.getElementById('siteDescription').value || 'Tatuajes personalizados de alta calidad'
+                    },
+
+                    // Artist data
+                    artist: {
+                        name: document.getElementById('artistName').value || '',
+                        title: document.getElementById('artistTitle').value || '',
+                        bio: document.getElementById('artistBio').value || '',
+                        badge: document.getElementById('artistBadge').value || '',
+                        experience: parseInt(document.getElementById('experience').value) || 0,
+                        clients: parseInt(document.getElementById('clients').value) || 0,
+                        awards: parseInt(document.getElementById('awards').value) || 0,
+                        whatsapp: document.getElementById('whatsapp').value || '',
+                        email: document.getElementById('email').value || '',
+                        location: document.getElementById('location').value || '',
+                        instagram: document.getElementById('instagram').value || '',
+                        facebook: document.getElementById('facebook').value || '',
+                        tiktok: document.getElementById('tiktok').value || '',
+                        youtube: document.getElementById('youtube').value || '',
+                        instagramFollowers: parseInt(document.getElementById('instagramFollowers').value) || 0,
+                        facebookFollowers: parseInt(document.getElementById('facebookFollowers').value) || 0,
+                        workHours: parseInt(document.getElementById('workHours').value) || 0,
+                        projects: parseInt(document.getElementById('projects').value) || 0
+                    },
+
+                    // Homepage texts
+                    texts: {
+                        homepage: {
+                            heroTitle: document.getElementById('homepageTitle').value || 'Arte que',
+                            heroTitleAccent: document.getElementById('homepageTitleAccent').value || 'Vive Contigo',
+                            heroDescription: document.getElementById('homepageDescription').value || 'Transformo visiones en arte permanente con precisión en cada línea.'
+                        }
+                    },
+
+                    // Pricing configuration
+                    pricing: {
+                        currency: document.getElementById('currencySymbol').value || '$',
+                        currencyName: document.getElementById('currencyName').value || 'COP',
+                        small: {
+                            min: parseInt(document.getElementById('smallPriceMin').value) || 350000,
+                            max: parseInt(document.getElementById('smallPriceMax').value) || 650000,
+                            description: document.getElementById('smallDescription').value || 'Diseños pequeños y minimalistas'
+                        },
+                        medium: {
+                            min: parseInt(document.getElementById('mediumPriceMin').value) || 650000,
+                            max: parseInt(document.getElementById('mediumPriceMax').value) || 1800000,
+                            description: document.getElementById('mediumDescription').value || 'Tatuajes medianos con detalles'
+                        },
+                        large: {
+                            min: parseInt(document.getElementById('largePriceMin').value) || 1800000,
+                            max: document.getElementById('largePriceMax').value ? parseInt(document.getElementById('largePriceMax').value) : null,
+                            description: document.getElementById('largeDescription').value || 'Proyectos grandes y complejos'
+                        },
+                        hourly: {
+                            rate: parseInt(document.getElementById('hourlyRate').value) || 450000,
+                            description: document.getElementById('hourlyDescription').value || 'Para proyectos complejos por horas'
+                        },
+                        touchup: {
+                            free: parseInt(document.getElementById('touchupFreeDays').value) || 30,
+                            price: parseInt(document.getElementById('touchupPrice').value) || 220000,
+                            description: document.getElementById('touchupDescription').value || 'Primer retoque gratuito dentro de 30 días'
+                        },
+                        deposit: {
+                            percentage: parseInt(document.getElementById('depositPercentage').value) || 30,
+                            description: document.getElementById('depositDescription').value || 'Depósito requerido para reservar fecha'
+                        }
+                    },
+
+                    // Theme configuration
+                    theme: {
+                        colors: {
+                            primary: document.getElementById('primaryColor').value || '#9535d4',
+                            accent: document.getElementById('primaryColor').value || '#9535d4',
+                            background: document.getElementById('backgroundColor').value || '#000000',
+                            surface: document.getElementById('surfaceColor').value || '#1a1a1a',
+                            textPrimary: document.getElementById('textColor').value || '#ffffff'
+                        }
+                    }
+                };
+
+                // Handle images
+                const imageUpdates = {};
+
+                // Artist profile image
+                if (artistImageUploader && artistImageUploader.getValue()) {
+                    const imageValue = artistImageUploader.getValue();
+                    const imageFile = artistImageUploader.getFile();
+
+                    if (imageFile) {
+                        const timestamp = Date.now();
+                        const extension = imageFile.name.split('.').pop().toLowerCase();
+                        const fileName = `profile_${timestamp}.${extension}`;
+                        const relativePath = `imagenes/artist/${fileName}`;
+
+                        imageUpdates.artistProfile = relativePath;
+                        completeConfig.images = {
+                            ...completeConfig.images,
+                            artistProfile: relativePath,
+                            artist: { profile: relativePath }
+                        };
+
+                        // Handle image upload
+                        localAPI.handleImageUpload(imageFile, 'artistProfile', (imagePath) => {
+                            console.log('✅ Imagen de perfil guardada:', imagePath);
+                        });
+                    } else if (imageValue && imageValue.startsWith('http')) {
+                        completeConfig.images = {
+                            ...completeConfig.images,
+                            artistProfile: imageValue,
+                            artist: { profile: imageValue }
+                        };
+                    }
+                }
+
+                // Homepage hero image
+                if (homepageHeroUploader && homepageHeroUploader.getValue()) {
+                    const imageValue = homepageHeroUploader.getValue();
+                    const imageFile = homepageHeroUploader.getFile();
+
+                    if (imageFile) {
+                        const timestamp = Date.now();
+                        const extension = imageFile.name.split('.').pop().toLowerCase();
+                        const fileName = `hero_${timestamp}.${extension}`;
+                        const relativePath = `imagenes/homepage/${fileName}`;
+
+                        completeConfig.images = {
+                            ...completeConfig.images,
+                            hero: relativePath,
+                            homepage: { hero: relativePath }
+                        };
+
+                        localAPI.handleImageUpload(imageFile, 'heroImage', (imagePath) => {
+                            console.log('✅ Imagen hero homepage guardada:', imagePath);
+                        });
+                    } else if (imageValue && imageValue.startsWith('http')) {
+                        completeConfig.images = {
+                            ...completeConfig.images,
+                            hero: imageValue,
+                            homepage: { hero: imageValue }
+                        };
+                    }
+                }
+
+                // Logo
+                const logoUrl = document.getElementById('logoUrl').value.trim();
+                const logoFile = logoImageUploader ? logoImageUploader.getFile() : null;
+
+                if (logoFile) {
+                    const timestamp = Date.now();
+                    const extension = logoFile.name.split('.').pop().toLowerCase();
+                    const fileName = `logo_${timestamp}.${extension}`;
+                    const relativePath = `imagenes/${fileName}`;
+
+                    completeConfig.theme.logo = relativePath;
+
+                    localAPI.handleImageUpload(logoFile, 'logo', (imagePath) => {
+                        console.log('✅ Logo guardado:', imagePath);
+                    });
+                } else if (logoUrl && logoUrl.startsWith('http')) {
+                    completeConfig.theme.logo = logoUrl;
+                } else {
+                    completeConfig.theme.logo = null;
+                }
+
+                // Save everything at once
+                console.log('💾 Guardando configuración completa:', completeConfig);
+                window.configUpdater.updateConfig(completeConfig);
+                await window.configUpdater.saveConfig();
+
+                // Apply theme immediately
+                if (completeConfig.theme && completeConfig.theme.colors) {
+                    applyAdminTheme(completeConfig.theme.colors);
+                    updateCriticalThemeCache(completeConfig.theme);
+                }
+
+                // Update pricing preview
+                updatePricingPreview();
+
+                const successMessage = `
+                ✅ CONFIGURACIÓN GUARDADA EXITOSAMENTE
+
+                📊 Datos actualizados:
+                • Perfil del artista y estadísticas
+                • Configuración del sitio y homepage
+                • Información de contacto y redes sociales
+                • Configuración completa de precios
+                • Tema y colores personalizados
+
+                🎯 Próximos pasos:
+                • El config.json se ha descargado automáticamente
+                • Reemplaza el archivo en tu proyecto
+                • Recarga las páginas públicas para ver los cambios
+                `;
+
+                showNotification(successMessage, 'success', 8000);
+
+            } catch (error) {
+                console.error('❌ Error guardando configuración completa:', error);
+                showNotification('Error guardando la configuración completa: ' + error.message, 'error');
+            }
+        }
+
+        // Preview All Changes Function
+        function previewAllChanges() {
+            const changes = [];
+
+            // Check site configuration
+            const siteTitle = document.getElementById('siteTitle').value;
+            const siteTagline = document.getElementById('siteTagline').value;
+            if (siteTitle) changes.push(`📄 Título del sitio: "${siteTitle}"`);
+            if (siteTagline) changes.push(`🏷️ Eslogan: "${siteTagline}"`);
+
+            // Check artist data
+            const artistName = document.getElementById('artistName').value;
+            const experience = document.getElementById('experience').value;
+            const clients = document.getElementById('clients').value;
+            if (artistName) changes.push(`👨‍🎨 Nombre del artista: "${artistName}"`);
+            if (experience) changes.push(`📅 Experiencia: ${experience} años`);
+            if (clients) changes.push(`👥 Clientes: ${clients}`);
+
+            // Check pricing
+            const currency = document.getElementById('currencySymbol').value || '$';
+            const smallMin = document.getElementById('smallPriceMin').value;
+            const mediumMin = document.getElementById('mediumPriceMin').value;
+            if (smallMin) changes.push(`💰 Tatuajes pequeños desde: ${currency}${formatPricePreview(parseInt(smallMin))}`);
+            if (mediumMin) changes.push(`💰 Tatuajes medianos desde: ${currency}${formatPricePreview(parseInt(mediumMin))}`);
+
+            // Check theme
+            const primaryColor = document.getElementById('primaryColor').value;
+            if (primaryColor !== '#9535d4') changes.push(`🎨 Color primario: ${primaryColor}`);
+
+            // Check images
+            if (artistImageUploader && artistImageUploader.getValue()) {
+                changes.push(`🖼️ Imagen de perfil del artista actualizada`);
+            }
+            if (homepageHeroUploader && homepageHeroUploader.getValue()) {
+                changes.push(`🖼️ Imagen hero de homepage actualizada`);
+            }
+
+            const previewMessage = changes.length > 0
+                ? `
+                👁️ VISTA PREVIA DE CAMBIOS
+
+                Se guardarán los siguientes cambios:
+
+                ${changes.join('\n')}
+
+                ${changes.length > 8 ? '\n... y más configuraciones.' : ''}
+
+                ✅ ¿Continuar con el guardado?
+                `
+                : `
+                ℹ️ NO HAY CAMBIOS DETECTADOS
+
+                Parece que no has modificado ninguna configuración,
+                o los valores son idénticos a los valores por defecto.
+
+                Si has hecho cambios, puedes guardar de todas formas.
+                `;
+
+            if (confirm(previewMessage)) {
+                saveAllConfiguration();
+            }
+        }
+
+        // Verificar si File System Access API está disponible
+        async function checkFileSystemSupport() {
+            const isSupported = 'showDirectoryPicker' in window;
+
+            if (isSupported) {
+                console.log('✅ File System Access API soportada');
+                showFileSystemStatusNotification(true);
+            } else {
+                console.log('⚠️ File System Access API no soportada');
+                showFileSystemStatusNotification(false);
+            }
+
+            return isSupported;
+        }
+
+        function showFileSystemStatusNotification(isSupported) {
+            const message = isSupported
+                ? `✅ ¡Guardado automático disponible!
+
+Al subir tu primera imagen, se te pedirá seleccionar la carpeta del proyecto una sola vez.
+Después, todas las imágenes y config.json se guardarán automáticamente.`
+                : `⚠️ Guardado automático no disponible en este navegador.
+
+Para guardado automático, usa:
+• Google Chrome (versión 86+)
+• Microsoft Edge (versión 86+)
+• Otros navegadores basados en Chromium
+
+Mientras tanto, se usarán instrucciones manuales.`;
+
+            if (window.showNotification) {
+                showNotification(message, isSupported ? 'success' : 'info', isSupported ? 5000 : 8000);
+            } else {
+                console.log(message);
+            }
+        }
+
+        // Información sobre carpetas (se crean automáticamente)
+        function showImageFolderInfo() {
+            const folderInfo = `
+📂 CARPETAS QUE SE CREAN AUTOMÁTICAMENTE:
+
+✅ ESTRUCTURA AUTOMÁTICA:
+• imagenes/ - Logos y elementos generales
+• imagenes/homepage/ - Imágenes de la página principal
+• imagenes/artist/ - Imágenes del perfil del artista
+• imagenes/portafolio/ - Imágenes de trabajos del portafolio
+• imagenes/gallery/ - Galería de imágenes adicionales
+
+🚀 FUNCIONAMIENTO AUTOMÁTICO:
+1. Primera vez: Selecciona la carpeta del proyecto
+2. Las subcarpetas se crean automáticamente si no existen
+3. Imágenes se guardan automáticamente con nombres únicos
+4. config.json se actualiza automáticamente
+
+💡 TIP: Solo necesitas seleccionar la carpeta del proyecto una vez
+            `;
+
+            console.log(folderInfo);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            const isAuth = await checkAuth();
+            if (!isAuth) return;
+
+            // Verificar soporte de File System Access API
+            await checkFileSystemSupport();
+
+            // Información sobre carpetas (se crearán automáticamente si es necesario)
+            showImageFolderInfo();
+
+            console.log('🔄 Esperando a que ConfigUpdater termine de cargar...');
+
+            // CRÍTICO: Esperar a que configUpdater termine de cargar primero
+            await window.configUpdater.loadConfig();
+            console.log('✅ ConfigUpdater listo - ahora cargar formularios');
+
+            await Promise.all([
+                loadSettings(),
+                loadTheme(),
+                loadPricingSettings(),
+                checkInitialFolderStatus()
+            ]);
+
+            // Setup real-time pricing preview updates
+            const pricingInputs = [
+                'currencySymbol', 'smallPriceMin', 'smallPriceMax', 'mediumPriceMin', 'mediumPriceMax',
+                'largePriceMin', 'largePriceMax', 'hourlyRate', 'depositPercentage'
+            ];
+
+            pricingInputs.forEach(inputId => {
+                const input = document.getElementById(inputId);
+                if (input) {
+                    input.addEventListener('input', updatePricingPreview);
+                    input.addEventListener('blur', updatePricingPreview);
+                }
+            });
+
+            console.log('✅ Eventos de vista previa de precios configurados');
+
+            // Apply current theme to admin panel on page load
+            try {
+                const theme = await localAPI.getTheme();
+                if (theme && theme.colors) {
+                    // Apply admin theme
+                    applyAdminTheme(theme.colors);
+                    console.log('✅ Tema aplicado al panel admin al cargar');
+
+                    // Also apply to public API if available
+                    if (window.publicAPI) {
+                        publicAPI.applyTheme(theme);
+                        console.log('✅ Tema aplicado al sistema público al cargar');
+                    }
+                }
+            } catch (themeError) {
+                console.warn('⚠️ Error aplicando tema al cargar:', themeError);
+            }
+        });
+
+        // Auto-recarga cuando la ventana vuelve al foco (detectar cambios externos)
+        let lastConfigCheck = Date.now();
+        window.addEventListener('focus', async () => {
+            // Solo revisar si han pasado más de 2 segundos desde la última verificación
+            if (Date.now() - lastConfigCheck > 2000) {
+                console.log('🔄 Ventana enfocada - verificando cambios en config.json...');
+                try {
+                    const response = await fetch('../config.json?_=' + Date.now());
+                    if (response.ok) {
+                        const newConfig = await response.json();
+                        const currentConfig = window.configUpdater.getConfig();
+
+                        // Comparar si hay cambios (básico)
+                        if (JSON.stringify(newConfig) !== JSON.stringify(currentConfig)) {
+                            console.log('📡 ¡Cambios detectados en config.json!');
+                            await window.reloadSettings();
+                            showNotification('🔄 Config.json actualizado automáticamente', 'success');
+                        }
+                    }
+                } catch (error) {
+                    console.log('ℹ️ No se pudo verificar cambios automáticos:', error.message);
+                }
+                lastConfigCheck = Date.now();
+            }
+        });
+
+        // También agregar función global fácil de usar
+        window.forceReload = window.reloadSettings;
+
+        // Función simplificada para recargar configuración
+        window.reloadSettings = async function() {
+            try {
+                console.log('🔄 Recargando configuración desde config.json...');
+
+                // PRIMERO: Recargar desde config.json
+                await window.configUpdater.loadConfig();
+                console.log('✅ Config.json recargado');
+
+                // SEGUNDO: Actualizar todos los formularios
+                await loadSettings();
+                await loadTheme();
+                await loadPricingSettings();
+
+
+                showNotification('✅ Configuración recargada correctamente desde config.json');
+            } catch (error) {
+                console.error('❌ Error recargando configuración:', error);
+                showNotification('Error recargando configuración: ' + error.message, 'error');
+            }
+        };
+
+        // Función para configurar carpeta del proyecto manualmente
+        window.configureProjectFolder = async function() {
+            try {
+                // Forzar nueva selección de carpeta
+                window.localAPI.projectDirectoryHandle = null;
+
+                const directory = await window.localAPI.getProjectDirectory();
+
+                if (directory) {
+                    updateFolderStatus(true, directory.name);
+                    showNotification('✅ Carpeta configurada correctamente. ¡Ahora las imágenes y config.json se guardarán automáticamente!', 'success', 5000);
+                }
+            } catch (error) {
+                console.error('Error configurando carpeta:', error);
+                updateFolderStatus(false);
+
+                if (error.message.includes('Usuario canceló')) {
+                    showNotification('Configuración de carpeta cancelada', 'info');
+                } else {
+                    showNotification('Error configurando carpeta: ' + error.message, 'error');
+                }
+            }
+        };
+
+        // Función para actualizar el estado de la carpeta
+        function updateFolderStatus(isConfigured, folderName = '') {
+            const statusElement = document.getElementById('folderStatus');
+
+            if (isConfigured) {
+                statusElement.innerHTML = `
+                    <div class="flex items-center gap-2 text-green-400">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Configurado: ${folderName}</span>
+                    </div>
+                `;
+            } else {
+                statusElement.innerHTML = `
+                    <div class="flex items-center gap-2 text-admin-text-tertiary">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                        <span>No configurado - Click para seleccionar carpeta</span>
+                    </div>
+                `;
+            }
+        }
+
+        // Función para verificar estado inicial de la carpeta
+        async function checkInitialFolderStatus() {
+            if ('showDirectoryPicker' in window && window.localAPI.projectDirectoryHandle) {
+                try {
+                    // Verificar si aún tenemos permisos
+                    if (await window.localAPI.projectDirectoryHandle.queryPermission({ mode: 'readwrite' }) === 'granted') {
+                        updateFolderStatus(true, window.localAPI.projectDirectoryHandle.name);
+                        return;
+                    }
+                } catch (error) {
+                    // Permisos expirados
+                }
+            }
+
+            updateFolderStatus(false);
+        }
+    </script>
+
+    <!-- Sistema de Configuración Integrado -->
+    <script src="js/image-manager.js"></script>
+    <!-- Sistemas duplicados removidos para evitar conflictos -->
+</body>
+</html>

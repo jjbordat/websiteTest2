@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información de Reservas - InkMaster Portfolio. Proceso de consulta, precios transparentes y programación de citas para tu próximo tatuaje.">
+    <meta name="keywords" content="reservas tatuajes, consulta tatuador, precios tatuajes, agendar cita tatuaje, InkMaster">
+    <title>Información de Reservas - InkMaster Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/dynamic-links.js"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+
+    <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finkmaster2554back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+    <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+</head>
+<body class="bg-background text-text-primary">
+<!-- Navigation Header -->
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-custom bg-primary/90 border-b border-border">
+    <nav class="container-custom py-4" role="navigation" aria-label="Navegación principal">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="homepage.html" class="flex items-center gap-3 group" aria-label="InkMaster Portfolio - Inicio">
+                <svg class="w-10 h-10 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="url(#goldGradient)" stroke-width="2"/>
+                    <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="url(#goldGradient)"/>
+                    <defs>
+                        <linearGradient id="goldGradient" x1="8" y1="8" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#740DB5"/>
+                            <stop offset="50%" stop-color="#8B2AC0"/>
+                            <stop offset="100%" stop-color="#740DB5"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Inicio</a>
+                <a href="portfolio_gallery.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Portafolio</a>
+                <a href="artist_profile.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Artista</a>
+                <a href="category_explorer.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Estilos</a>
+                <a href="booking_information.html" class="text-accent font-medium hover:text-accent-light transition-colors duration-300">Reservas</a>
+                <a href="contact.html" class="btn btn-primary">Contactar</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="lg:hidden p-2 text-accent hover:text-accent-light transition-colors duration-300" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="fixed inset-0 bg-primary/95 backdrop-blur-custom z-50 lg:hidden transform translate-x-full transition-transform duration-300" role="dialog" aria-modal="true">
+            <div class="flex flex-col h-full">
+                <div class="flex items-center justify-between p-4 border-b border-border">
+                    <span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+                    <button id="closeMobileMenu" class="p-2 text-accent hover:text-accent-light transition-colors duration-300" aria-label="Cerrar menú">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-2 p-6" role="navigation" aria-label="Navegación móvil">
+                    <a href="homepage.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Inicio</a>
+                    <a href="portfolio_gallery.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Portafolio</a>
+                    <a href="artist_profile.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Artista</a>
+                    <a href="category_explorer.html" class="text-text-primary text-lg py-3 px-4 rounded-lg hover:bg-surface transition-colors duration-300">Estilos</a>
+                    <a href="booking_information.html" class="text-accent text-lg font-medium py-3 px-4 rounded-lg bg-accent/10 border border-accent/20">Reservas</a>
+                    <a href="contact.html" class="btn btn-primary mt-4">Contactar</a>
+                </nav>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-16 md:pt-40 md:pb-20" role="banner">
+    <div class="container-custom">
+        <div class="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
+            <div class="inline-flex items-center gap-2 badge badge-gold mb-4">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                </svg>
+                <span>Proceso Transparente y Profesional</span>
+            </div>
+            <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Información de
+                <span class="text-gradient-gold block">Reservas</span>
+            </h1>
+            <p class="text-text-secondary text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                Todo lo que necesitas saber sobre el proceso de consulta, precios y programación de tu próximo tatuaje. Transparencia y profesionalismo en cada paso.
+            </p>
+            <div class="h-1 w-24 bg-gradient-to-r from-accent to-transparent mx-auto"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Process Section -->
+<section class="section bg-gradient-to-b from-background to-secondary" id="booking-process">
+    <div class="container-custom">
+        <div class="text-center mb-16 space-y-4 animate-fade-in">
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                Proceso de <span class="text-gradient-gold">Reserva</span>
+            </h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                Un viaje paso a paso desde tu primera consulta hasta el día de tu sesión
+            </p>
+            <div class="divider max-w-xs mx-auto"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+            <!-- Step 1 -->
+            <div class="card p-8 mb-6 animate-slide-up">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="relative inline-flex">
+                            <div class="absolute inset-0 bg-accent/20 rounded-full blur-xl"></div>
+                            <div class="relative w-16 h-16 bg-surface border-2 border-accent rounded-full flex items-center justify-center">
+                                <span class="font-headline text-2xl font-bold text-accent">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 space-y-3">
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Consulta Inicial Gratuita</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Comienza con una conversación sin compromiso donde discutimos tu visión, estilo preferido, ubicación del tatuaje y cualquier pregunta que tengas. Puedes contactarme por WhatsApp, formulario web o visitar el estudio.
+                        </p>
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <span class="badge badge-gold">30-45 minutos</span>
+                            <span class="badge badge-gold">Sin costo</span>
+                            <span class="badge badge-gold">Presencial o virtual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="card p-8 mb-6 animate-slide-up" style="animation-delay: 0.1s;">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="relative inline-flex">
+                            <div class="absolute inset-0 bg-accent/20 rounded-full blur-xl"></div>
+                            <div class="relative w-16 h-16 bg-surface border-2 border-accent rounded-full flex items-center justify-center">
+                                <span class="font-headline text-2xl font-bold text-accent">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 space-y-3">
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Diseño Personalizado</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Creo un diseño único basado en tu visión y mis recomendaciones profesionales. Incluye hasta 2 revisiones para asegurar que el diseño sea exactamente lo que deseas. Recibirás bocetos digitales para tu aprobación.
+                        </p>
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <span class="badge badge-gold">7-14 días</span>
+                            <span class="badge badge-gold">2 revisiones incluidas</span>
+                            <span class="badge badge-gold">Bocetos digitales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="card p-8 mb-6 animate-slide-up" style="animation-delay: 0.2s;">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="relative inline-flex">
+                            <div class="absolute inset-0 bg-accent/20 rounded-full blur-xl"></div>
+                            <div class="relative w-16 h-16 bg-surface border-2 border-accent rounded-full flex items-center justify-center">
+                                <span class="font-headline text-2xl font-bold text-accent">3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 space-y-3">
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Confirmación y Depósito</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Una vez aprobado el diseño, se requiere un depósito del 30% para reservar tu fecha. Este depósito es no reembolsable pero se aplica al costo total del tatuaje. Aceptamos transferencia bancaria o efectivo.
+                        </p>
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <span class="badge badge-gold">30% depósito</span>
+                            <span class="badge badge-gold">No reembolsable</span>
+                            <span class="badge badge-gold">Reserva tu fecha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="card p-8 animate-slide-up" style="animation-delay: 0.3s;">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="relative inline-flex">
+                            <div class="absolute inset-0 bg-accent/20 rounded-full blur-xl"></div>
+                            <div class="relative w-16 h-16 bg-surface border-2 border-accent rounded-full flex items-center justify-center">
+                                <span class="font-headline text-2xl font-bold text-accent">4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 space-y-3">
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Día de la Sesión</h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            Llega 10 minutos antes para completar el papeleo. Revisaremos el diseño final, colocaremos el stencil y comenzaremos el trabajo. Incluye descansos según sea necesario. El pago final se realiza al completar la sesión.
+                        </p>
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <span class="badge badge-gold">Llegar 10 min antes</span>
+                            <span class="badge badge-gold">Descansos incluidos</span>
+                            <span class="badge badge-gold">Pago al finalizar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="section" id="pricing">
+    <div class="container-custom">
+        <div class="text-center mb-16 space-y-4 animate-fade-in">
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                Precios <span class="text-gradient-gold">Transparentes</span>
+            </h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                Inversión justa por arte de calidad que durará toda la vida
+            </p>
+            <div class="divider max-w-xs mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Pricing Card 1 -->
+            <div class="card card-hover p-8 space-y-6 animate-scale-in">
+                <div class="space-y-2">
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary">Tatuajes Pequeños</h3>
+                    <p class="text-text-tertiary text-sm">Hasta 5cm x 5cm</p>
+                </div>
+                <div class="space-y-1">
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-headline text-4xl font-bold text-accent" data-price-small-min>$350.000</span>
+                        <span class="text-text-tertiary" data-price-small-max>- $650.000</span>
+                    </div>
+                    <p class="text-text-secondary text-sm">Precio mínimo del estudio</p>
+                </div>
+                <div class="divider"></div>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Diseño personalizado incluido</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Consulta gratuita</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Instrucciones de cuidado</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Retoque gratuito (30 días)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pricing Card 2 -->
+            <div class="card card-gold p-8 space-y-6 animate-scale-in relative overflow-hidden" style="animation-delay: 0.1s;">
+                <div class="absolute top-0 right-0 bg-accent text-primary text-xs font-semibold px-3 py-1 rounded-bl-lg">
+                    MÁS POPULAR
+                </div>
+                <div class="space-y-2">
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary">Tatuajes Medianos</h3>
+                    <p class="text-text-tertiary text-sm">5cm x 5cm hasta 15cm x 15cm</p>
+                </div>
+                <div class="space-y-1">
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-headline text-4xl font-bold text-accent" data-price-medium-min>$650.000</span>
+                        <span class="text-text-tertiary" data-price-medium-max>- $1.800.000</span>
+                    </div>
+                    <p class="text-text-secondary text-sm">Precio según complejidad</p>
+                </div>
+                <div class="divider"></div>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Todo lo anterior incluido</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Hasta 2 revisiones de diseño</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Sesión de 2-4 horas</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Seguimiento post-sesión</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pricing Card 3 -->
+            <div class="card card-hover p-8 space-y-6 animate-scale-in" style="animation-delay: 0.2s;">
+                <div class="space-y-2">
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary">Tatuajes Grandes</h3>
+                    <p class="text-text-tertiary text-sm">Más de 15cm x 15cm</p>
+                </div>
+                <div class="space-y-1">
+                    <div class="flex items-baseline gap-2">
+                        <span class="font-headline text-4xl font-bold text-accent" data-price-large-min>$1.800.000</span>
+                        <span class="text-text-tertiary">+</span>
+                    </div>
+                    <p class="text-text-secondary text-sm">Presupuesto personalizado</p>
+                </div>
+                <div class="divider"></div>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Todo lo anterior incluido</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Múltiples sesiones disponibles</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Plan de pago flexible</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm">Prioridad en agenda</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Additional Pricing Info -->
+        <div class="max-w-4xl mx-auto mt-12">
+            <div class="card p-8 space-y-6">
+                <h3 class="font-headline text-2xl font-semibold text-text-primary text-center">Información Adicional de Precios</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Tarifa por Hora</h4>
+                                <p class="text-text-secondary text-sm" data-hourly-description>Para proyectos complejos: <span data-price-hourly>$450.000</span>/hora. Estimación detallada en consulta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Cover-ups</h4>
+                                <p class="text-text-secondary text-sm">Precio según complejidad. Consulta gratuita para evaluar viabilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Retoques</h4>
+                                <p class="text-text-secondary text-sm" data-touchup-description>Primer retoque gratuito dentro de <span data-touchup-free-days>30</span> días. Posteriores: <span data-price-touchup>$220.000</span> mínimo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-1">Métodos de Pago</h4>
+                                <p class="text-text-secondary text-sm">Efectivo, transferencia bancaria. No se aceptan tarjetas de crédito.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Price Calculator Section -->
+<section class="section bg-gradient-to-b from-background to-secondary" id="calculator">
+    <div class="container-custom">
+        <div class="text-center mb-16 space-y-4 animate-fade-in">
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                Calculadora de <span class="text-gradient-gold">Presupuesto</span>
+            </h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                Obtén una estimación aproximada del costo de tu tatuaje
+            </p>
+            <div class="divider max-w-xs mx-auto"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="card p-8 md:p-12 space-y-8">
+                <form id="priceCalculator" class="space-y-6">
+                    <!-- Size Selection -->
+                    <div class="space-y-3">
+                        <label class="block text-text-primary font-semibold mb-3">Tamaño del Tatuaje</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="size" value="small" class="peer sr-only" checked>
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Pequeño</div>
+                                    <div class="text-text-tertiary text-sm">Hasta 5x5cm</div>
+                                    <div class="text-accent font-semibold mt-2" data-calc-price-small>$350.000 - $650.000</div>
+                                </div>
+                            </label>
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="size" value="medium" class="peer sr-only">
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Mediano</div>
+                                    <div class="text-text-tertiary text-sm">5x5cm - 15x15cm</div>
+                                    <div class="text-accent font-semibold mt-2" data-calc-price-medium>$650.000 - $1.800.000</div>
+                                </div>
+                            </label>
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="size" value="large" class="peer sr-only">
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Grande</div>
+                                    <div class="text-text-tertiary text-sm">Más de 15x15cm</div>
+                                    <div class="text-accent font-semibold mt-2" data-calc-price-large>$1.800.000+</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Complexity Selection -->
+                    <div class="space-y-3">
+                        <label class="block text-text-primary font-semibold mb-3">Complejidad del Diseño</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="complexity" value="simple" class="peer sr-only" checked>
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Simple</div>
+                                    <div class="text-text-tertiary text-sm">Líneas básicas</div>
+                                </div>
+                            </label>
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="complexity" value="moderate" class="peer sr-only">
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Moderado</div>
+                                    <div class="text-text-tertiary text-sm">Detalles medios</div>
+                                </div>
+                            </label>
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="complexity" value="complex" class="peer sr-only">
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Complejo</div>
+                                    <div class="text-text-tertiary text-sm">Alta complejidad</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="space-y-3">
+                        <label class="block text-text-primary font-semibold mb-3">Color</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="color" value="blackgray" class="peer sr-only" checked>
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">Blanco y Negro</div>
+                                    <div class="text-text-tertiary text-sm">Precio estándar</div>
+                                </div>
+                            </label>
+                            <label class="relative cursor-pointer">
+                                <input type="radio" name="color" value="color" class="peer sr-only">
+                                <div class="card p-4 text-center border-2 border-border peer-checked:border-accent peer-checked:bg-accent/10 transition-all duration-300">
+                                    <div class="font-semibold text-text-primary mb-1">A Color</div>
+                                    <div class="text-text-tertiary text-sm">+20% adicional</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Estimated Price Display -->
+                    <div class="bg-surface-light rounded-lg p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-text-secondary">Estimación Aproximada:</span>
+                            <span id="estimatedPrice" class="font-headline text-3xl font-bold text-accent">$350.000 - $650.000</span>
+                        </div>
+                        <p class="text-text-tertiary text-sm text-center">
+                            * Esta es una estimación aproximada. El precio final se determinará en la consulta personal según las especificaciones exactas de tu diseño.
+                        </p>
+                    </div>
+
+                    <button type="button" onclick="window.location.href='contact.html'" class="btn btn-primary w-full glow-gold group">
+                        <span>Solicitar Consulta Gratuita</span>
+                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Calendar Section -->
+<section class="section" id="availability">
+    <div class="container-custom">
+        <div class="text-center mb-16 space-y-4 animate-fade-in">
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                Disponibilidad <span class="text-gradient-gold">Actual</span>
+            </h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                Próximas fechas disponibles para nuevas reservas
+            </p>
+            <div class="divider max-w-xs mx-auto"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Calendar Display -->
+                <div class="card p-8 space-y-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Enero 2025</h3>
+                        <div class="flex items-center gap-2">
+                            <button class="p-2 hover:bg-surface-light rounded-lg transition-colors duration-300" aria-label="Mes anterior">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button class="p-2 hover:bg-surface-light rounded-lg transition-colors duration-300" aria-label="Mes siguiente">
+                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Calendar Grid -->
+                    <div class="grid grid-cols-7 gap-2">
+                        <!-- Day Headers -->
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">L</div>
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">M</div>
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">X</div>
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">J</div>
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">V</div>
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">S</div>
+                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">D</div>
+
+                        <!-- Calendar Days -->
+                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">30</div>
+                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">31</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">1</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">2</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">3</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">4</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">5</div>
+
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">6</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">7</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">8</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">9</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">10</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">11</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">12</div>
+
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">13</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">14</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">15</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">16</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">17</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">18</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">19</div>
+
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">20</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">21</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">22</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">23</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">24</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">25</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">26</div>
+
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">27</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">28</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">29</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">30</div>
+                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">31</div>
+                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">1</div>
+                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">2</div>
+                    </div>
+
+                    <div class="flex items-center gap-4 pt-4 border-t border-border">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 bg-accent/20 border border-accent rounded"></div>
+                            <span class="text-text-secondary text-sm">Disponible</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 bg-surface-light rounded"></div>
+                            <span class="text-text-secondary text-sm">Reservado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Appointments -->
+                <div class="space-y-6">
+                    <h3 class="font-headline text-2xl font-semibold text-text-primary">Próximas Fechas Disponibles</h3>
+
+                    <!-- Appointment Card 1 -->
+                    <div class="card p-6 space-y-4 hover:border-accent transition-all duration-300 border border-border">
+                        <div class="flex items-start justify-between">
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                    <span class="font-semibold text-text-primary">Miércoles, 08/01/2025</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-text-secondary text-sm">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>10:00 - 14:00</span>
+                                </div>
+                            </div>
+                            <span class="badge badge-gold">4 horas</span>
+                        </div>
+                        <button onclick="window.location.href='contact.html'" class="btn btn-outline w-full group">
+                            <span>Reservar Esta Fecha</span>
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Appointment Card 2 -->
+                    <div class="card p-6 space-y-4 hover:border-accent transition-all duration-300 border border-border">
+                        <div class="flex items-start justify-between">
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                    </svg>
+                                    <span class="font-semibold text-text-primary">Miércoles, 15/01/2025</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-text-secondary text-sm">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>15:00 - 19:00</span>
+                                </div>
+                            </div>
+                            <span class="badge badge-gold">4 horas</span>
+                        </div>
+                        <button onclick="window.location.href='contact.html'" class="btn btn-outline w-full group">
+                            <span>Reservar Esta Fecha</span>
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Info Box -->
+                    <div class="bg-accent/10 border border-accent/20 rounded-lg p-6 space-y-3">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div class="space-y-2">
+                                <h4 class="font-semibold text-text-primary">Nota Importante</h4>
+                                <p class="text-text-secondary text-sm leading-relaxed">
+                                    Las fechas mostradas son orientativas. La disponibilidad exacta se confirmará durante la consulta inicial. Se recomienda reservar con al menos 2-3 semanas de anticipación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section bg-gradient-to-b from-background to-secondary" id="faq">
+    <div class="container-custom">
+        <div class="text-center mb-16 space-y-4 animate-fade-in">
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                Preguntas <span class="text-gradient-gold">Frecuentes</span>
+            </h2>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
+                Respuestas a las dudas más comunes sobre el proceso de reserva
+            </p>
+            <div class="divider max-w-xs mx-auto"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="card overflow-hidden">
+                <button class="faq-button w-full p-6 text-left flex items-center justify-between hover:bg-surface-light transition-colors duration-300" aria-expanded="false">
+                    <span class="font-semibold text-text-primary pr-8">¿Cuánto tiempo de anticipación debo reservar?</span>
+                    <svg class="w-6 h-6 text-accent flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-text-secondary leading-relaxed">
+                        Se recomienda reservar con al menos 2-3 semanas de anticipación para tatuajes pequeños y medianos. Para proyectos grandes o complejos, es mejor planificar con 4-6 semanas de antelación. Esto permite tiempo suficiente para el diseño personalizado y las revisiones necesarias.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="card overflow-hidden">
+                <button class="faq-button w-full p-6 text-left flex items-center justify-between hover:bg-surface-light transition-colors duration-300" aria-expanded="false">
+                    <span class="font-semibold text-text-primary pr-8">¿Qué pasa si necesito cancelar o reprogramar?</span>
+                    <svg class="w-6 h-6 text-accent flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-text-secondary leading-relaxed">
+                        Si necesitas cancelar o reprogramar, por favor avísame con al menos 48 horas de anticipación. Las cancelaciones con menos de 48 horas de aviso resultarán en la pérdida del depósito. Las reprogramaciones con aviso adecuado pueden mantener el depósito para una nueva fecha, sujeto a disponibilidad.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="card overflow-hidden">
+                <button class="faq-button w-full p-6 text-left flex items-center justify-between hover:bg-surface-light transition-colors duration-300" aria-expanded="false">
+                    <span class="font-semibold text-text-primary pr-8">¿Puedo traer mi propio diseño?</span>
+                    <svg class="w-6 h-6 text-accent flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-text-secondary leading-relaxed">
+                        Sí, puedes traer referencias o ideas de diseño. Sin embargo, siempre adapto los diseños para asegurar que funcionen bien como tatuaje y se ajusten a tu anatomía. Esto garantiza el mejor resultado posible y la longevidad del tatuaje. Durante la consulta, discutiremos cómo adaptar tu visión de manera óptima.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="card overflow-hidden">
+                <button class="faq-button w-full p-6 text-left flex items-center justify-between hover:bg-surface-light transition-colors duration-300" aria-expanded="false">
+                    <span class="font-semibold text-text-primary pr-8">¿Qué debo hacer antes de mi cita?</span>
+                    <svg class="w-6 h-6 text-accent flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-text-secondary leading-relaxed">
+                        Asegúrate de dormir bien la noche anterior, comer una comida completa antes de la cita, y mantenerte hidratado. Evita el alcohol 24 horas antes. Usa ropa cómoda que permita fácil acceso al área del tatuaje. Trae una identificación válida (debes ser mayor de 18 años) y cualquier referencia adicional que quieras discutir.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="card overflow-hidden">
+                <button class="faq-button w-full p-6 text-left flex items-center justify-between hover:bg-surface-light transition-colors duration-300" aria-expanded="false">
+                    <span class="font-semibold text-text-primary pr-8">¿Ofrecen planes de pago para tatuajes grandes?</span>
+                    <svg class="w-6 h-6 text-accent flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-text-secondary leading-relaxed">
+                        Sí, para proyectos grandes que requieren múltiples sesiones, ofrecemos planes de pago flexibles. Después del depósito inicial del 30%, puedes pagar por sesión o establecer un plan de pagos personalizado. Discutiremos las opciones durante la consulta inicial para encontrar lo que mejor funcione para tu presupuesto.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="card overflow-hidden">
+                <button class="faq-button w-full p-6 text-left flex items-center justify-between hover:bg-surface-light transition-colors duration-300" aria-expanded="false">
+                    <span class="font-semibold text-text-primary pr-8">¿Cuánto dura una sesión típica?</span>
+                    <svg class="w-6 h-6 text-accent flex-shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </button>
+                <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-text-secondary leading-relaxed">
+                        Las sesiones varían según el tamaño y complejidad del tatuaje. Los tatuajes pequeños pueden tomar 1-2 horas, los medianos 2-4 horas, y los grandes pueden requerir sesiones de 4-6 horas o múltiples sesiones. Siempre incluimos descansos según sea necesario para tu comodidad. Durante la consulta, te daré una estimación más precisa del tiempo necesario.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section">
+    <div class="container-custom">
+        <div class="card card-gold p-12 md:p-16 text-center space-y-8 relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-5">
+                <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                    </pattern>
+                    <rect width="100" height="100" fill="url(#grid)"/>
+                </svg>
+            </div>
+
+            <div class="relative z-10 space-y-6">
+                <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
+                    ¿Listo para <span class="text-gradient-gold">Comenzar?</span>
+                </h2>
+                <p class="text-text-secondary text-lg md:text-xl max-w-2xl mx-auto">
+                    Agenda tu consulta gratuita hoy y comencemos a dar vida a tu visión. El proceso es simple, transparente y profesional de principio a fin.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                    <a href="contact.html" class="btn btn-primary glow-gold group">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span>Contactar por WhatsApp</span>
+                    </a>
+                    <a href="portfolio_gallery.html" class="btn btn-outline group">
+                        <span>Ver Portafolio</span>
+                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary border-t border-border">
+    <div class="container-custom py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <!-- Brand Column -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" stroke="url(#goldGradientFooter)" stroke-width="2"/>
+                        <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="url(#goldGradientFooter)"/>
+                        <defs>
+                            <linearGradient id="goldGradientFooter" x1="8" y1="8" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#740DB5"/>
+                                <stop offset="50%" stop-color="#8B2AC0"/>
+                                <stop offset="100%" stop-color="#740DB5"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+                </div>
+                <p class="text-text-secondary text-sm">
+                    Arte que vive contigo. Transformando visiones en obras maestras permanentes con precisión en cada línea.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="space-y-4">
+                <h3 class="font-headline text-lg font-semibold text-text-primary">Enlaces Rápidos</h3>
+                <nav class="flex flex-col gap-2" role="navigation" aria-label="Enlaces del pie de página">
+                    <a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Inicio</a>
+                    <a href="portfolio_gallery.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Portafolio</a>
+                    <a href="artist_profile.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Sobre el Artista</a>
+                    <a href="category_explorer.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Estilos</a>
+                </nav>
+            </div>
+
+            <!-- Services -->
+            <div class="space-y-4">
+                <h3 class="font-headline text-lg font-semibold text-text-primary">Servicios</h3>
+                <nav class="flex flex-col gap-2" role="navigation" aria-label="Servicios">
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Consultas</a>
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Diseños Personalizados</a>
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Cover-ups</a>
+                    <a href="booking_information.html" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Retoques</a>
+                </nav>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-4">
+                <h3 class="font-headline text-lg font-semibold text-text-primary">Contacto</h3>
+                <div class="flex flex-col gap-3">
+                    <a href="contact.html" class="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors duration-300 text-sm">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="contact.html" class="flex items-center gap-2 text-text-secondary hover:text-accent transition-colors duration-300 text-sm">
+                        <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8">
+            <p class="text-text-tertiary text-sm">
+                © 2025 InkMaster Portfolio. Todos los derechos reservados.
+            </p>
+            <div class="flex items-center gap-6">
+                <a href="javascript:void(0)" class="text-text-tertiary hover:text-accent transition-colors duration-300 text-sm">Política de Privacidad</a>
+                <a href="javascript:void(0)" class="text-text-tertiary hover:text-accent transition-colors duration-300 text-sm">Términos de Servicio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="contact.html" class="fixed bottom-6 right-6 w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-gold-lg hover:scale-110 transition-transform duration-300 z-50 glow-gold" aria-label="Contactar por WhatsApp">
+    <svg class="w-7 h-7 text-primary" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    });
+
+    closeMobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Price Calculator
+    const priceCalculator = document.getElementById('priceCalculator');
+    const estimatedPrice = document.getElementById('estimatedPrice');
+
+    // Global pricing configuration
+    let pricingConfig = null;
+
+    // Load pricing configuration from config.json
+    async function loadPricingConfig() {
+        try {
+            console.log('💰 Cargando configuración de precios desde config.json...');
+
+            const response = await fetch('../config.json?' + new Date().getTime());
+            if (!response.ok) {
+                throw new Error('No se pudo cargar config.json');
+            }
+
+            const config = await response.json();
+            pricingConfig = config.pricing || {};
+
+            console.log('✅ Configuración de precios cargada:', pricingConfig);
+
+            // Update all static prices in the page
+            updateStaticPrices();
+
+            // Update calculator with initial prices
+            calculatePrice();
+
+        } catch (error) {
+            console.error('❌ Error cargando configuración de precios:', error);
+            // Use fallback prices if config fails
+            pricingConfig = {
+                currency: '$',
+                small: { min: 350000, max: 650000 },
+                medium: { min: 650000, max: 1800000 },
+                large: { min: 1800000, max: null },
+                hourly: { rate: 450000 },
+                touchup: { free: 30, price: 220000 },
+                deposit: { percentage: 30 }
+            };
+            updateStaticPrices();
+            calculatePrice();
+        }
+    }
+
+    function updateStaticPrices() {
+        if (!pricingConfig) return;
+
+        const currency = pricingConfig.currency || '$';
+
+        // Update small size prices
+        const smallMin = document.querySelector('[data-price-small-min]');
+        const smallMax = document.querySelector('[data-price-small-max]');
+        if (smallMin && pricingConfig.small) {
+            smallMin.textContent = `${currency}${formatPrice(pricingConfig.small.min)}`;
+        }
+        if (smallMax && pricingConfig.small) {
+            smallMax.textContent = `- ${currency}${formatPrice(pricingConfig.small.max)}`;
+        }
+
+        // Update medium size prices
+        const mediumMin = document.querySelector('[data-price-medium-min]');
+        const mediumMax = document.querySelector('[data-price-medium-max]');
+        if (mediumMin && pricingConfig.medium) {
+            mediumMin.textContent = `${currency}${formatPrice(pricingConfig.medium.min)}`;
+        }
+        if (mediumMax && pricingConfig.medium) {
+            mediumMax.textContent = `- ${currency}${formatPrice(pricingConfig.medium.max)}`;
+        }
+
+        // Update large size prices
+        const largeMin = document.querySelector('[data-price-large-min]');
+        if (largeMin && pricingConfig.large) {
+            largeMin.textContent = `${currency}${formatPrice(pricingConfig.large.min)}`;
+        }
+
+        // Update hourly rate
+        const hourlyRate = document.querySelector('[data-price-hourly]');
+        if (hourlyRate && pricingConfig.hourly) {
+            hourlyRate.textContent = `${currency}${formatPrice(pricingConfig.hourly.rate)}`;
+        }
+
+        // Update touchup prices
+        const touchupPrice = document.querySelector('[data-price-touchup]');
+        const touchupDays = document.querySelector('[data-touchup-free-days]');
+        if (touchupPrice && pricingConfig.touchup) {
+            touchupPrice.textContent = `${currency}${formatPrice(pricingConfig.touchup.price)}`;
+        }
+        if (touchupDays && pricingConfig.touchup) {
+            touchupDays.textContent = pricingConfig.touchup.free;
+        }
+
+        // Update calculator static prices
+        const calcSmall = document.querySelector('[data-calc-price-small]');
+        const calcMedium = document.querySelector('[data-calc-price-medium]');
+        const calcLarge = document.querySelector('[data-calc-price-large]');
+
+        if (calcSmall && pricingConfig.small) {
+            calcSmall.textContent = `${currency}${formatPrice(pricingConfig.small.min)} - ${currency}${formatPrice(pricingConfig.small.max)}`;
+        }
+        if (calcMedium && pricingConfig.medium) {
+            calcMedium.textContent = `${currency}${formatPrice(pricingConfig.medium.min)} - ${currency}${formatPrice(pricingConfig.medium.max)}`;
+        }
+        if (calcLarge && pricingConfig.large) {
+            calcLarge.textContent = `${currency}${formatPrice(pricingConfig.large.min)}+`;
+        }
+
+        console.log('✅ Precios estáticos actualizados');
+    }
+
+    function formatPrice(price) {
+        // Format Colombian pesos with dots as thousands separators
+        return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    }
+
+    function calculatePrice() {
+        if (!pricingConfig) return;
+
+        const sizeElement = document.querySelector('input[name="size"]:checked');
+        const complexityElement = document.querySelector('input[name="complexity"]:checked');
+        const colorElement = document.querySelector('input[name="color"]:checked');
+
+        if (!sizeElement) return; // No size selected yet
+
+        const size = sizeElement.value;
+        const complexity = complexityElement?.value || 'simple';
+        const color = colorElement?.value || 'blackwork';
+
+        let baseMin = 0;
+        let baseMax = 0;
+        const currency = pricingConfig.currency || '$';
+
+        // Base price by size from config
+        if (size === 'small' && pricingConfig.small) {
+            baseMin = pricingConfig.small.min;
+            baseMax = pricingConfig.small.max;
+        } else if (size === 'medium' && pricingConfig.medium) {
+            baseMin = pricingConfig.medium.min;
+            baseMax = pricingConfig.medium.max;
+        } else if (size === 'large' && pricingConfig.large) {
+            baseMin = pricingConfig.large.min;
+            baseMax = pricingConfig.large.max || baseMin * 2;
+        }
+
+        // Adjust by complexity
+        if (complexity === 'moderate') {
+            baseMin *= 1.2;
+            baseMax *= 1.2;
+        } else if (complexity === 'complex') {
+            baseMin *= 1.5;
+            baseMax *= 1.5;
+        }
+
+        // Adjust by color (color tattoos are typically more expensive)
+        if (color === 'color') {
+            baseMin *= 1.2;
+            baseMax *= 1.2;
+        }
+
+        // Round to nearest thousands for Colombian pesos
+        baseMin = Math.round(baseMin / 10000) * 10000;
+        baseMax = Math.round(baseMax / 10000) * 10000;
+
+        // Display result
+        if (size === 'large' || !baseMax || baseMax > 2500000) {
+            estimatedPrice.textContent = `${currency}${formatPrice(baseMin)}+`;
+        } else {
+            estimatedPrice.textContent = `${currency}${formatPrice(baseMin)} - ${currency}${formatPrice(baseMax)}`;
+        }
+    }
+
+    // Add event listeners to all radio buttons
+    const radioButtons = priceCalculator.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', calculatePrice);
+    });
+
+    // Load pricing configuration when page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        loadPricingConfig();
+    });
+
+    // Make functions available globally for debugging
+    window.loadPricingConfig = loadPricingConfig;
+    window.calculatePrice = calculatePrice;
+
+    // FAQ Accordion
+    const faqButtons = document.querySelectorAll('.faq-button');
+
+    faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            // Close all other FAQs
+            faqButtons.forEach(otherButton => {
+                if (otherButton !== button) {
+                    const otherContent = otherButton.nextElementSibling;
+                    const otherIcon = otherButton.querySelector('svg');
+                    otherContent.style.maxHeight = '0';
+                    otherIcon.style.transform = 'rotate(0deg)';
+                    otherButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Toggle current FAQ
+            if (isExpanded) {
+                content.style.maxHeight = '0';
+                icon.style.transform = 'rotate(0deg)';
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+                button.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add scroll-based header background
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('shadow-lg');
+        } else {
+            header.classList.remove('shadow-lg');
+        }
+    });
+</script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

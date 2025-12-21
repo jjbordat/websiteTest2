@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - InkMaster Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-container">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="sidebar">
+        <div class="p-6">
+            <!-- Logo -->
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="url(#goldGradient)" stroke-width="2"/>
+                    <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="url(#goldGradient)"/>
+                    <defs>
+                        <linearGradient id="goldGradient" x1="8" y1="8" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#9535d4"/>
+                            <stop offset="50%" stop-color="#a855f7"/>
+                            <stop offset="100%" stop-color="#9535d4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div>
+                    <h1 class="font-headline text-lg font-bold text-gradient-gold">InkMaster</h1>
+                    <p class="text-xs text-admin-text-tertiary">Admin Panel</p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="space-y-2">
+                <a href="dashboard.html" class="admin-nav-item active">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                    </svg>
+                    <span class="admin-nav-text">Dashboard</span>
+                </a>
+                <a href="portfolio.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    <span class="admin-nav-text">Portfolio</span>
+                </a>
+                <a href="categories.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                    </svg>
+                    <span class="admin-nav-text">Categorías</span>
+                </a>
+                <a href="settings.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span class="admin-nav-text">Configuración</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Información del Sistema -->
+        <div class="p-6 border-t border-admin-border">
+            <div class="text-admin-text-tertiary text-xs">
+                <p>Modo Local</p>
+                <p>Sin autenticación requerida</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header flex items-center justify-between px-6">
+            <div class="flex items-center gap-4">
+                <button onclick="toggleSidebar()" class="lg:hidden admin-btn admin-btn-secondary admin-btn-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <h1 class="font-headline text-2xl font-bold text-admin-text-primary">Dashboard</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-sm text-admin-text-secondary" id="lastUpdate">Última actualización: --</span>
+                <div class="admin-badge success">Online</div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="p-6">
+            <!-- Stats Grid -->
+            <div class="admin-stats-grid">
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <div class="admin-stat-number" id="portfolioCount">0</div>
+                    <div class="admin-stat-label">Trabajos en Portfolio</div>
+                </div>
+
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                        </svg>
+                    </div>
+                    <div class="admin-stat-number" id="categoriesCount">0</div>
+                    <div class="admin-stat-label">Categorías</div>
+                </div>
+
+                <div class="admin-stat-card">
+                    <div class="admin-stat-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                        </svg>
+                    </div>
+                    <div class="admin-stat-number" id="featuredCount">0</div>
+                    <div class="admin-stat-label">Trabajos Destacados</div>
+                </div>
+            </div>
+
+            <!-- Quick Actions & Recent Portfolio -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Quick Actions -->
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3 class="admin-card-title">Acciones Rápidas</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <a href="portfolio.html?action=add" class="admin-btn admin-btn-primary w-full">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                            </svg>
+                            Agregar Nuevo Trabajo
+                        </a>
+                        <a href="categories.html?action=add" class="admin-btn admin-btn-secondary w-full">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                            </svg>
+                            Nueva Categoría
+                        </a>
+                        <a href="../pages/homepage.html" target="_blank" class="admin-btn admin-btn-secondary w-full">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Ver Sitio Web
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recent Portfolio -->
+                <div class="admin-card">
+                    <div class="admin-card-header">
+                        <h3 class="admin-card-title">Portfolio Reciente</h3>
+                        <a href="portfolio.html" class="text-admin-primary text-sm hover:text-admin-primary-light">Ver todo</a>
+                    </div>
+                    <div id="recentPortfolio" class="space-y-3">
+                        <div class="admin-loading">Cargando trabajos recientes...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        // No se requiere autenticación en el modo local
+        async function checkAuth() {
+            return true; // Siempre permitir acceso
+        }
+
+        // Initialize dashboard
+        async function initDashboard() {
+            const isAuthenticated = await checkAuth();
+            if (!isAuthenticated) return;
+
+            await Promise.all([
+                loadStats(),
+                loadRecentPortfolio()
+            ]);
+
+            updateLastUpdate();
+        }
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const stats = await apiClient.getStats();
+                document.getElementById('portfolioCount').textContent = stats.portfolioCount;
+                document.getElementById('categoriesCount').textContent = stats.categoriesCount;
+                document.getElementById('featuredCount').textContent = stats.featuredCount;
+            } catch (error) {
+                console.error('Failed to load stats:', error);
+                apiClient.showNotification('Error cargando estadísticas', 'error');
+            }
+        }
+
+        // Load recent portfolio items
+        async function loadRecentPortfolio() {
+            const container = document.getElementById('recentPortfolio');
+
+            try {
+                const portfolio = await apiClient.getPortfolio();
+                const recent = portfolio.slice(-3).reverse(); // Last 3 items
+
+                if (recent.length === 0) {
+                    container.innerHTML = '<p class="text-admin-text-tertiary text-sm">No hay trabajos en el portfolio aún.</p>';
+                    return;
+                }
+
+                container.innerHTML = recent.map(item => `
+                    <div class="flex items-center gap-3 p-3 bg-admin-background rounded-lg">
+                        <img src="${item.image}" alt="${item.title}" class="w-12 h-12 object-cover rounded">
+                        <div class="flex-1">
+                            <h4 class="text-sm font-medium text-admin-text-primary">${item.title}</h4>
+                            <p class="text-xs text-admin-text-tertiary">${item.category.name || item.category}</p>
+                        </div>
+                        ${item.featured ? '<div class="admin-badge">Destacado</div>' : ''}
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Failed to load portfolio:', error);
+                container.innerHTML = '<p class="text-admin-text-tertiary text-sm">Error cargando portfolio.</p>';
+            }
+        }
+
+        // Update last update time
+        function updateLastUpdate() {
+            const date = new Date();
+            document.getElementById('lastUpdate').textContent =
+                `Última actualización: ${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+        }
+
+        // Sidebar toggle for mobile
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('show');
+        }
+
+        // Ya no se requiere función de logout en el modo local
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', initDashboard);
+    </script>
+</body>
+</html>

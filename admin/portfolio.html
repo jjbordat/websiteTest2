@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - InkMaster Admin</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-container">
+    <!-- Sidebar (same as dashboard) -->
+    <aside class="admin-sidebar" id="sidebar">
+        <div class="p-6">
+            <div class="flex items-center gap-3 mb-8">
+                <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="#9535d4" stroke-width="2"/>
+                    <path d="M20 8L22 15L28 12L24 18L32 20L24 22L28 28L22 25L20 32L18 25L12 28L16 22L8 20L16 18L12 12L18 15L20 8Z" fill="#9535d4"/>
+                </svg>
+                <div>
+                    <h1 class="font-headline text-lg font-bold text-gradient-gold">InkMaster</h1>
+                    <p class="text-xs text-admin-text-tertiary">Admin Panel</p>
+                </div>
+            </div>
+            <nav class="space-y-2">
+                <a href="dashboard.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
+                    </svg>
+                    <span class="admin-nav-text">Dashboard</span>
+                </a>
+                <a href="portfolio.html" class="admin-nav-item active">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    <span class="admin-nav-text">Portfolio</span>
+                </a>
+                <a href="categories.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/>
+                    </svg>
+                    <span class="admin-nav-text">Categorías</span>
+                </a>
+                <a href="settings.html" class="admin-nav-item">
+                    <svg class="admin-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span class="admin-nav-text">Configuración</span>
+                </a>
+            </nav>
+        </div>
+        <!-- Información del Sistema -->
+        <div class="p-6 border-t border-admin-border">
+            <div class="text-admin-text-tertiary text-xs">
+                <p>Modo Local</p>
+                <p>Sin autenticación requerida</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <header class="admin-header flex items-center justify-between px-6">
+            <div class="flex items-center gap-4">
+                <button onclick="toggleSidebar()" class="lg:hidden admin-btn admin-btn-secondary admin-btn-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <h1 class="font-headline text-2xl font-bold text-admin-text-primary">Gestión de Portfolio</h1>
+            </div>
+            <button onclick="showAddModal()" class="admin-btn admin-btn-primary">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                </svg>
+                Agregar Trabajo
+            </button>
+        </header>
+
+        <div class="p-6">
+            <!-- Portfolio Grid -->
+            <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="admin-loading">Cargando portfolio...</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add/Edit Modal -->
+    <div id="portfolioModal" class="admin-modal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-header">
+                <h3 class="admin-modal-title" id="modalTitle">Agregar Trabajo</h3>
+                <button onclick="closeModal()" class="admin-modal-close">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="portfolioForm">
+                <input type="hidden" id="editId" value="">
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Título *</label>
+                    <input type="text" id="title" class="admin-input" required>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Descripción *</label>
+                    <textarea id="description" class="admin-textarea" required></textarea>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Categoría *</label>
+                    <select id="category" class="admin-select" required>
+                        <option value="">Seleccionar categoría</option>
+                    </select>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Imagen (URL o ruta local) *</label>
+                    <input type="text" id="imageUrl" class="admin-input" required placeholder="https://ejemplo.com/imagen.jpg o imagenes/portafolio/trabajo.jpg">
+                    <p class="text-xs text-admin-text-tertiary mt-1">Acepta URLs externas (https://) o rutas locales (imagenes/...)</p>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Ubicación/Localización *</label>
+                    <input type="text" id="location" class="admin-input" required placeholder="Ej: Brazo, Espalda, Pecho, etc.">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="admin-form-group">
+                        <label class="admin-label">Estilo *</label>
+                        <input type="text" id="style" class="admin-input" required placeholder="Ej: Realismo, Geométrico, etc.">
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Colocación *</label>
+                        <input type="text" id="placement" class="admin-input" required placeholder="Ej: Brazo superior, Espalda completa">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="admin-form-group">
+                        <label class="admin-label">Sesiones *</label>
+                        <input type="text" id="sessions" class="admin-input" required placeholder="Ej: 2-3 sesiones">
+                    </div>
+                    <div class="admin-form-group">
+                        <label class="admin-label">Año *</label>
+                        <input type="number" id="year" class="admin-input" required placeholder="2024" min="2020" max="2030">
+                    </div>
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="admin-label">Tags (separados por coma) *</label>
+                    <input type="text" id="tags" class="admin-input" required placeholder="Ej: retrato, blanco-negro, brazo">
+                </div>
+
+                <div class="admin-form-group">
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" id="active" class="admin-checkbox" checked>
+                        <span class="text-admin-text-primary">✅ Trabajo activo (visible en el portafolio público)</span>
+                    </label>
+                    <p class="text-xs text-admin-text-tertiary mt-1">Si no está marcado, el trabajo no aparecerá en pages/portfolio_gallery.html</p>
+                </div>
+
+                <div class="flex gap-3 justify-end">
+                    <button type="button" onclick="closeModal()" class="admin-btn admin-btn-secondary">Cancelar</button>
+                    <button type="submit" class="admin-btn admin-btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Incluir ConfigUpdater -->
+    <script>
+        // ConfigUpdater sin fetch para evitar CORS
+        class ConfigUpdater {
+            constructor() {
+                this.config = {};
+                this.isDirty = false;
+                console.log('⚙️ Config Updater inicializado para portfolio.html');
+            }
+
+            async loadConfig() {
+                try {
+                    const response = await fetch(`../config.json?_=${Date.now()}`);
+                    if (response.ok) {
+                        this.config = await response.json();
+                        console.log('✅ Configuración cargada desde config.json');
+                        return this.config;
+                    } else {
+                        console.error('❌ No se pudo cargar config.json');
+                        this.config = { portfolios: [], categories: [] };
+                        return this.config;
+                    }
+                } catch (error) {
+                    console.error('❌ Error cargando config.json:', error);
+                    this.config = { portfolios: [], categories: [] };
+                    return this.config;
+                }
+            }
+
+            getConfig() {
+                return this.config;
+            }
+
+            updateConfig(updates) {
+                this.config = { ...this.config, ...updates };
+                console.log('📝 Configuración actualizada en memoria');
+                return this.config;
+            }
+
+            async saveConfig() {
+                try {
+                    console.log('💾 Generando descarga de config.json...');
+
+                    // Generar descarga automática del config.json actualizado
+                    const blob = new Blob([JSON.stringify(this.config, null, 2)], { type: 'application/json' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = 'config.json';
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+
+                    console.log('📤 config.json descargado automáticamente');
+                    return { success: true, message: 'config.json descargado' };
+                } catch (error) {
+                    console.error('❌ Error generando descarga:', error);
+                    return { success: false, error: error.message };
+                }
+            }
+        }
+
+        window.configUpdater = new ConfigUpdater();
+    </script>
+
+    <script>
+        // No se requiere autenticación en el modo local
+        async function checkAuth() {
+            return true; // Siempre permitir acceso
+        }
+
+        async function loadPortfolio() {
+            const grid = document.getElementById('portfolioGrid');
+            console.log('📂 Cargando portafolio...');
+
+            try {
+                await window.configUpdater.loadConfig();
+                const config = window.configUpdater.getConfig();
+                const portfolios = config.portfolios || [];
+
+                console.log('🎨 Trabajos de portafolio encontrados:', portfolios.length);
+
+                if (portfolios.length === 0) {
+                    grid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-admin-text-tertiary">No hay trabajos en el portafolio aún.</p></div>';
+                    return;
+                }
+
+                grid.innerHTML = portfolios.map((portfolio, index) => {
+                    // Normalizar ruta de imagen
+                    const imageSrc = portfolio.image && !portfolio.image.startsWith('http')
+                        ? `../${portfolio.image}`
+                        : portfolio.image;
+
+                    // Crear placeholder SVG como data URI
+                    const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
+                        <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#1a1a1a"/>
+                            <text x="200" y="150" text-anchor="middle" fill="#9535d4" font-size="24" font-family="Arial">${portfolio.title}</text>
+                        </svg>
+                    `)}`;
+
+                    return `
+                    <div class="admin-card">
+                        <img src="${imageSrc}" alt="${portfolio.title}" class="w-full h-48 object-cover rounded-t-lg"
+                             onerror="this.src='${placeholderSvg}'">
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-admin-text-primary">${portfolio.title}</h3>
+                                ${portfolio.active ? '<span class="badge badge-gold text-xs">Activo</span>' : '<span class="badge bg-gray-500 text-white text-xs">Inactivo</span>'}
+                            </div>
+                            <p class="text-sm text-admin-text-secondary mb-3">${portfolio.description.substring(0, 100)}...</p>
+                            <div class="mb-3">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs text-admin-text-tertiary">Categoría:</span>
+                                    <span class="text-xs px-2 py-1 bg-accent/20 text-accent rounded">${portfolio.category}</span>
+                                </div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs text-admin-text-tertiary">Estilo:</span>
+                                    <span class="text-xs text-admin-text-primary">${portfolio.style}</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs text-admin-text-tertiary">Año:</span>
+                                    <span class="text-xs text-admin-text-primary">${portfolio.year}</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs px-2 py-1 bg-surface text-text-primary rounded">${portfolio.location}</span>
+                                <div class="flex gap-2">
+                                    <button onclick="editPortfolio(${index})" class="admin-btn admin-btn-sm admin-btn-secondary">Editar</button>
+                                    <button onclick="deletePortfolio(${index})" class="admin-btn admin-btn-sm" style="background: #dc3545; color: white;">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `}).join('');
+            } catch (error) {
+                console.error('❌ Error cargando portafolio:', error);
+                grid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-red-500">Error cargando portafolio. Revisa la consola.</p></div>';
+            }
+        }
+
+        async function loadCategories() {
+            try {
+                const select = document.getElementById('category');
+
+                if (!select) {
+                    console.warn('⚠️ Select de categorías no encontrado');
+                    return;
+                }
+
+                // Mostrar indicador de carga
+                select.innerHTML = '<option value="">Cargando categorías...</option>';
+                select.disabled = true;
+
+                // Asegurar que el config esté cargado
+                await window.configUpdater.loadConfig();
+                const config = window.configUpdater.getConfig();
+                const categories = config.categories || [];
+
+                // Generar opciones de categorías
+                const activeCategories = categories.filter(cat => cat.active !== false);
+                const optionsHTML = '<option value="">Seleccionar categoría</option>' +
+                    activeCategories.map(cat => `<option value="${cat.id}">${cat.name}</option>`).join('');
+
+                select.innerHTML = optionsHTML;
+                select.disabled = false;
+
+                console.log('🏷️ Categorías cargadas en selector:', activeCategories.length);
+
+                return categories;
+            } catch (error) {
+                console.error('❌ Error cargando categorías:', error);
+                const select = document.getElementById('category');
+                if (select) {
+                    select.innerHTML = '<option value="">Error cargando categorías</option>';
+                    select.disabled = false;
+                }
+            }
+        }
+
+        async function showAddModal() {
+            document.getElementById('modalTitle').textContent = 'Agregar Trabajo';
+            document.getElementById('portfolioForm').reset();
+            document.getElementById('editId').value = '';
+            document.getElementById('year').value = new Date().getFullYear(); // Año actual por defecto
+
+            // Cargar categorías disponibles en el modal
+            await loadCategories();
+
+            document.getElementById('portfolioModal').classList.add('show');
+        }
+
+        // Función de notificación simple
+        function showNotification(message, type = 'success') {
+            // Crear o actualizar notificación
+            let notification = document.getElementById('notification');
+            if (!notification) {
+                notification = document.createElement('div');
+                notification.id = 'notification';
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    padding: 12px 20px;
+                    border-radius: 6px;
+                    color: white;
+                    font-weight: 500;
+                    z-index: 1000;
+                    transition: transform 0.3s ease;
+                    transform: translateX(400px);
+                `;
+                document.body.appendChild(notification);
+            }
+
+            notification.textContent = message;
+            notification.style.background = type === 'error' ? '#dc3545' : type === 'warning' ? '#ffc107' : '#28a745';
+            notification.style.transform = 'translateX(0)';
+
+            setTimeout(() => {
+                notification.style.transform = 'translateX(400px)';
+            }, 3000);
+        }
+
+        async function editPortfolio(index) {
+            try {
+                const config = window.configUpdater.getConfig();
+                const portfolio = config.portfolios[index];
+                if (!portfolio) return;
+
+                document.getElementById('modalTitle').textContent = 'Editar Trabajo';
+                document.getElementById('editId').value = index;
+                document.getElementById('title').value = portfolio.title;
+                document.getElementById('description').value = portfolio.description;
+                document.getElementById('imageUrl').value = portfolio.image;
+                document.getElementById('location').value = portfolio.location || '';
+                document.getElementById('style').value = portfolio.style || '';
+                document.getElementById('placement').value = portfolio.placement || '';
+                document.getElementById('sessions').value = portfolio.sessions || '';
+                document.getElementById('year').value = portfolio.year || new Date().getFullYear();
+                document.getElementById('tags').value = portfolio.tags ? portfolio.tags.join(', ') : '';
+                document.getElementById('active').checked = portfolio.active !== false;
+
+                // Cargar categorías ANTES de establecer el valor seleccionado
+                await loadCategories();
+
+                // Ahora sí establecer la categoría seleccionada (después de cargar las opciones)
+                document.getElementById('category').value = portfolio.category;
+
+                document.getElementById('portfolioModal').classList.add('show');
+            } catch (error) {
+                showNotification('Error cargando trabajo', 'error');
+            }
+        }
+
+        async function deletePortfolio(index) {
+            if (confirm('¿Estás seguro de que quieres eliminar este trabajo?')) {
+                try {
+                    const config = window.configUpdater.getConfig();
+                    const portfolioTitle = config.portfolios[index].title;
+                    config.portfolios.splice(index, 1);
+
+                    // Actualizar y guardar config
+                    window.configUpdater.updateConfig({ portfolios: config.portfolios });
+                    await window.configUpdater.saveConfig();
+
+                    showNotification(`Trabajo "${portfolioTitle}" eliminado - config.json descargado`);
+                    loadPortfolio();
+                } catch (error) {
+                    showNotification('Error eliminando trabajo', 'error');
+                }
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('portfolioModal').classList.remove('show');
+        }
+
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('show');
+        }
+
+        // Form submit handler
+        document.getElementById('portfolioForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Generar ID único para nuevo portafolio
+            const generateId = () => {
+                const config = window.configUpdater.getConfig();
+                const existingIds = (config.portfolios || []).map(p => p.id);
+                let newId = Math.max(...existingIds.filter(id => typeof id === 'number'), 0) + 1;
+                return newId;
+            };
+
+            const formData = {
+                id: parseInt(document.getElementById('editId').value) || generateId(),
+                title: document.getElementById('title').value,
+                description: document.getElementById('description').value,
+                category: document.getElementById('category').value,
+                image: document.getElementById('imageUrl').value,
+                location: document.getElementById('location').value,
+                style: document.getElementById('style').value,
+                placement: document.getElementById('placement').value,
+                sessions: document.getElementById('sessions').value,
+                year: document.getElementById('year').value,
+                tags: document.getElementById('tags').value.split(',').map(tag => tag.trim()).filter(Boolean),
+                active: document.getElementById('active').checked
+            };
+
+            const editIndex = document.getElementById('editId').value;
+
+            try {
+                const config = window.configUpdater.getConfig();
+
+                if (editIndex !== '') {
+                    // Editar existente
+                    config.portfolios[parseInt(editIndex)] = formData;
+
+                    // Actualizar y guardar config
+                    window.configUpdater.updateConfig({ portfolios: config.portfolios });
+                    await window.configUpdater.saveConfig();
+
+                    showNotification('Trabajo actualizado - config.json descargado');
+                } else {
+                    // Crear nuevo
+                    if (!config.portfolios) {
+                        config.portfolios = [];
+                    }
+                    config.portfolios.push(formData);
+
+                    // Actualizar y guardar config
+                    window.configUpdater.updateConfig({ portfolios: config.portfolios });
+                    await window.configUpdater.saveConfig();
+
+                    showNotification('Trabajo creado - config.json descargado');
+                }
+
+                closeModal();
+                loadPortfolio();
+            } catch (error) {
+                showNotification('Error guardando trabajo', 'error');
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            const isAuth = await checkAuth();
+            if (!isAuth) return;
+
+            // Cargar portafolio y categorías en paralelo para mejor rendimiento
+            await Promise.all([
+                loadPortfolio(),
+                loadCategories()
+            ]);
+
+            console.log('✅ Admin portfolio inicializado completamente');
+        });
+    </script>
+</body>
+</html>

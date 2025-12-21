@@ -1,0 +1,70 @@
+# ===== ARCHIVOS DE DESARROLLO - NO SUBIR A PRODUCCIÓN =====
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Development files
+package.json
+package-lock.json
+yarn.lock
+
+# Build tools y configuraciones de desarrollo
+tailwind.config.js
+postcss.config.js
+webpack.config.js
+vite.config.js
+
+# CSS fuente (NO compilado) - solo se incluye el compilado main.css
+css/tailwind.css
+
+# Archivos de debug y testing
+debug-*.html
+test-*.html
+fix-theme.html
+
+# Documentación de desarrollo
+README*.md
+*.md
+!imagenes/README.md
+!imagenes/*/README.md
+
+# IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Logs
+*.log
+
+# Environment files
+.env*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# ===== ARCHIVOS QUE SÍ SE INCLUYEN PARA PRODUCCIÓN =====
+# pages/*.html
+# css/main.css (compilado)
+# js/*.js
+# imagenes/
+# config.json
+# admin/
