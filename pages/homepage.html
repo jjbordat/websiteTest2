@@ -85,10 +85,16 @@
                 <div class="relative group">
                     <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
                     <div class="relative overflow-hidden rounded-2xl border-2 border-accent/30 group-hover:border-accent transition-all duration-500">
+                        <!-- Placeholder de carga -->
+                        <div id="heroImageLoader" class="w-full aspect-[4/5] bg-surface flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="animate-pulse text-accent mb-2">Cargando imagen...</div>
+                                <div class="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin mx-auto"></div>
+                            </div>
+                        </div>
                         <img
-                                src="/imagenes/homepage/hero_1766256843841.jpg"
                                 alt="Artista tatuador profesional trabajando en su estudio con precisión y dedicación"
-                                class="w-full aspect-[4/5] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                class="w-full aspect-[4/5] object-cover transform group-hover:scale-105 transition-transform duration-700 hidden"
                                 loading="eager"
                                 data-homepage-hero-image
                         >
@@ -661,30 +667,45 @@
 
     function loadHeroImage(images) {
         try {
-            // Buscar la imagen del hero
+            // Buscar elementos necesarios
             const heroImage = document.querySelector('[data-homepage-hero-image]');
+            const heroLoader = document.getElementById('heroImageLoader');
+
             if (!heroImage) {
                 console.warn('⚠️ No se encontró imagen del hero con data-homepage-hero-image');
                 return;
             }
 
             // Obtener la URL de la imagen del hero
-            let heroImageUrl = images.homepage?.hero || images.hero || 'imagenes/homepage/hero.jpg';
+            const heroImageUrl = images.homepage?.hero || images.hero || 'imagenes/homepage/hero.jpg';
 
-            // Normalizar ruta para que sea absoluta desde la raíz del sitio
-            if (!heroImageUrl.startsWith('http') && !heroImageUrl.startsWith('/')) {
-                heroImageUrl = `/${heroImageUrl}`;
-            }
+            // Normalizar ruta de imagen (usando ruta relativa como las otras páginas)
+            const heroImageSrc = heroImageUrl && !heroImageUrl.startsWith('http')
+                ? `../${heroImageUrl}`
+                : heroImageUrl;
 
-            console.log('🖼️ Cargando imagen del hero:', heroImageUrl);
+            console.log('🖼️ Cargando imagen del hero:', heroImageSrc);
 
-            // Asignar el src a la imagen
-            heroImage.src = heroImageUrl;
+            // Configurar eventos de carga de imagen
+            heroImage.onload = function() {
+                // Ocultar loader y mostrar imagen
+                if (heroLoader) heroLoader.classList.add('hidden');
+                heroImage.classList.remove('hidden');
+                console.log('✅ Imagen del hero cargada correctamente');
+            };
 
-            console.log('✅ Imagen del hero cargada correctamente');
+            heroImage.onerror = function() {
+                console.error('❌ Error cargando imagen del hero');
+                if (heroLoader) {
+                    heroLoader.innerHTML = '<div class="text-center text-red-500">Error cargando imagen</div>';
+                }
+            };
+
+            // Asignar el src a la imagen para iniciar la carga
+            heroImage.src = heroImageSrc;
 
         } catch (error) {
-            console.error('❌ Error cargando imagen del hero:', error);
+            console.error('❌ Error en función loadHeroImage:', error);
         }
     }
 
@@ -704,11 +725,10 @@
         }
 
         grid.innerHTML = featuredWorks.map((work, index) => {
-            // Normalizar ruta de imagen para que sea absoluta desde la raíz del sitio
-            let imageSrc = work.image;
-            if (imageSrc && !imageSrc.startsWith('http') && !imageSrc.startsWith('/')) {
-                imageSrc = `/${imageSrc}`;
-            }
+            // Normalizar ruta de imagen (usando ruta relativa como las otras páginas)
+            const imageSrc = work.image && !work.image.startsWith('http')
+                ? `../${work.image}`
+                : work.image;
 
             // Crear placeholder SVG
             const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
@@ -757,11 +777,10 @@
         }
 
         grid.innerHTML = featuredCategories.map(category => {
-            // Normalizar ruta de imagen para que sea absoluta desde la raíz del sitio
-            let imageSrc = category.image;
-            if (imageSrc && !imageSrc.startsWith('http') && !imageSrc.startsWith('/')) {
-                imageSrc = `/${imageSrc}`;
-            }
+            // Normalizar ruta de imagen (usando ruta relativa como las otras páginas)
+            const imageSrc = category.image && !category.image.startsWith('http')
+                ? `../${category.image}`
+                : category.image;
 
             // Crear placeholder SVG
             const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
