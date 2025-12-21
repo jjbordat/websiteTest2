@@ -86,6 +86,7 @@
                     <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
                     <div class="relative overflow-hidden rounded-2xl border-2 border-accent/30 group-hover:border-accent transition-all duration-500">
                         <img
+                                src="/imagenes/homepage/hero_1766256843841.jpg"
                                 alt="Artista tatuador profesional trabajando en su estudio con precisión y dedicación"
                                 class="w-full aspect-[4/5] object-cover transform group-hover:scale-105 transition-transform duration-700"
                                 loading="eager"
@@ -668,7 +669,12 @@
             }
 
             // Obtener la URL de la imagen del hero
-            const heroImageUrl = images.homepage?.hero || images.hero || 'imagenes/homepage/hero.jpg';
+            let heroImageUrl = images.homepage?.hero || images.hero || 'imagenes/homepage/hero.jpg';
+
+            // Normalizar ruta para que sea absoluta desde la raíz del sitio
+            if (!heroImageUrl.startsWith('http') && !heroImageUrl.startsWith('/')) {
+                heroImageUrl = `/${heroImageUrl}`;
+            }
 
             console.log('🖼️ Cargando imagen del hero:', heroImageUrl);
 
@@ -698,10 +704,11 @@
         }
 
         grid.innerHTML = featuredWorks.map((work, index) => {
-            // Normalizar ruta de imagen
-            const imageSrc = work.image && !work.image.startsWith('http')
-                ? `../${work.image}`
-                : work.image;
+            // Normalizar ruta de imagen para que sea absoluta desde la raíz del sitio
+            let imageSrc = work.image;
+            if (imageSrc && !imageSrc.startsWith('http') && !imageSrc.startsWith('/')) {
+                imageSrc = `/${imageSrc}`;
+            }
 
             // Crear placeholder SVG
             const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
@@ -750,10 +757,11 @@
         }
 
         grid.innerHTML = featuredCategories.map(category => {
-            // Normalizar ruta de imagen
-            const imageSrc = category.image && !category.image.startsWith('http')
-                ? `../${category.image}`
-                : category.image;
+            // Normalizar ruta de imagen para que sea absoluta desde la raíz del sitio
+            let imageSrc = category.image;
+            if (imageSrc && !imageSrc.startsWith('http') && !imageSrc.startsWith('/')) {
+                imageSrc = `/${imageSrc}`;
+            }
 
             // Crear placeholder SVG
             const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
