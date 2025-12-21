@@ -198,113 +198,16 @@
 
 <!-- Lightbox Modal -->
 <div id="lightbox" class="fixed inset-0 bg-primary/95 backdrop-blur-custom z-90 opacity-0 pointer-events-none transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Vista detallada de tatuaje">
-    <!-- Mobile Layout -->
-    <div class="lg:hidden h-full flex flex-col">
-        <!-- Close Button Mobile -->
-        <button id="closeLightbox" class="absolute top-4 right-4 z-20 w-10 h-10 bg-surface rounded-full flex items-center justify-center text-text-primary hover:bg-accent hover:text-primary transition-all duration-300" aria-label="Cerrar vista detallada">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-        </button>
-
-        <!-- Image Section Mobile -->
-        <div class="flex-shrink-0 h-[45vh] bg-surface/20 flex items-center justify-center p-4">
-            <img
-                id="lightboxImageMobile"
-                src=""
-                alt=""
-                class="max-w-full max-h-full object-contain rounded-lg"
-            >
-        </div>
-
-        <!-- Details Section Mobile -->
-        <div class="flex-1 bg-secondary rounded-t-3xl overflow-hidden">
-            <div class="h-full overflow-y-auto p-6">
-                <div class="space-y-4">
-                    <div>
-                        <span id="lightboxCategoryMobile" class="badge badge-gold mb-3"></span>
-                        <h2 id="lightboxTitleMobile" class="font-headline text-2xl font-bold mb-2"></h2>
-                        <p id="lightboxLocationMobile" class="text-text-secondary"></p>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <div>
-                        <h3 class="font-headline text-lg font-semibold mb-2">Descripción</h3>
-                        <p id="lightboxDescriptionMobile" class="text-text-secondary leading-relaxed text-sm"></p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-headline text-lg font-semibold mb-2">Etiquetas</h3>
-                        <div id="lightboxTagsMobile" class="flex flex-wrap gap-2"></div>
-                    </div>
-
-                    <div>
-                        <h3 class="font-headline text-lg font-semibold mb-2">Detalles Técnicos</h3>
-                        <div class="grid grid-cols-2 gap-3 text-sm">
-                            <div>
-                                <p class="text-text-tertiary mb-1">Estilo</p>
-                                <p id="lightboxStyleMobile" class="text-text-primary font-medium"></p>
-                            </div>
-                            <div>
-                                <p class="text-text-tertiary mb-1">Ubicación</p>
-                                <p id="lightboxPlacementMobile" class="text-text-primary font-medium"></p>
-                            </div>
-                            <div>
-                                <p class="text-text-tertiary mb-1">Sesiones</p>
-                                <p id="lightboxSessionsMobile" class="text-text-primary font-medium"></p>
-                            </div>
-                            <div>
-                                <p class="text-text-tertiary mb-1">Año</p>
-                                <p id="lightboxYearMobile" class="text-text-primary font-medium"></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Navigation -->
-                    <div class="flex justify-between border-t border-border pt-4">
-                        <button id="prevImageMobile" class="btn btn-outline flex-1 mr-2">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                            </svg>
-                            Anterior
-                        </button>
-                        <button id="nextImageMobile" class="btn btn-outline flex-1 ml-2">
-                            Siguiente
-                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="flex flex-col gap-3 pt-4 border-t border-border pb-8">
-                        <a href="contact.html" class="btn btn-primary">
-                            Consultar Diseño Similar
-                        </a>
-                        <button class="btn btn-outline" onclick="window.print()">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
-                            </svg>
-                            Compartir
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Desktop Layout -->
-    <div class="hidden lg:flex h-full items-center justify-center p-4">
+    <div class="container-custom h-full flex items-center justify-center p-4">
         <div class="relative max-w-6xl w-full">
-            <!-- Close Button Desktop -->
-            <button id="closeLightboxDesktop" class="absolute top-4 right-4 z-10 w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-primary hover:bg-accent hover:text-primary transition-all duration-300" aria-label="Cerrar vista detallada">
+            <!-- Close Button -->
+            <button id="closeLightbox" class="absolute top-4 right-4 z-10 w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-primary hover:bg-accent hover:text-primary transition-all duration-300" aria-label="Cerrar vista detallada">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
 
-            <!-- Navigation Buttons Desktop -->
+            <!-- Navigation Buttons -->
             <button id="prevImage" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-surface rounded-full flex items-center justify-center text-text-primary hover:bg-accent hover:text-primary transition-all duration-300" aria-label="Imagen anterior">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
@@ -316,10 +219,10 @@
                 </svg>
             </button>
 
-            <!-- Content Desktop -->
-            <div class="grid grid-cols-2 gap-8 bg-secondary rounded-2xl overflow-hidden">
-                <!-- Image Desktop -->
-                <div class="relative aspect-square lg:aspect-auto">
+            <!-- Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-secondary rounded-2xl overflow-hidden">
+                <!-- Image -->
+                <div class="relative aspect-square lg:aspect-auto cursor-pointer lightbox-trigger" data-index="">
                     <img
                         id="lightboxImage"
                         src=""
@@ -328,56 +231,58 @@
                     >
                 </div>
 
-                <!-- Details Desktop -->
-                <div class="p-8 flex flex-col justify-between">
-                    <div class="space-y-6">
+                <!-- Details -->
+                <div class="p-4 lg:p-8 flex flex-col h-full lg:justify-between">
+                    <!-- Scrollable content area for mobile -->
+                    <div class="flex-1 overflow-y-auto lg:overflow-visible space-y-4 lg:space-y-6" style="max-height: calc(100vh - 12rem); -webkit-overflow-scrolling: touch;">
                         <div>
-                            <span id="lightboxCategoryDesktop" class="badge badge-gold mb-4"></span>
-                            <h2 id="lightboxTitleDesktop" class="font-headline text-3xl md:text-4xl font-bold mb-4"></h2>
-                            <p id="lightboxLocationDesktop" class="text-text-secondary text-lg"></p>
+                            <span id="lightboxCategory" class="badge badge-gold mb-4"></span>
+                            <h2 id="lightboxTitle" class="font-headline text-2xl lg:text-3xl xl:text-4xl font-bold mb-4"></h2>
+                            <p id="lightboxLocation" class="text-text-secondary text-base lg:text-lg"></p>
                         </div>
 
                         <div class="divider"></div>
 
                         <div>
-                            <h3 class="font-headline text-xl font-semibold mb-3">Descripción</h3>
-                            <p id="lightboxDescriptionDesktop" class="text-text-secondary leading-relaxed"></p>
+                            <h3 class="font-headline text-lg lg:text-xl font-semibold mb-3">Descripción</h3>
+                            <p id="lightboxDescription" class="text-text-secondary leading-relaxed text-sm lg:text-base"></p>
                         </div>
 
                         <div>
-                            <h3 class="font-headline text-xl font-semibold mb-3">Etiquetas</h3>
-                            <div id="lightboxTagsDesktop" class="flex flex-wrap gap-2"></div>
+                            <h3 class="font-headline text-lg lg:text-xl font-semibold mb-3">Etiquetas</h3>
+                            <div id="lightboxTags" class="flex flex-wrap gap-2"></div>
                         </div>
 
                         <div>
-                            <h3 class="font-headline text-xl font-semibold mb-3">Detalles Técnicos</h3>
-                            <div class="grid grid-cols-2 gap-4 text-sm">
+                            <h3 class="font-headline text-lg lg:text-xl font-semibold mb-3">Detalles Técnicos</h3>
+                            <div class="grid grid-cols-2 gap-4 text-xs lg:text-sm">
                                 <div>
                                     <p class="text-text-tertiary mb-1">Estilo</p>
-                                    <p id="lightboxStyleDesktop" class="text-text-primary font-medium"></p>
+                                    <p id="lightboxStyle" class="text-text-primary font-medium"></p>
                                 </div>
                                 <div>
                                     <p class="text-text-tertiary mb-1">Ubicación</p>
-                                    <p id="lightboxPlacementDesktop" class="text-text-primary font-medium"></p>
+                                    <p id="lightboxPlacement" class="text-text-primary font-medium"></p>
                                 </div>
                                 <div>
                                     <p class="text-text-tertiary mb-1">Sesiones</p>
-                                    <p id="lightboxSessionsDesktop" class="text-text-primary font-medium"></p>
+                                    <p id="lightboxSessions" class="text-text-primary font-medium"></p>
                                 </div>
                                 <div>
                                     <p class="text-text-tertiary mb-1">Año</p>
-                                    <p id="lightboxYearDesktop" class="text-text-primary font-medium"></p>
+                                    <p id="lightboxYear" class="text-text-primary font-medium"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex gap-4 pt-6 border-t border-border">
-                        <a href="contact.html" class="btn btn-primary flex-1">
+                    <!-- Fixed buttons area -->
+                    <div class="flex gap-2 lg:gap-4 pt-4 lg:pt-6 border-t border-border mt-4 lg:mt-0 flex-shrink-0">
+                        <a href="contact.html" class="btn btn-primary flex-1 text-sm lg:text-base">
                             Consultar Diseño Similar
                         </a>
                         <button class="btn btn-outline" onclick="window.print()">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 lg:w-5 lg:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
                             </svg>
                         </button>
@@ -685,30 +590,16 @@
 
     // Lightbox Functionality
     const lightbox = document.getElementById('lightbox');
-
-    // Desktop elements
     const lightboxImage = document.getElementById('lightboxImage');
-    const lightboxTitle = document.getElementById('lightboxTitleDesktop');
-    const lightboxCategory = document.getElementById('lightboxCategoryDesktop');
-    const lightboxLocation = document.getElementById('lightboxLocationDesktop');
-    const lightboxDescription = document.getElementById('lightboxDescriptionDesktop');
-    const lightboxTags = document.getElementById('lightboxTagsDesktop');
-    const lightboxStyle = document.getElementById('lightboxStyleDesktop');
-    const lightboxPlacement = document.getElementById('lightboxPlacementDesktop');
-    const lightboxSessions = document.getElementById('lightboxSessionsDesktop');
-    const lightboxYear = document.getElementById('lightboxYearDesktop');
-
-    // Mobile elements
-    const lightboxImageMobile = document.getElementById('lightboxImageMobile');
-    const lightboxTitleMobile = document.getElementById('lightboxTitleMobile');
-    const lightboxCategoryMobile = document.getElementById('lightboxCategoryMobile');
-    const lightboxLocationMobile = document.getElementById('lightboxLocationMobile');
-    const lightboxDescriptionMobile = document.getElementById('lightboxDescriptionMobile');
-    const lightboxTagsMobile = document.getElementById('lightboxTagsMobile');
-    const lightboxStyleMobile = document.getElementById('lightboxStyleMobile');
-    const lightboxPlacementMobile = document.getElementById('lightboxPlacementMobile');
-    const lightboxSessionsMobile = document.getElementById('lightboxSessionsMobile');
-    const lightboxYearMobile = document.getElementById('lightboxYearMobile');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxCategory = document.getElementById('lightboxCategory');
+    const lightboxLocation = document.getElementById('lightboxLocation');
+    const lightboxDescription = document.getElementById('lightboxDescription');
+    const lightboxTags = document.getElementById('lightboxTags');
+    const lightboxStyle = document.getElementById('lightboxStyle');
+    const lightboxPlacement = document.getElementById('lightboxPlacement');
+    const lightboxSessions = document.getElementById('lightboxSessions');
+    const lightboxYear = document.getElementById('lightboxYear');
 
     const closeLightbox = document.getElementById('closeLightbox');
     const prevImage = document.getElementById('prevImage');
@@ -725,58 +616,53 @@
             ? `../${item.image}`
             : item.image;
 
-        // Update desktop elements
-        if (lightboxImage) {
-            lightboxImage.src = imageSrc;
-            lightboxImage.alt = `Vista detallada de ${item.title} - ${item.description}`;
-        }
-        if (lightboxTitle) lightboxTitle.textContent = item.title;
-        if (lightboxCategory) lightboxCategory.textContent = item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        if (lightboxLocation) lightboxLocation.textContent = item.location;
-        if (lightboxDescription) lightboxDescription.textContent = item.description;
-        if (lightboxStyle) lightboxStyle.textContent = item.style;
-        if (lightboxPlacement) lightboxPlacement.textContent = item.placement;
-        if (lightboxSessions) lightboxSessions.textContent = item.sessions;
-        if (lightboxYear) lightboxYear.textContent = item.year;
+        lightboxImage.src = imageSrc;
+        lightboxImage.alt = `Vista detallada de ${item.title} - ${item.description}`;
+        lightboxTitle.textContent = item.title;
+        lightboxCategory.textContent = item.category.charAt(0).toUpperCase() + item.category.slice(1);
+        lightboxLocation.textContent = item.location;
+        lightboxDescription.textContent = item.description;
+        lightboxStyle.textContent = item.style;
+        lightboxPlacement.textContent = item.placement;
+        lightboxSessions.textContent = item.sessions;
+        lightboxYear.textContent = item.year;
 
-        // Update mobile elements
-        if (lightboxImageMobile) {
-            lightboxImageMobile.src = imageSrc;
-            lightboxImageMobile.alt = `Vista detallada de ${item.title} - ${item.description}`;
-        }
-        if (lightboxTitleMobile) lightboxTitleMobile.textContent = item.title;
-        if (lightboxCategoryMobile) lightboxCategoryMobile.textContent = item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        if (lightboxLocationMobile) lightboxLocationMobile.textContent = item.location;
-        if (lightboxDescriptionMobile) lightboxDescriptionMobile.textContent = item.description;
-        if (lightboxStyleMobile) lightboxStyleMobile.textContent = item.style;
-        if (lightboxPlacementMobile) lightboxPlacementMobile.textContent = item.placement;
-        if (lightboxSessionsMobile) lightboxSessionsMobile.textContent = item.sessions;
-        if (lightboxYearMobile) lightboxYearMobile.textContent = item.year;
-
-        // Clear and populate tags for both desktop and mobile
-        if (lightboxTags) {
-            lightboxTags.innerHTML = '';
-            item.tags.forEach(tag => {
-                const tagSpan = document.createElement('span');
-                tagSpan.className = 'px-3 py-1 bg-surface text-text-secondary text-sm rounded-full border border-border';
-                tagSpan.textContent = tag;
-                lightboxTags.appendChild(tagSpan);
-            });
+        // Update lightbox image trigger data-index for navigation
+        const lightboxImageContainer = lightboxImage.parentElement;
+        if (lightboxImageContainer) {
+            lightboxImageContainer.setAttribute('data-index', currentImageIndex);
         }
 
-        if (lightboxTagsMobile) {
-            lightboxTagsMobile.innerHTML = '';
-            item.tags.forEach(tag => {
-                const tagSpan = document.createElement('span');
-                tagSpan.className = 'px-3 py-1 bg-surface text-text-secondary text-sm rounded-full border border-border';
-                tagSpan.textContent = tag;
-                lightboxTagsMobile.appendChild(tagSpan);
-            });
-        }
+        // Clear and populate tags
+        lightboxTags.innerHTML = '';
+        item.tags.forEach(tag => {
+            const tagSpan = document.createElement('span');
+            tagSpan.className = 'px-3 py-1 bg-surface text-text-secondary text-sm rounded-full border border-border';
+            tagSpan.textContent = tag;
+            lightboxTags.appendChild(tagSpan);
+        });
 
         lightbox.classList.remove('opacity-0', 'pointer-events-none');
         lightbox.classList.add('opacity-100');
         document.body.style.overflow = 'hidden';
+
+        // Re-initialize lightbox image click handler for navigation
+        initializeLightboxImageClick();
+    }
+
+    function initializeLightboxImageClick() {
+        const lightboxImageContainer = document.querySelector('#lightbox .lightbox-trigger');
+        if (lightboxImageContainer) {
+            lightboxImageContainer.removeEventListener('click', handleLightboxImageClick);
+            lightboxImageContainer.addEventListener('click', handleLightboxImageClick);
+        }
+    }
+
+    function handleLightboxImageClick(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // Navigate to next image when clicking on the lightbox image
+        showNextImage();
     }
 
     function closeLightboxModal() {
@@ -804,10 +690,7 @@
     //     });
     // });
 
-    // Desktop buttons
-    const closeLightboxDesktop = document.getElementById('closeLightboxDesktop');
     closeLightbox.addEventListener('click', closeLightboxModal);
-    closeLightboxDesktop.addEventListener('click', closeLightboxModal);
     prevImage.addEventListener('click', showPrevImage);
     nextImage.addEventListener('click', showNextImage);
 
