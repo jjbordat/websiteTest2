@@ -111,7 +111,7 @@ class DataManager {
 
             theme: {
                 colors: {
-                    primary: "#740DB5",    // Purple accent
+                    primary: "#D4AF37",    // Gold accent
                     background: "#000000", // Black background
                     surface: "#262626",    // Card backgrounds
                     text: {

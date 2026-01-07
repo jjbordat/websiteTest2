@@ -577,13 +577,13 @@ video {
   /* Card backgrounds and content separation */
   --color-secondary-dark: #0D0D0D;
   /* Deeper secondary shade */
-  /* Accent Colors - Premium Purple */
-  --color-accent: #740DB5;
-  /* Premium purple for navigation and focus moments */
-  --color-accent-light: #8B2AC0;
-  /* Lighter purple for hover states */
-  --color-accent-dark: #5A0A8F;
-  /* Darker purple for pressed states */
+  /* Accent Colors - Premium Gold */
+  --color-accent: #D4AF37;
+  /* Premium gold for navigation and focus moments */
+  --color-accent-light: #F4E99B;
+  /* Lighter gold for hover states */
+  --color-accent-dark: #B8860B;
+  /* Darker gold for pressed states */
   /* Background Colors */
   --color-background: #000000;
   /* Pure black background */
@@ -622,8 +622,8 @@ video {
   /* Border Colors */
   --color-border: #333333;
   /* Default border color */
-  --color-border-accent: #740DB5;
-  /* Purple accent borders */
+  --color-border-accent: #D4AF37;
+  /* Gold accent borders */
   --color-border-light: #404040;
   /* Lighter border for subtle separation */
   /* Shadow Values */
@@ -631,7 +631,7 @@ video {
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
   --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.5);
-  --shadow-gold: 0 4px 20px rgba(116, 13, 181, 0.15);
+  --shadow-gold: 0 4px 20px rgba(212, 175, 55, 0.15);
   /* Transition Values */
   --transition-fast: 150ms ease-out;
   --transition-base: 300ms ease-out;
@@ -812,33 +812,33 @@ button{
 
 .btn-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(116 13 181 / var(--tw-bg-opacity, 1));
+  background-color: rgb(212 175 55 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(13 13 13 / var(--tw-text-opacity, 1));
 }
 
 .btn-primary:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(139 42 192 / var(--tw-bg-opacity, 1));
+  background-color: rgb(244 233 155 / var(--tw-bg-opacity, 1));
 }
 
 .btn-primary:active{
   --tw-bg-opacity: 1;
-  background-color: rgb(90 10 143 / var(--tw-bg-opacity, 1));
+  background-color: rgb(184 134 11 / var(--tw-bg-opacity, 1));
 }
 
 .btn-outline{
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(116 13 181 / var(--tw-text-opacity, 1));
+  color: rgb(212 175 55 / var(--tw-text-opacity, 1));
 }
 
 .btn-outline:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(116 13 181 / var(--tw-bg-opacity, 1));
+  background-color: rgb(212 175 55 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(13 13 13 / var(--tw-text-opacity, 1));
 }
@@ -868,7 +868,7 @@ button{
 .card-gold{
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
   box-shadow: var(--shadow-gold);
 }
 
@@ -908,7 +908,7 @@ button{
 
 .input:focus{
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -941,7 +941,7 @@ button{
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  box-shadow: 0 0 20px rgba(116, 13, 181, 0.4), 0 0 40px rgba(116, 13, 181, 0.2);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), 0 0 40px rgba(212, 175, 55, 0.2);
 }
 
 .glow-gold:hover::after{
@@ -1016,12 +1016,12 @@ button{
 
 .text-gradient-gold{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #740DB5 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(116 13 181 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #D4AF37 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(212 175 55 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(139 42 192 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #8B2AC0 var(--tw-gradient-via-position), var(--tw-gradient-to);
-  --tw-gradient-to: #740DB5 var(--tw-gradient-to-position);
+  --tw-gradient-to: rgb(244 233 155 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #F4E99B var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: #D4AF37 var(--tw-gradient-to-position);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -1035,8 +1035,8 @@ button{
   --tw-gradient-from: transparent var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(116 13 181 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #740DB5 var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: rgb(212 175 55 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #D4AF37 var(--tw-gradient-via-position), var(--tw-gradient-to);
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
@@ -1057,10 +1057,10 @@ button{
 
 .badge-gold{
   border-width: 1px;
-  border-color: rgb(116 13 181 / 0.2);
-  background-color: rgb(116 13 181 / 0.1);
+  border-color: rgb(212 175 55 / 0.2);
+  background-color: rgb(212 175 55 / 0.1);
   --tw-text-opacity: 1;
-  color: rgb(116 13 181 / var(--tw-text-opacity, 1));
+  color: rgb(212 175 55 / var(--tw-text-opacity, 1));
 }
 
 /* Badge posicionamiento específico - Fix para evitar solapamiento con header */
@@ -1834,15 +1834,15 @@ button{
 
 .border-accent{
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
 }
 
 .border-accent\/20{
-  border-color: rgb(116 13 181 / 0.2);
+  border-color: rgb(212 175 55 / 0.2);
 }
 
 .border-accent\/30{
-  border-color: rgb(116 13 181 / 0.3);
+  border-color: rgb(212 175 55 / 0.3);
 }
 
 .border-border{
@@ -1852,7 +1852,7 @@ button{
 
 .border-border-accent{
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
 }
 
 .border-primary{
@@ -1866,15 +1866,15 @@ button{
 
 .bg-accent{
   --tw-bg-opacity: 1;
-  background-color: rgb(116 13 181 / var(--tw-bg-opacity, 1));
+  background-color: rgb(212 175 55 / var(--tw-bg-opacity, 1));
 }
 
 .bg-accent\/10{
-  background-color: rgb(116 13 181 / 0.1);
+  background-color: rgb(212 175 55 / 0.1);
 }
 
 .bg-accent\/20{
-  background-color: rgb(116 13 181 / 0.2);
+  background-color: rgb(212 175 55 / 0.2);
 }
 
 .bg-background{
@@ -1934,20 +1934,20 @@ button{
 }
 
 .from-accent{
-  --tw-gradient-from: #740DB5 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(116 13 181 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #D4AF37 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(212 175 55 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-accent\/20{
-  --tw-gradient-from: rgb(116 13 181 / 0.2) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(116 13 181 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: rgb(212 175 55 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(212 175 55 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-accent\/30{
-  --tw-gradient-from: rgb(116 13 181 / 0.3) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(116 13 181 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: rgb(212 175 55 / 0.3) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(212 175 55 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1980,7 +1980,7 @@ button{
 }
 
 .to-accent-light{
-  --tw-gradient-to: #8B2AC0 var(--tw-gradient-to-position);
+  --tw-gradient-to: #F4E99B var(--tw-gradient-to-position);
 }
 
 .to-background{
@@ -2215,7 +2215,7 @@ button{
 
 .text-accent{
   --tw-text-opacity: 1;
-  color: rgb(116 13 181 / var(--tw-text-opacity, 1));
+  color: rgb(212 175 55 / var(--tw-text-opacity, 1));
 }
 
 .text-error{
@@ -2284,7 +2284,7 @@ button{
 }
 
 .shadow-gold-lg{
-  --tw-shadow: 0 8px 32px rgba(116, 13, 181, 0.25);
+  --tw-shadow: 0 8px 32px rgba(212, 175, 55, 0.25);
   --tw-shadow-colored: 0 8px 32px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -2448,20 +2448,20 @@ button{
 
 .hover\:border-accent:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
 }
 
 .hover\:border-accent\/30:hover{
-  border-color: rgb(116 13 181 / 0.3);
+  border-color: rgb(212 175 55 / 0.3);
 }
 
 .hover\:bg-accent:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(116 13 181 / var(--tw-bg-opacity, 1));
+  background-color: rgb(212 175 55 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-accent\/10:hover{
-  background-color: rgb(116 13 181 / 0.1);
+  background-color: rgb(212 175 55 / 0.1);
 }
 
 .hover\:bg-surface:hover{
@@ -2476,12 +2476,12 @@ button{
 
 .hover\:text-accent:hover{
   --tw-text-opacity: 1;
-  color: rgb(116 13 181 / var(--tw-text-opacity, 1));
+  color: rgb(212 175 55 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-accent-light:hover{
   --tw-text-opacity: 1;
-  color: rgb(139 42 192 / var(--tw-text-opacity, 1));
+  color: rgb(244 233 155 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-primary:hover{
@@ -2497,7 +2497,7 @@ button{
 
 .focus\:ring-accent:focus{
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(116 13 181 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(212 175 55 / var(--tw-ring-opacity, 1));
 }
 
 .group:hover .group-hover\:translate-x-1{
@@ -2524,7 +2524,7 @@ button{
 
 .group:hover .group-hover\:border-accent{
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
 }
 
 .group:hover .group-hover\:opacity-100{
@@ -2548,11 +2548,11 @@ button{
 
 .peer:checked ~ .peer-checked\:border-accent{
   --tw-border-opacity: 1;
-  border-color: rgb(116 13 181 / var(--tw-border-opacity, 1));
+  border-color: rgb(212 175 55 / var(--tw-border-opacity, 1));
 }
 
 .peer:checked ~ .peer-checked\:bg-accent\/10{
-  background-color: rgb(116 13 181 / 0.1);
+  background-color: rgb(212 175 55 / 0.1);
 }
 
 @media (min-width: 640px){

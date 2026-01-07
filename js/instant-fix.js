@@ -41,7 +41,7 @@ class InstantFix {
         } catch (error) {
             console.warn('⚠️ InstantFix no pudo cargar config, usando valores por defecto');
             this.config = {
-                theme: { colors: { primary: '#740DB5', accent: '#740DB5' } },
+                theme: { colors: { primary: '#D4AF37', accent: '#D4AF37' } },
                 artist: { badge: 'INgeniero Profesional Certificado' }
             };
         }
@@ -53,7 +53,7 @@ class InstantFix {
 
         console.log(`🔧 InstantFix: Aplicando correcciones (intento ${this.fixAttempts})...`);
 
-        const accentColor = this.config?.theme?.colors?.accent || '#740DB5';
+        const accentColor = this.config?.theme?.colors?.accent || '#D4AF37';
 
         try {
             // 1. FIX: Botones específicos que fallan

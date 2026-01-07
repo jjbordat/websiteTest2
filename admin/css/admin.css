@@ -6,9 +6,9 @@
 /* ===== VARIABLES GLOBALES ===== */
 :root {
     /* Admin specific colors */
-    --admin-primary: #740DB5;
-    --admin-primary-light: #8B2AC0;
-    --admin-primary-dark: #5A0A8F;
+    --admin-primary: #D4AF37;
+    --admin-primary-light: #F4E99B;
+    --admin-primary-dark: #B8860B;
     --admin-background: #0D0D0D;
     --admin-surface: #1A1A1A;
     --admin-surface-light: #262626;
