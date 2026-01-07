@@ -163,7 +163,7 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="card p-8 mb-6 animate-slide-up" style="animation-delay: 0.2s;">
+            <div class="card p-8 mb-6 animate-slide-up" style="animation-delay: 0.3s;">
                 <div class="flex flex-col md:flex-row gap-6">
                     <div class="flex-shrink-0">
                         <div class="relative inline-flex">
@@ -174,14 +174,14 @@
                         </div>
                     </div>
                     <div class="flex-1 space-y-3">
-                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Confirmación y Depósito</h3>
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Día de la Sesión</h3>
                         <p class="text-text-secondary leading-relaxed">
-                            Una vez aprobado el diseño, se requiere un depósito del 30% para reservar tu fecha. Este depósito es no reembolsable pero se aplica al costo total del tatuaje. Aceptamos transferencia bancaria o efectivo.
+                            Llega 10 minutos antes para completar el papeleo. Revisaremos el diseño final, colocaremos el stencil y comenzaremos el trabajo. Incluye descansos según sea necesario. El pago final se realiza al completar la sesión.
                         </p>
                         <div class="flex flex-wrap gap-3 pt-2">
-                            <span class="badge badge-gold">30% depósito</span>
-                            <span class="badge badge-gold">No reembolsable</span>
-                            <span class="badge badge-gold">Reserva tu fecha</span>
+                            <span class="badge badge-gold">Llegar 10 min antes</span>
+                            <span class="badge badge-gold">Descansos incluidos</span>
+                            <span class="badge badge-gold">Pago al finalizar</span>
                         </div>
                     </div>
                 </div>
@@ -199,14 +199,14 @@
                         </div>
                     </div>
                     <div class="flex-1 space-y-3">
-                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Día de la Sesión</h3>
+                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Cuidado Posterior</h3>
                         <p class="text-text-secondary leading-relaxed">
-                            Llega 10 minutos antes para completar el papeleo. Revisaremos el diseño final, colocaremos el stencil y comenzaremos el trabajo. Incluye descansos según sea necesario. El pago final se realiza al completar la sesión.
+                            Lava el tatuaje con agua tibia y jabón neutro, hidrata con una capa delgada de crema cicatrizante y evita el sol, piscinas y rascar costras. Mantén la zona limpia y sigue las indicaciones del tatuador para una correcta cicatrización.
                         </p>
                         <div class="flex flex-wrap gap-3 pt-2">
-                            <span class="badge badge-gold">Llegar 10 min antes</span>
-                            <span class="badge badge-gold">Descansos incluidos</span>
-                            <span class="badge badge-gold">Pago al finalizar</span>
+                            <span class="badge badge-gold">Lavar con jabón neutro</span>
+                            <span class="badge badge-gold">Hidratar sin excederse</span>
+                            <span class="badge badge-gold">Evitar sol y agua</span>
                         </div>
                     </div>
                 </div>
@@ -523,7 +523,7 @@
                         </p>
                     </div>
 
-                    <button type="button" onclick="window.location.href='contact.html'" class="btn btn-primary w-full glow-gold group">
+                    <button type="button" onclick="sendWhatsAppConsultation()" class="btn btn-primary w-full glow-gold group">
                         <span>Solicitar Consulta Gratuita</span>
                         <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
@@ -535,181 +535,6 @@
     </div>
 </section>
 
-<!-- Booking Calendar Section -->
-<section class="section" id="availability">
-    <div class="container-custom">
-        <div class="text-center mb-16 space-y-4 animate-fade-in">
-            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold">
-                Disponibilidad <span class="text-gradient-gold">Actual</span>
-            </h2>
-            <p class="text-text-secondary text-lg max-w-2xl mx-auto">
-                Próximas fechas disponibles para nuevas reservas
-            </p>
-            <div class="divider max-w-xs mx-auto"></div>
-        </div>
-
-        <div class="max-w-5xl mx-auto">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Calendar Display -->
-                <div class="card p-8 space-y-6">
-                    <div class="flex items-center justify-between mb-6">
-                        <h3 class="font-headline text-2xl font-semibold text-text-primary">Enero 2025</h3>
-                        <div class="flex items-center gap-2">
-                            <button class="p-2 hover:bg-surface-light rounded-lg transition-colors duration-300" aria-label="Mes anterior">
-                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                                </svg>
-                            </button>
-                            <button class="p-2 hover:bg-surface-light rounded-lg transition-colors duration-300" aria-label="Mes siguiente">
-                                <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Calendar Grid -->
-                    <div class="grid grid-cols-7 gap-2">
-                        <!-- Day Headers -->
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">L</div>
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">M</div>
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">X</div>
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">J</div>
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">V</div>
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">S</div>
-                        <div class="text-center text-text-tertiary text-sm font-semibold py-2">D</div>
-
-                        <!-- Calendar Days -->
-                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">30</div>
-                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">31</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">1</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">2</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">3</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">4</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">5</div>
-
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">6</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">7</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">8</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">9</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">10</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">11</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">12</div>
-
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">13</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">14</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">15</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">16</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">17</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">18</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">19</div>
-
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">20</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">21</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">22</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">23</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">24</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">25</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">26</div>
-
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">27</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">28</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-accent/20 border border-accent rounded-lg font-semibold">29</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">30</div>
-                        <div class="aspect-square flex items-center justify-center text-text-primary text-sm bg-surface-light rounded-lg">31</div>
-                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">1</div>
-                        <div class="aspect-square flex items-center justify-center text-text-muted text-sm">2</div>
-                    </div>
-
-                    <div class="flex items-center gap-4 pt-4 border-t border-border">
-                        <div class="flex items-center gap-2">
-                            <div class="w-4 h-4 bg-accent/20 border border-accent rounded"></div>
-                            <span class="text-text-secondary text-sm">Disponible</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-4 h-4 bg-surface-light rounded"></div>
-                            <span class="text-text-secondary text-sm">Reservado</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Upcoming Appointments -->
-                <div class="space-y-6">
-                    <h3 class="font-headline text-2xl font-semibold text-text-primary">Próximas Fechas Disponibles</h3>
-
-                    <!-- Appointment Card 1 -->
-                    <div class="card p-6 space-y-4 hover:border-accent transition-all duration-300 border border-border">
-                        <div class="flex items-start justify-between">
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                    </svg>
-                                    <span class="font-semibold text-text-primary">Miércoles, 08/01/2025</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-text-secondary text-sm">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span>10:00 - 14:00</span>
-                                </div>
-                            </div>
-                            <span class="badge badge-gold">4 horas</span>
-                        </div>
-                        <button onclick="window.location.href='contact.html'" class="btn btn-outline w-full group">
-                            <span>Reservar Esta Fecha</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- Appointment Card 2 -->
-                    <div class="card p-6 space-y-4 hover:border-accent transition-all duration-300 border border-border">
-                        <div class="flex items-start justify-between">
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                    </svg>
-                                    <span class="font-semibold text-text-primary">Miércoles, 15/01/2025</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-text-secondary text-sm">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                    <span>15:00 - 19:00</span>
-                                </div>
-                            </div>
-                            <span class="badge badge-gold">4 horas</span>
-                        </div>
-                        <button onclick="window.location.href='contact.html'" class="btn btn-outline w-full group">
-                            <span>Reservar Esta Fecha</span>
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- Info Box -->
-                    <div class="bg-accent/10 border border-accent/20 rounded-lg p-6 space-y-3">
-                        <div class="flex items-start gap-3">
-                            <svg class="w-6 h-6 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                            <div class="space-y-2">
-                                <h4 class="font-semibold text-text-primary">Nota Importante</h4>
-                                <p class="text-text-secondary text-sm leading-relaxed">
-                                    Las fechas mostradas son orientativas. La disponibilidad exacta se confirmará durante la consulta inicial. Se recomienda reservar con al menos 2-3 semanas de anticipación.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- FAQ Section -->
 <section class="section bg-gradient-to-b from-background to-secondary" id="faq">
@@ -1165,9 +990,91 @@
         loadPricingConfig();
     });
 
+    // WhatsApp Consultation Function
+    async function sendWhatsAppConsultation() {
+        try {
+            // Load configuration to get WhatsApp number
+            const response = await fetch('../config.json?' + new Date().getTime());
+            if (!response.ok) throw new Error('Could not load config');
+            const config = await response.json();
+
+            const whatsappNumber = config.artist?.whatsapp || '+573118321831'; // Fallback number
+
+            // Get selected values from the form
+            const sizeElement = document.querySelector('input[name="size"]:checked');
+            const complexityElement = document.querySelector('input[name="complexity"]:checked');
+            const colorElement = document.querySelector('input[name="color"]:checked');
+            const estimatedPriceElement = document.getElementById('estimatedPrice');
+
+            // Get text descriptions for better readability
+            const sizeText = sizeElement ? getSizeDescription(sizeElement.value) : 'No especificado';
+            const complexityText = complexityElement ? getComplexityDescription(complexityElement.value) : 'Simple';
+            const colorText = colorElement ? getColorDescription(colorElement.value) : 'Blanco y Negro';
+            const estimatedPrice = estimatedPriceElement ? estimatedPriceElement.textContent.trim() : 'A consultar';
+
+            // Create the WhatsApp message
+            const message = `¡Hola! 👋
+
+Me interesa solicitar una *consulta gratuita* para un tatuaje.
+
+📋 *Detalles del proyecto:*
+• *Tamaño:* ${sizeText}
+• *Complejidad:* ${complexityText}
+• *Color:* ${colorText}
+• *Precio estimado:* ${estimatedPrice}
+
+¿Podríamos agendar una consulta para revisar el diseño y confirmar todos los detalles?
+
+¡Gracias! 😊`;
+
+            // Encode the message for URL
+            const encodedMessage = encodeURIComponent(message);
+
+            // Create WhatsApp URL (remove any + or spaces from phone number)
+            const cleanNumber = whatsappNumber.replace(/[\s\+\-\(\)]/g, '');
+            const whatsappUrl = `https://wa.me/${cleanNumber}?text=${encodedMessage}`;
+
+            // Open WhatsApp
+            window.open(whatsappUrl, '_blank');
+
+        } catch (error) {
+            console.error('Error sending WhatsApp message:', error);
+            // Fallback: redirect to contact page
+            window.location.href = 'contact.html';
+        }
+    }
+
+    // Helper functions to get readable descriptions
+    function getSizeDescription(size) {
+        switch(size) {
+            case 'small': return 'Pequeño (hasta 5x5cm)';
+            case 'medium': return 'Mediano (5x5cm - 15x15cm)';
+            case 'large': return 'Grande (más de 15x15cm)';
+            default: return 'No especificado';
+        }
+    }
+
+    function getComplexityDescription(complexity) {
+        switch(complexity) {
+            case 'simple': return 'Simple (líneas básicas)';
+            case 'moderate': return 'Moderado (detalles medios)';
+            case 'complex': return 'Complejo (alta complejidad)';
+            default: return 'Simple';
+        }
+    }
+
+    function getColorDescription(color) {
+        switch(color) {
+            case 'blackgray': return 'Blanco y Negro';
+            case 'color': return 'A Color (+20% adicional)';
+            default: return 'Blanco y Negro';
+        }
+    }
+
     // Make functions available globally for debugging
     window.loadPricingConfig = loadPricingConfig;
     window.calculatePrice = calculatePrice;
+    window.sendWhatsAppConsultation = sendWhatsAppConsultation;
 
     // FAQ Accordion
     const faqButtons = document.querySelectorAll('.faq-button');

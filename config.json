@@ -28,8 +28,8 @@
   },
   "theme": {
     "colors": {
-      "primary": "#D4AF37",
-      "accent": "#D4AF37",
+      "primary": "#d4af37",
+      "accent": "#d4af37",
       "background": "#0a0a0a",
       "surface": "#1a1a1a",
       "textPrimary": "#ffffff"
