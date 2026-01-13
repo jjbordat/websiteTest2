@@ -136,9 +136,9 @@ const accentColor = this.config?.theme?.colors?.accent || '#740DB5';
 Para cambiar "InkMaster" por tu propio nombre, edita estas líneas en **todas las páginas HTML**:
 
 #### En cada archivo de `pages/*.html`:
-- **Header (desktop)**: Buscar `<span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>`
+- **Header (desktop)**: Buscar `<span class="font-headline text-2xl font-semibold text-gradient-gold">Alaska ink</span>`
 - **Menú móvil**: Buscar la misma línea dentro del menú móvil
-- **Footer**: Buscar `<span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>`
+- **Footer**: Buscar `<span class="font-headline text-2xl font-semibold text-gradient-gold">Alaska ink</span>`
 - **Copyright**: Cambiar `© 2025 InkMaster Portfolio` por tu nombre
 
 #### Archivos específicos y líneas aproximadas:
@@ -165,7 +165,7 @@ pages/category_explorer.html: (similares ubicaciones)
 ### Ejemplo de Cambio Completo:
 ```html
 <!-- ANTES -->
-<span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+<span class="font-headline text-2xl font-semibold text-gradient-gold">Alaska ink</span>
 
 <!-- DESPUÉS -->
 <span class="font-headline text-2xl font-semibold text-gradient-gold">Tu Nombre</span>
