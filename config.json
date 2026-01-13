@@ -1,28 +1,28 @@
 {
   "site": {
     "title": "Portfolio",
-    "tagline": "Arte que vive contigo",
-    "description": "Transformo visiones en arte permanente con precisión en cada línea. Cada tatuaje es una colaboración única entre artista y cliente, donde tu historia se convierte en una obra maestra que llevarás contigo para siempre."
+    "tagline": "Arte sobre la piel ",
+    "description": "Transformo visiones en arte permanente con precisión en cada línea. Cada tatuaje es una colaboración única entre artista y cliente, donde tu historia se convierte en una obra maestra que llevarás contigo para siempre, Aquí encontrarás piezas ejecutadas con atención al detalle, manejo del contraste y una lectura clara sobre la piel. Mi objetivo es crear tatuajes sólidos, estéticos y pensados para envejecer correctamente con el paso del tiempo.\n\nExplora el portafolio y descubre el tipo de trabajo que desarrollo. Si conectas con este estilo, será un gusto convertir tu idea en una pieza única."
   },
   "artist": {
-    "name": "Jeferson Bordaaaa",
-    "title": "Maestro del Arte Corporal en ingenieria",
-    "bio": "Con más de 30 años transformando visiones en arte permanente, cada línea que trazo cuenta una historia única.",
-    "badge": "INgeniero Profesional Certificado",
-    "experience": 12,
-    "clients": 510,
-    "awards": 8,
-    "whatsapp": "+573118321831",
-    "email": "contacto@inkmaster.es",
-    "location": "Calle del Arte, 123, 28001 Madrid, España",
-    "instagram": "https://instagram.com/inkmaster",
-    "facebook": "https://facebook.com/inkmaster",
-    "tiktok": "https://www.tiktok.com/@inkmaster",
-    "youtube": "https://www.youtube.com/@inkmaster",
-    "workHours": 5000,
-    "projects": 511,
-    "instagramFollowers": 1500,
-    "facebookFollowers": 523,
+    "name": "JHONN QUEVEDO",
+    "title": "Tatuador Profesional Internacional",
+    "bio": "Soy tatuador profesional con mas de 6 años de experiencia, especializado en crear piezas únicas y personalizadas, adaptadas al cuerpo y a la historia de cada cliente. Mi trabajo se enfoca en la calidad del trazo, el contraste y la durabilidad del tatuaje, cuidando cada detalle desde el diseño hasta la cicatrización.\n\nCada proyecto es un proceso colaborativo, donde la idea se transforma en una pieza sólida, estética y bien ejecutada. Si buscas un tatuaje con carácter, técnica y atención profesional, estás en el lugar correcto.",
+    "badge": "Artista Tatuador Profesional Internacional",
+    "experience": 7,
+    "clients": 1000,
+    "awards": 0,
+    "whatsapp": "+57 313 741 65 82",
+    "email": "jhonquevedo16@gmail.com",
+    "location": "carrera 79 #43-25 Bogota,Colombia",
+    "instagram": "https://www.instagram.com/jhonnquevedo_art?igsh=MTl6cmpycmxtNXVheQ%3D%3D&utm_source=qr",
+    "facebook": "https://www.facebook.com/share/1GwURt8hBg/?mibextid=wwXIfr",
+    "tiktok": "https://www.tiktok.com/@jhonnquevedo_art?_r=1&_t=ZS-92srLnV9BVB",
+    "youtube": "",
+    "workHours": 10000,
+    "projects": 1000,
+    "instagramFollowers": 2600,
+    "facebookFollowers": 2400,
     "tiktokFollowers": 890,
     "youtubeFollowers": 1200
   },
@@ -37,154 +37,81 @@
     "logo": null
   },
   "images": {
-    "hero": "imagenes/homepage/hero_1766256843841.jpg",
-    "artistProfile": "imagenes/artist/profile_1766255546731.jpg",
+    "hero": "imagenes/homepage/hero_1767843600998.jpg",
+    "artistProfile": "imagenes/artist/profile_1767843514146.jpg",
     "homepage": {
-      "hero": "imagenes/homepage/hero_1766256843841.jpg",
+      "hero": "imagenes/homepage/hero_1767843600998.jpg",
       "featured1": null,
       "featured2": null,
       "featured3": null
     },
     "artist": {
-      "profile": "imagenes/artist/profile_1766255546731.jpg",
+      "profile": "imagenes/artist/profile_1767843514146.jpg",
       "gallery": []
     }
   },
   "texts": {
     "homepage": {
-      "heroTitle": "Arte queaaaaaabbbbb",
-      "heroTitleAccent": "Vive Contigoaaaaaaa",
-      "heroDescription": "Transformo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      "heroTitle": "Arte sobre",
+      "heroTitleAccent": "la piel",
+      "heroDescription": "Transformo visiones en arte permanente con precisión en cada línea. Cada tatuaje es una colaboración única entre artista y cliente, donde tu historia se convierte en una obra maestra que llevarás contigo para siempre, Aquí encontrarás piezas ejecutadas con atención al detalle, manejo del contraste y una lectura clara sobre la piel. Mi objetivo es crear tatuajes sólidos, estéticos y pensados para envejecer correctamente con el paso del tiempo.\n\nExplora el portafolio y descubre el tipo de trabajo que desarrollo. Si conectas con este estilo, será un gusto convertir tu idea en una pieza única."
     }
   },
   "categories": [
     {
-      "id": "realismo",
-      "name": "Realismo",
-      "description": "Detalles fotográficos que capturan la esencia de retratos y escenas con precisión impresionante.",
-      "image": "imagenes/categories/realismo.jpg",
-      "badge": "Alta Demanda",
+      "id": "realismo-en-sombras",
+      "name": "Realismo en sombras",
+      "description": "Especializado en realismo en sombras, donde la profundidad, el contraste y el detalle se unen para crear piezas intensas, atemporales y llenas de carácter.\n\n",
+      "image": "imagenes/categories/realismo/portada.jpg",
+      "badge": "Trending",
       "complexity": "high",
-      "tags": [
-        "color",
-        "detallado",
-        "grande",
-        "modernooooooooooooooo"
-      ],
+      "tags": [],
       "active": true,
       "link": "portfolio_gallery.html"
     },
     {
-      "id": "geometrico",
-      "name": "Geométrico",
-      "description": "Patrones precisos y formas matemáticas que crean composiciones equilibradas y modernas.",
-      "image": "imagenes/categories/geometrico.jpg",
-      "tags": [
-        "blackwork",
-        "detallado",
-        "moderno",
-        "minimalista"
-      ],
-      "badge": "",
+      "id": "retrato-en-sombras",
+      "name": "Retrato en sombras",
+      "description": "Retratos en sombras enfocados en capturar la esencia, expresión y emoción del rostro, logrando resultados fieles y de alto impacto visual.\n\n.\n\n",
+      "image": "imagenes/categories/retratos/IMG_2574.jpg",
+      "badge": "Trending",
       "complexity": "high",
-      "link": "portfolio_gallery.html",
-      "active": true
+      "tags": [],
+      "active": true,
+      "link": "portfolio_gallery.html"
     },
     {
-      "id": "japones",
-      "name": "Japonés Irezumi",
-      "description": "Arte tradicional con dragones, koi y elementos de la cultura japonesa en composiciones completas.",
-      "image": "imagenes/categories/japones.jpg",
-      "tags": [
-        "color",
-        "tradicional",
-        "grande",
-        "cultural"
-      ],
-      "badge": "Tradicional",
+      "id": "color",
+      "name": "Color",
+      "description": "Trabajo en color con una paleta equilibrada, saturación controlada y transiciones limpias, buscando piezas vibrantes que conserven fuerza y durabilidad en el tiempo.\n\n.\n\n",
+      "image": "imagenes/categories/color/IMG_6241.jpg",
+      "badge": "Trending",
       "complexity": "high",
-      "link": "portfolio_gallery.html",
-      "active": true
+      "tags": [],
+      "active": true,
+      "link": "portfolio_gallery.html"
     },
     {
       "id": "blackwork",
       "name": "Blackwork",
-      "description": "Tinta negra sólida con diseños contundentes que destacan por su simplicidad y elegancia atemporal.",
-      "image": "imagenes/categories/blackwork.jpg",
-      "tags": [
-        "blackwork",
-        "bold",
-        "moderno",
-        "minimalista"
-      ],
-      "badge": "",
-      "complexity": "medium",
-      "link": "portfolio_gallery.html",
-      "active": true
-    },
-    {
-      "id": "dotwork",
-      "name": "Dotwork",
-      "description": "Técnica meticulosa de puntillismo que crea texturas y gradientes únicos con miles de puntos precisos.",
-      "image": "imagenes/categories/dotwork.jpg",
-      "tags": [
-        "blackwork",
-        "detallado",
-        "moderno",
-        "stippling"
-      ],
-      "badge": "",
+      "description": "Blackwork sólido y definido, con alto contraste y líneas contundentes, creando tatuajes fuertes, gráficos y visualmente poderosos.\n\n.\n\n",
+      "image": "imagenes/categories/blackwork/IMG_7707.jpg",
+      "badge": "Trending",
       "complexity": "high",
-      "link": "portfolio_gallery.html",
-      "active": true
+      "tags": [],
+      "active": true,
+      "link": "portfolio_gallery.html"
     },
     {
-      "id": "acuarela",
-      "name": "Acuarela",
-      "description": "Colores vibrantes que fluyen como pinceladas de acuarela, creando efectos únicos y artísticos.",
-      "image": "imagenes/categories/acuarela.jpg",
-      "tags": [
-        "color",
-        "artístico",
-        "moderno",
-        "abstracto"
-      ],
-      "badge": "Artístico",
-      "complexity": "medium",
-      "link": "portfolio_gallery.html",
-      "active": true
-    },
-    {
-      "id": "neo-tradicional",
-      "name": "Neo-Tradicional",
-      "description": "Evolución del estilo clásico americano con líneas gruesas, colores sólidos y motivos icónicos modernos.",
-      "image": "imagenes/categories/neo-tradicional.jpg",
-      "tags": [
-        "color",
-        "bold",
-        "tradicional",
-        "clásico"
-      ],
-      "badge": "",
-      "complexity": "medium",
-      "link": "portfolio_gallery.html",
-      "active": true
-    },
-    {
-      "id": "minimalista",
-      "name": "Minimalista",
-      "description": "Diseños simples y elegantes con líneas finas y composiciones limpias. La belleza en la simplicidad.",
-      "image": "imagenes/categories/minimalista.jpg",
-      "tags": [
-        "simple",
-        "lineas",
-        "delicado",
-        "moderno"
-      ],
-      "badge": "Elegante",
-      "complexity": "low",
-      "link": "portfolio_gallery.html",
-      "active": true
+      "id": "fine-line",
+      "name": "Fine line",
+      "description": "Fine line delicado y preciso, con trazos limpios y minimalistas, pensado para piezas elegantes, sutiles y de gran detalle.\n\n.\n\n",
+      "image": "imagenes/categories/fineline/IMG_2112.jpg",
+      "badge": "Trending",
+      "complexity": "high",
+      "tags": [],
+      "active": true,
+      "link": "portfolio_gallery.html"
     }
   ],
   "pricing": {
@@ -197,243 +124,1563 @@
     },
     "medium": {
       "min": 300000,
-      "max": 800000,
+      "max": 750000,
       "description": "Tatuajes medianos con detalles"
     },
     "large": {
       "min": 800000,
-      "max": 1900000,
+      "max": 1500000,
       "description": "Proyectos grandes y complejos"
     },
     "hourly": {
-      "rate": 45000,
-      "description": "Para proyectos complejos por horas"
+      "rate": 12000,
+      "description": "Sesion de un dia completo"
     },
     "touchup": {
       "free": 30,
-      "price": 99000,
+      "price": 150000,
       "description": "Primer retoque gratuito dentro de 30 días"
     },
     "deposit": {
-      "percentage": 30,
+      "percentage": 40,
       "description": "Depósito requerido para reservar fecha"
     }
   },
   "portfolios": [
     {
-      "id": 13,
-      "title": "Retrato Realistaaaaaaaaaaaaaaaaaaa",
-      "description": "Retrato realista en blanco y negro con sombreado detallado y técnica fotográfica. Este diseño captura la esencia y expresión del sujeto con precisión artística.aaaaaaaaaaaaaaa",
-      "category": "realismo",
-      "image": "imagenes/portafolio/retrato_realista_001.jpg",
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Pierna",
+      "style": "Realismo",
+      "placement": "Pierna",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0577.jpg",
       "location": "Brazo",
       "style": "Realismo",
       "placement": "Brazo superior",
-      "sessions": "2-3 sesiones",
-      "year": "2024",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
       "tags": [
-        "retrato",
-        "blanco-negro",
-        "brazo"
+        "Black",
+        "grey"
       ],
       "active": true
     },
     {
-      "id": 2,
-      "title": "Geometría Sagrada",
-      "category": "geometrico",
-      "location": "Antebrazo",
-      "tags": [
-        "mandala",
-        "simetria",
-        "antebrazo"
-      ],
-      "image": "imagenes/portafolio/geometria_sagrada_002.jpg",
-      "description": "Diseño geométrico con mandalas y patrones simétricos que representan equilibrio y armonía. Cada línea está calculada con precisión matemática.",
-      "style": "Geométrico",
-      "placement": "Antebrazo completo",
-      "sessions": "2 sesiones",
-      "year": "2024",
-      "active": true
-    },
-    {
-      "id": 2,
-      "title": "Dragón Tradicional",
-      "description": "Tatuaje japonés tradicional con dragón y elementos florales. Representa fuerza, sabiduría y protección en la cultura oriental.",
-      "category": "japones",
-      "image": "imagenes/portafolio/dragon_tradicional_003.jpg",
-      "location": "Espalda",
-      "style": "Japonés Tradicional",
-      "placement": "Espalda completa",
-      "sessions": "4-5 sesiones",
-      "year": "2023",
-      "tags": [
-        "dragon",
-        "tradicional",
-        "espalda"
-      ],
-      "active": true
-    },
-    {
-      "id": 4,
-      "title": "Blackwork Tribal",
-      "category": "blackwork",
-      "location": "Hombro",
-      "tags": [
-        "tribal",
-        "negro",
-        "hombro"
-      ],
-      "image": "imagenes/portafolio/blackwork_tribal_004.jpg",
-      "description": "Diseño blackwork con patrones tribales en tinta negra sólida. Estilo audaz que destaca por su contraste y presencia visual.",
-      "style": "Blackwork",
-      "placement": "Hombro y pecho",
-      "sessions": "2 sesiones",
-      "year": "2024",
-      "active": true
-    },
-    {
-      "id": 4,
-      "title": "Flores Acuarela",
-      "description": "Tatuaje a color con técnica de acuarela que simula pinceladas fluidas. Los colores vibrantes crean un efecto artístico único.",
-      "category": "acuarela",
-      "image": "imagenes/portafolio/flores_acuarela_005.jpg",
-      "location": "Pierna",
-      "style": "Acuarela Color",
-      "placement": "Muslo",
-      "sessions": "2-3 sesiones",
-      "year": "2024",
-      "tags": [
-        "flores",
-        "acuarela",
-        "pierna"
-      ],
-      "active": true
-    },
-    {
-      "id": 6,
-      "title": "Líneas Minimalistas",
-      "category": "minimalista",
-      "location": "Muñeca",
-      "tags": [
-        "lineas",
-        "simple",
-        "muneca"
-      ],
-      "image": "imagenes/portafolio/lineas_minimalistas_006.jpg",
-      "description": "Diseño minimalista con líneas finas y delicadas. La simplicidad es la máxima sofisticación en este estilo contemporáneo.",
-      "style": "Minimalista",
-      "placement": "Muñeca interior",
-      "sessions": "1 sesión",
-      "year": "2024",
-      "active": true
-    },
-    {
-      "id": 7,
-      "title": "Lobo Realista",
-      "category": "realismo",
-      "location": "Pecho",
-      "tags": [
-        "animal",
-        "lobo",
-        "pecho"
-      ],
-      "image": "imagenes/portafolio/lobo_realista_007.jpg",
-      "description": "Retrato realista de lobo con detalles fotográficos en pelaje y expresión. Simboliza lealtad, fuerza y espíritu libre.",
-      "style": "Realismo Animal",
-      "placement": "Pecho central",
-      "sessions": "3 sesiones",
-      "year": "2023",
-      "active": true
-    },
-    {
-      "id": 8,
-      "title": "Abstracto Geométrico",
-      "category": "geometrico",
-      "location": "Costado",
-      "tags": [
-        "abstracto",
-        "lineas",
-        "costado"
-      ],
-      "image": "imagenes/portafolio/abstracto_geometrico_008.jpg",
-      "description": "Composición geométrica abstracta con líneas precisas y formas interconectadas. Arte moderno en la piel.",
-      "style": "Geométrico Abstracto",
-      "placement": "Costado completo",
-      "sessions": "2-3 sesiones",
-      "year": "2024",
-      "active": true
-    },
-    {
-      "id": 9,
-      "title": "Koi Japonés",
-      "category": "japones",
-      "location": "Manga",
-      "tags": [
-        "koi",
-        "agua",
-        "manga"
-      ],
-      "image": "imagenes/portafolio/koi_japones_009.jpg",
-      "description": "Pez koi nadando entre olas y flores de loto. Representa perseverancia, transformación y buena fortuna en la tradición japonesa.",
-      "style": "Japonés Tradicional",
-      "placement": "Manga completa",
-      "sessions": "3-4 sesiones",
-      "year": "2023",
-      "active": true
-    },
-    {
-      "id": 9,
-      "title": "Mariposa Natural",
-      "description": "Mariposa realista con colores naturales y elementos florales. Simboliza transformación, libertad y belleza efímera.",
-      "category": "acuarela",
-      "image": "imagenes/portafolio/mariposa_natural_010.jpg",
-      "location": "Espalda",
-      "style": "Realismo Color",
-      "placement": "Espalda alta",
-      "sessions": "2 sesiones",
-      "year": "2024",
-      "tags": [
-        "mariposa",
-        "naturaleza",
-        "espalda"
-      ],
-      "active": true
-    },
-    {
-      "id": 11,
-      "title": "Ornamental Blackwork",
-      "category": "blackwork",
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
       "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
       "tags": [
-        "ornamental",
-        "simetria",
-        "brazo"
+        "Black",
+        "grey"
       ],
-      "image": "imagenes/portafolio/ornamental_blackwork_011.jpg",
-      "description": "Diseño ornamental blackwork con patrones simétricos y detalles intrincados. Elegancia en tinta negra pura.",
-      "style": "Blackwork Ornamental",
-      "placement": "Brazo completo",
-      "sessions": "3 sesiones",
-      "year": "2024",
       "active": true
     },
     {
-      "id": 12,
-      "title": "Símbolo Delicado",
-      "category": "minimalista",
-      "location": "Tobillo",
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
       "tags": [
-        "simbolo",
-        "pequeno",
-        "tobillo"
+        "Black",
+        "grey"
       ],
-      "image": "imagenes/portafolio/simbolo_delicado_012.jpg",
-      "description": "Pequeño símbolo minimalista con significado personal. Diseño discreto pero con gran impacto emocional.",
-      "style": "Minimalista",
-      "placement": "Tobillo exterior",
-      "sessions": "1 sesión",
-      "year": "2024",
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },  {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Realismo sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Realismo",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Retrato sombra",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "retrato-en-sombras",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Blackwork",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "blackwork",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Color",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "color",
+      "image": "imagenes/categories/realismo/IMG_0463.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    }, {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 1,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
+      "active": true
+    },
+    {
+      "id": 34,
+      "title": "Fine Line",
+      "description": "Fotografias de mis ultimos trabajos",
+      "category": "fine-line",
+      "image": "imagenes/categories/fineline/IMG_2030.jpg",
+      "location": "Brazo",
+      "style": "Retrato",
+      "placement": "Brazo superior",
+      "sessions": "1-3 sesiones",
+      "year": "2025",
+      "tags": [
+        "Black",
+        "grey"
+      ],
       "active": true
     }
   ]

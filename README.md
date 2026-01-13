@@ -165,7 +165,7 @@ pages/category_explorer.html: (similares ubicaciones)
 ### Ejemplo de Cambio Completo:
 ```html
 <!-- ANTES -->
-<span class="font-headline text-2xl font-semibold text-gradient-gold">InkMaster</span>
+<span class="font-headline text-2xl font-semibold text-gradient-gold">Jhonn Ink</span>
 
 <!-- DESPUÉS -->
 <span class="font-headline text-2xl font-semibold text-gradient-gold">Tu Nombre</span>
