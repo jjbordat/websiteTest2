@@ -8,6 +8,7 @@
     <title>Galería de Portfolio - InkMaster Portfolio</title>
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/dynamic-links.js"></script>
+    <script src="../js/dynamic-logo.js"></script>
     <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
 
     <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Finkmaster2554back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
@@ -516,6 +517,7 @@
 <script>
     // Portfolio Data - Cargado dinámicamente desde config.json
     let portfolioData = [];
+    let currentFilteredPortfolios = []; // Array de portfolios actualmente filtrados para el lightbox
 
     // Sistema de paginación
     const ITEMS_PER_PAGE = 8; // Mostrar 8 elementos inicialmente
@@ -582,6 +584,9 @@
 
         // Reiniciar paginación
         currentlyShown = 0;
+
+        // Actualizar array filtrado global para el lightbox
+        currentFilteredPortfolios = filteredPortfolios;
 
         // Regenerar HTML con los primeros elementos del filtro
         if (filteredPortfolios.length === 0) {
@@ -688,7 +693,12 @@
     let currentImageIndex = 0;
 
     function openLightbox(index) {
-        const item = portfolioData[index];
+        // Usar el array filtrado actual en lugar del array completo
+        const item = currentFilteredPortfolios[index];
+        if (!item) {
+            console.error('❌ Portfolio no encontrado en índice filtrado:', index);
+            return;
+        }
         currentImageIndex = index;
 
         // Normalizar ruta de imagen (ARREGLO DEL PROBLEMA)
@@ -855,12 +865,18 @@
     }
 
     function showPrevImage() {
-        currentImageIndex = (currentImageIndex - 1 + portfolioData.length) % portfolioData.length;
+        // Usar el array filtrado actual para la navegación
+        const totalItems = currentFilteredPortfolios.length;
+        if (totalItems === 0) return;
+        currentImageIndex = (currentImageIndex - 1 + totalItems) % totalItems;
         openLightbox(currentImageIndex);
     }
 
     function showNextImage() {
-        currentImageIndex = (currentImageIndex + 1) % portfolioData.length;
+        // Usar el array filtrado actual para la navegación
+        const totalItems = currentFilteredPortfolios.length;
+        if (totalItems === 0) return;
+        currentImageIndex = (currentImageIndex + 1) % totalItems;
         openLightbox(currentImageIndex);
     }
 
@@ -936,11 +952,8 @@
     function loadMorePortfolios() {
         console.log('📂 Cargando más portfolios...');
 
-        // Obtener portfolios filtrados según la categoría actual
-        let filteredPortfolios = portfolioData;
-        if (currentFilter !== 'todos') {
-            filteredPortfolios = portfolioData.filter(portfolio => portfolio.category === currentFilter);
-        }
+        // Usar el array filtrado actual
+        let filteredPortfolios = currentFilteredPortfolios;
 
         console.log(`🔍 Filtro actual: ${currentFilter}`);
         console.log(`📊 Portfolios filtrados: ${filteredPortfolios.length}`);
@@ -1104,11 +1117,14 @@
             // Actualizar portfolioData global para que funcione con el lightbox
             portfolioData = portfolios.filter(portfolio => portfolio.active !== false);
 
+            // Inicializar array filtrado con todos los portfolios
+            currentFilteredPortfolios = [...portfolioData];
+
             // Generar filtros de categorías dinámicamente
             generateCategoryFilters(config.categories || []);
 
             // Generar HTML del portafolio con paginación inicial
-            generatePortfolioHTML(portfolioData, ITEMS_PER_PAGE);
+            generatePortfolioHTML(currentFilteredPortfolios, ITEMS_PER_PAGE);
 
             // Re-inicializar funcionalidad después de cargar contenido dinámico
             reinitializePortfolioFeatures();
