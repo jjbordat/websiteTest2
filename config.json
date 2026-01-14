@@ -1467,6 +1467,1673 @@
       "year": "2025",
       "tags": ["coverup", "floral", "color"],
       "active": true
+    },
+    {
+      "id": 91,
+      "title": "Flor delicada",
+      "description": "Diseño floral en fine line con trazos suaves y elegantes",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0308.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 92,
+      "title": "Lettering minimal",
+      "description": "Tipografía delicada en líneas finas y composición limpia",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0309.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 93,
+      "title": "Símbolo botánico",
+      "description": "Elemento natural trabajado en fine line minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0318.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 94,
+      "title": "Espalda ornamental",
+      "description": "Composición vertical ornamental con líneas finas",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0948.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 95,
+      "title": "Mandala fino",
+      "description": "Mandala simétrico realizado en estilo fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0949.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 96,
+      "title": "Minimal abstracto",
+      "description": "Diseño abstracto de líneas limpias y finas",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0953.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 97,
+      "title": "Floral detallado",
+      "description": "Trabajo floral con alto nivel de detalle en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0958.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 98,
+      "title": "Micro tattoo",
+      "description": "Micro tatuaje delicado en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0960.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 99,
+      "title": "Sol ornamental",
+      "description": "Diseño solar ornamental con líneas precisas",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0963.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 100,
+      "title": "Clavícula simétrica",
+      "description": "Composición simétrica pensada para la clavícula",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0980.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 101,
+      "title": "Retrato lineal",
+      "description": "Retrato artístico realizado en line art",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_0985.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 102,
+      "title": "Manga floral",
+      "description": "Manga parcial floral en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1005.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 103,
+      "title": "Animal minimal",
+      "description": "Figura animal en estilo minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1020.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 104,
+      "title": "Rostro line art",
+      "description": "Rostro femenino en line art fino",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1043.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 105,
+      "title": "Espalda sutil",
+      "description": "Diseño vertical discreto para espalda",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1049.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 106,
+      "title": "Flor single line",
+      "description": "Flor trazada en técnica single line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1053.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 107,
+      "title": "Botánica elegante",
+      "description": "Ilustración botánica elegante",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1054.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 108,
+      "title": "Nombre script",
+      "description": "Nombre en lettering script fino",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1055.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 109,
+      "title": "Texto minimal",
+      "description": "Texto corto en tipografía delicada",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1063.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 110,
+      "title": "Símbolo espiritual",
+      "description": "Símbolo espiritual minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1064.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 111,
+      "title": "Flor vertical",
+      "description": "Flor vertical estilizada",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1065.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 112,
+      "title": "Corazón lineal",
+      "description": "Corazón en diseño lineal",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1067.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 113,
+      "title": "Frase delicada",
+      "description": "Frase corta en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1068.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 114,
+      "title": "Huella simbólica",
+      "description": "Huella simbólica en líneas finas",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1071.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 115,
+      "title": "Ave minimal",
+      "description": "Ave en diseño minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1075.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 116,
+      "title": "Flor con color",
+      "description": "Flor en fine line con toque de color",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1077.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 117,
+      "title": "Columna vertebral",
+      "description": "Diseño vertical alineado a la columna",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1080.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 118,
+      "title": "Clavículas gemelas",
+      "description": "Diseño simétrico para ambas clavículas",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1081.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 119,
+      "title": "Figura abstracta",
+      "description": "Figura abstracta en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1083.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 120,
+      "title": "Cruz ornamental",
+      "description": "Cruz ornamental minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1085.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 121,
+      "title": "Alas lineales",
+      "description": "Alas en diseño lineal",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1086.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 122,
+      "title": "Puzzle minimal",
+      "description": "Pieza de rompecabezas en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1087.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 123,
+      "title": "Texto íntimo",
+      "description": "Texto íntimo y personal",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1093.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 124,
+      "title": "Manga floral full",
+      "description": "Manga floral completa en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1097.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 125,
+      "title": "Mariposas",
+      "description": "Mariposas delicadas en line art",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1098.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 126,
+      "title": "Mariposa espalda",
+      "description": "Mariposa central en espalda baja",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1099.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 127,
+      "title": "Objeto simbólico",
+      "description": "Objeto simbólico ilustrado en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1104.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 128,
+      "title": "Mano minimal",
+      "description": "Detalle minimal en mano",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1106.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 129,
+      "title": "Símbolo geométrico",
+      "description": "Símbolo geométrico fino",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1110.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 130,
+      "title": "Sketch personaje",
+      "description": "Sketch artístico en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1121.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 131,
+      "title": "Texto lateral",
+      "description": "Texto lateral discreto",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1122.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 132,
+      "title": "Flor lateral",
+      "description": "Flor lateral estilizada",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1124.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 133,
+      "title": "Ramo floral",
+      "description": "Ramo floral detallado",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1142.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 134,
+      "title": "Dreamcatcher",
+      "description": "Atrapasueños en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1159.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 135,
+      "title": "Nombre cursivo",
+      "description": "Nombre en cursiva fina",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1160.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 136,
+      "title": "Símbolo pequeño",
+      "description": "Símbolo pequeño y delicado",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1163.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 137,
+      "title": "Flor muñeca",
+      "description": "Flor pequeña para muñeca",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1179.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 138,
+      "title": "Mariposa lumbar",
+      "description": "Mariposa en zona lumbar",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1180.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 139,
+      "title": "Nombre minimal",
+      "description": "Nombre minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1189.JPG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 140,
+      "title": "Figura simple",
+      "description": "Figura simple en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1190.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 141,
+      "title": "Flor brazo",
+      "description": "Flor vertical en brazo",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1208.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 142,
+      "title": "Texto emocional",
+      "description": "Texto emocional en fine line",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1218.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 143,
+      "title": "Flor delicada",
+      "description": "Diseño floral en fine line con trazos suaves y elegantes",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1226.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 144,
+      "title": "Lettering minimal",
+      "description": "Tipografía delicada en líneas finas y composición limpia",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1255.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 145,
+      "title": "Símbolo botánico",
+      "description": "Elemento natural trabajado en fine line minimalista",
+      "category": "fine-line",
+      "image": "imagenes/portafolio/fine-line/IMG_1258.JPEG",
+      "location": "Variado",
+      "style": "Fine Line",
+      "placement": "Variado",
+      "sessions": "1 sesión",
+      "year": "2025",
+      "tags": [
+        "fine-line",
+        "delicado",
+        "minimalista",
+        "líneas finas"
+      ],
+      "active": true
+    },
+    {
+      "id": 146,
+      "title": "Dragón japonés",
+      "description": "Dragón japonés tradicional con alto nivel de detalle y movimiento",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_0509.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 147,
+      "title": "Dragón en manga",
+      "description": "Manga japonesa con dragón y composición fluida",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_0532.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 148,
+      "title": "Manga oriental",
+      "description": "Manga completa inspirada en el arte japonés tradicional",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_0864.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 149,
+      "title": "Koi japonés",
+      "description": "Carpa koi japonesa representando fuerza y perseverancia",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_0868.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 150,
+      "title": "Manga samurái",
+      "description": "Manga japonesa con elementos samurái y líneas dinámicas",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_0892.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 151,
+      "title": "Serpiente japonesa",
+      "description": "Serpiente japonesa en composición vertical sobre la espalda",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1026.PNG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 152,
+      "title": "Geisha tradicional",
+      "description": "Rostro de geisha japonesa con expresión serena",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1030.JPG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 153,
+      "title": "Geisha fine detail",
+      "description": "Retrato japonés detallado en estilo tradicional",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1031.JPG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 154,
+      "title": "Dragón en muslo",
+      "description": "Dragón japonés trabajado en líneas sólidas y sombreado",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1038.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 155,
+      "title": "Enso japonés",
+      "description": "Círculo Enso japonés minimalista con simbolismo zen",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1059.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 156,
+      "title": "Geisha manga",
+      "description": "Manga japonesa protagonizada por geisha tradicional",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1145.JPG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 157,
+      "title": "Geisha lateral",
+      "description": "Retrato japonés lateral con elementos florales",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1155.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 158,
+      "title": "Manga oriental oscura",
+      "description": "Manga japonesa de alto contraste y detalle",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1158.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 159,
+      "title": "Kanji japonés",
+      "description": "Kanji japonés con círculo rojo estilo bandera nipona",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1168.JPEG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 160,
+      "title": "Máscara japonesa",
+      "description": "Máscara tradicional japonesa con flores ornamentales",
+      "category": "japones",
+      "image": "imagenes/portafolio/japones/IMG_1257.JPG",
+      "location": "Variado",
+      "style": "Japonés Tradicional",
+      "placement": "Variado",
+      "sessions": "2-4 sesiones",
+      "year": "2025",
+      "tags": [
+        "japones",
+        "oriental",
+        "tradicional",
+        "detallado"
+      ],
+      "active": true
+    },
+    {
+      "id": 161,
+      "title": "Retrato artístico",
+      "description": "Retrato pictórico con técnica mixta y una fuerte carga emocional, explorando el uso del color y la expresión facial.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_0945.JPG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "retrato", "arte", "color"],
+      "active": true
+    },
+    {
+      "id": 162,
+      "title": "Busto clásico intervenido",
+      "description": "Interpretación contemporánea de una escultura clásica intervenida con color y elementos modernos.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_0959.JPEG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "escultura", "clásico", "color"],
+      "active": true
+    },
+    {
+      "id": 163,
+      "title": "Autorretrato conceptual",
+      "description": "Autorretrato conceptual que explora la identidad y la introspección a través de símbolos visuales.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_0976.JPG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "conceptual", "autorretrato", "arte"],
+      "active": true
+    },
+    {
+      "id": 164,
+      "title": "Proceso creativo",
+      "description": "Registro visual del proceso creativo durante una sesión de pintura en estudio.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_0977.JPG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "proceso", "estudio", "arte"],
+      "active": true
+    },
+    {
+      "id": 165,
+      "title": "Naturaleza muerta cítrica",
+      "description": "Composición de naturaleza muerta con frutas cítricas y una paleta de colores vibrante.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_0996.JPEG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "naturaleza muerta", "color", "frutas"],
+      "active": true
+    },
+    {
+      "id": 166,
+      "title": "Corazón anatómico",
+      "description": "Ilustración pictórica de un corazón anatómico con un enfoque expresivo y simbólico.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_1001.JPEG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "anatomía", "expresivo", "arte"],
+      "active": true
+    },
+    {
+      "id": 167,
+      "title": "Retrato surreal",
+      "description": "Retrato surrealista que combina realismo y fantasía mediante una paleta cromática intensa.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_1042.JPEG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "surrealismo", "retrato", "color"],
+      "active": true
+    },
+    {
+      "id": 168,
+      "title": "Ilustración fantástica",
+      "description": "Ilustración de personaje fantástico con un estilo colorido y narrativo.",
+      "category": "pinturas",
+      "image": "imagenes/portafolio/pinturas/IMG_2576.PNG",
+      "location": "Estudio",
+      "style": "Pintura artística",
+      "placement": "Lienzo",
+      "sessions": "Proceso artístico",
+      "year": "2025",
+      "tags": ["pintura", "ilustración", "fantasía", "color"],
+      "active": true
+    },
+    {
+      "id": 169,
+      "title": "Retrato canino realista",
+      "description": "Retrato de perro trabajado en negro y sombras suaves, capturando la expresión y personalidad del animal.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_0197.JPEG",
+      "location": "Estudio",
+      "style": "Realismo",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "perro", "realismo", "retrato"],
+      "active": true
+    },
+    {
+      "id": 170,
+      "title": "Retrato felino a color",
+      "description": "Ilustración de gato con detalles en color que resaltan su carácter y energía.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_0221.JPEG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Brazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "gato", "color", "retrato"],
+      "active": true
+    },
+    {
+      "id": 171,
+      "title": "Retrato minimalista de gato",
+      "description": "Retrato felino en estilo limpio y sobrio, centrado en la mirada del animal.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_0951.JPG",
+      "location": "Estudio",
+      "style": "Fine line",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "gato", "línea fina", "retrato"],
+      "active": true
+    },
+    {
+      "id": 172,
+      "title": "Retrato de mascota con flores",
+      "description": "Composición que integra el retrato del animal con elementos florales decorativos.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_0978.JPEG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Brazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "perro", "flores", "retrato"],
+      "active": true
+    },
+    {
+      "id": 173,
+      "title": "Retrato circular de mascota",
+      "description": "Retrato de mascota enmarcado en un formato circular, con alto nivel de detalle.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_0991.JPG",
+      "location": "Estudio",
+      "style": "Realismo",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "retrato", "realismo", "detalle"],
+      "active": true
+    },
+    {
+      "id": 174,
+      "title": "Composición de huellas y retrato",
+      "description": "Diseño simbólico que combina retratos de mascotas con huellas representativas.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_0999.JPEG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Brazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "huellas", "retrato", "recuerdo"],
+      "active": true
+    },
+    {
+      "id": 175,
+      "title": "Retrato canino estilizado",
+      "description": "Retrato de perro con un enfoque estilizado y líneas definidas.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1029.JPEG",
+      "location": "Estudio",
+      "style": "Linework",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "perro", "líneas", "retrato"],
+      "active": true
+    },
+    {
+      "id": 176,
+      "title": "Retrato clásico de perro",
+      "description": "Retrato detallado que resalta la nobleza y expresión del animal.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1033.JPEG",
+      "location": "Estudio",
+      "style": "Realismo",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "perro", "realismo", "retrato"],
+      "active": true
+    },
+    {
+      "id": 177,
+      "title": "Retrato expresivo de mascota",
+      "description": "Retrato con énfasis en la expresión facial y textura del pelaje.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1039.JPEG",
+      "location": "Estudio",
+      "style": "Realismo",
+      "placement": "Brazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "expresión", "retrato", "detalle"],
+      "active": true
+    },
+    {
+      "id": 178,
+      "title": "Retrato vertical de mascota",
+      "description": "Diseño vertical que enfatiza proporciones y mirada del animal.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1058.JPEG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Brazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "retrato", "vertical", "arte"],
+      "active": true
+    },
+    {
+      "id": 179,
+      "title": "Retrato realista de perro",
+      "description": "Retrato de alta fidelidad que captura textura, volumen y carácter.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1084.JPG",
+      "location": "Estudio",
+      "style": "Realismo",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "perro", "realismo", "detalle"],
+      "active": true
+    },
+    {
+      "id": 180,
+      "title": "Retrato simbólico de mascota",
+      "description": "Retrato con un enfoque simbólico y composición cerrada.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1092.JPEG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "símbolo", "retrato", "arte"],
+      "active": true
+    },
+    {
+      "id": 181,
+      "title": "Retrato doble de mascotas",
+      "description": "Composición que integra dos retratos en una sola pieza equilibrada.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1129.JPEG",
+      "location": "Estudio",
+      "style": "Linework",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "doble retrato", "líneas", "recuerdo"],
+      "active": true
+    },
+    {
+      "id": 182,
+      "title": "Retrato delicado de mascota",
+      "description": "Retrato de líneas suaves que transmite ternura y cercanía.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1225.JPEG",
+      "location": "Estudio",
+      "style": "Fine line",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "línea fina", "retrato", "emocional"],
+      "active": true
+    },
+    {
+      "id": 183,
+      "title": "Retrato de mascota con ornamentos",
+      "description": "Retrato acompañado de elementos decorativos que realzan la composición.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1227.JPG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Brazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "ornamental", "retrato", "arte"],
+      "active": true
+    },
+    {
+      "id": 184,
+      "title": "Retrato floral de mascota",
+      "description": "Composición que fusiona el retrato de la mascota con motivos florales.",
+      "category": "retratos-de-mascotas",
+      "image": "imagenes/portafolio/retratos-de-mascotas/IMG_1252.JPEG",
+      "location": "Estudio",
+      "style": "Ilustrativo",
+      "placement": "Antebrazo",
+      "sessions": "Sesión única",
+      "year": "2025",
+      "tags": ["mascotas", "flores", "retrato", "decorativo"],
+      "active": true
     }
+
   ]
 }
