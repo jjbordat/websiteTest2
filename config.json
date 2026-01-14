@@ -147,1552 +147,925 @@
     }
   },
   "portfolios": [
+
     {
       "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Pierna",
-      "style": "Realismo",
-      "placement": "Pierna",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "image": "imagenes/portafolio/realismo/IMG_0463.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 2,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0577.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_0577.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 3,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_0904.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 4,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_1136.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 5,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3292.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 6,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3296.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 7,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3297.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 8,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3298.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 9,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3299.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 10,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3300.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 11,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3301.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 12,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3302.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 13,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3303.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 14,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3304.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 15,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3306.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 16,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3307.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 17,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3309.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 18,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3310.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 19,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3311.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 20,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3313.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 21,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3314.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 22,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3315.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 23,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3316.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 24,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3319.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 25,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_3320.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 26,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_4180.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 27,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_4442.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 28,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_4558.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 29,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_4649.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 30,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_4688.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 31,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_5299.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 32,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_5387.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
+      "id": 33,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
       "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
+      "image": "imagenes/portafolio/realismo/IMG_5450.JPG",
       "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Realismo sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "realismo-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Realismo",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Retrato sombra",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "retrato-en-sombras",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Blackwork",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "blackwork",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Color",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "color",
-      "image": "imagenes/categories/realismo/IMG_0463.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
-      ],
-      "active": true
-    },
-    {
-      "id": 1,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
-      "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
-      "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     },
     {
       "id": 34,
-      "title": "Fine Line",
-      "description": "Fotografias de mis ultimos trabajos",
-      "category": "fine-line",
-      "image": "imagenes/categories/fineline/IMG_2030.JPG",
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_5638.JPG",
       "location": "Brazo",
-      "style": "Retrato",
-      "placement": "Brazo superior",
-      "sessions": "1-3 sesiones",
-      "year": "2025",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
       "tags": [
-        "Black",
-        "grey"
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 35,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6267.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 36,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6305.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 37,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6407.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 38,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6716.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 39,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6753.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 40,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6825.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 41,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6869.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 42,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6914.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 43,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6916.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 44,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_6939.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 45,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_7851.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 46,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_8535.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 47,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_8695.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 48,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_9242.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 49,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_9260.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 50,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/IMG_9397.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
+      ],
+      "active": true
+    },
+    {
+      "id": 51,
+      "title": "Realismo en sombras",
+      "description": "Tatuaje profesional realizado en realismo en sombras con alto nivel de detalle.",
+      "category": "realismo-en-sombras",
+      "image": "imagenes/portafolio/realismo/portada.JPG",
+      "location": "Brazo",
+      "style": "Realismo en sombras",
+      "placement": "Antebrazo / Manga",
+      "sessions": "2-3 sesiones",
+      "year": "2024",
+      "tags": [
+        "realismo",
+        "sombras",
+        "detalle"
       ],
       "active": true
     }
+
   ]
 }
