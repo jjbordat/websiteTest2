@@ -35,7 +35,7 @@ class DataManager {
                     id: this.generateId(),
                     title: "Retrato Realista",
                     description: "Detalles fotográficos que capturan la esencia",
-                    category: "realismo",
+                    category: "realismo-en-sombras",
                     image: "https://img.rocket.new/generatedImages/rocket_gen_img_126b08c74-1765294156010.png",
                     tags: ["retrato", "blanco-negro", "brazo"],
                     featured: true,
@@ -69,7 +69,7 @@ class DataManager {
             categories: [
                 {
                     id: this.generateId(),
-                    name: "Realismo",
+                    name: "realismo-en-sombras",
                     description: "Detalles fotográficos que capturan la esencia de retratos y escenas con precisión impresionante.",
                     image: "https://img.rocket.new/generatedImages/rocket_gen_img_126b08c74-1765294156010.png",
                     tags: ["color", "detailed", "large", "modern"],
